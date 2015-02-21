@@ -64,7 +64,7 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= config.app %>/{,*/}*.html',
+                    '.tmp/{,*/}*.html',
                     '.tmp/styles/{,*/}*.css',
                     '<%= config.app %>/images/{,*/}*'
                 ]
@@ -111,7 +111,7 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd: '<%= config.templates %>/pages/',
                         src: ['*.hbs'],
-                        dest: '<%= config.app %>'
+                        dest: '.tmp'
                     }
                 ]
 
@@ -221,7 +221,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            html: '<%= config.app %>/index.html'
+            html: '.tmp/{,*/}*.html'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -311,21 +311,29 @@ module.exports = function (grunt) {
         // Copies remaining files to places other tasks can use
         copy: {
             dist: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= config.app %>',
-                    dest: '<%= config.dist %>',
-                    src: [
-                        '*.{ico,png,txt}',
-                        'images/{,*/}*.webp',
-                        '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
-                    ]
-                }, {
-                    src: 'node_modules/apache-server-configs/dist/.htaccess',
-                    dest: '<%= config.dist %>/.htaccess'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= config.app %>',
+                        dest: '<%= config.dist %>',
+                        src: [
+                            '*.{ico,png,txt}',
+                            'images/{,*/}*.webp',
+                            'styles/fonts/{,*/}*.*'
+                        ]
+                    },
+                    {
+                        src: 'node_modules/apache-server-configs/dist/.htaccess',
+                        dest: '<%= config.dist %>/.htaccess'
+                    },
+                    {
+                        expand: true,
+                        cwd: '.tmp',
+                        src: '{,*/}*.html',
+                        dest: '<%= config.dist %>'
+                    }
+                ]
             },
             styles: {
                 expand: true,
@@ -391,7 +399,6 @@ module.exports = function (grunt) {
         grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
         grunt.task.run([target ? ('serve:' + target) : 'serve']);
     });
-
 
     grunt.registerTask('build', [
         'clean:dist',
