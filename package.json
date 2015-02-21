@@ -1,5 +1,9 @@
 {
     "name": "64i-webapp",
+    "version": "0.0.1",
+    "author": "64 Interactive, LLC.",
+    "description": "The new client-facing website for Greer Dailey",
+    "repository": "git@hyphen8tion.git.beanstalkapp.com:/hyphen8tion/greer-dailey.git",
     "devDependencies": {
         "apache-server-configs": "^2.7.1",
         "grunt": "^0.4.5",
