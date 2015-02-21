@@ -162,13 +162,15 @@ module.exports = function (grunt) {
                 }]
             },
             server: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/styles',
-                    src: ['*.{scss,sass}'],
-                    dest: '.tmp/styles',
-                    ext: '.css'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.app %>/styles',
+                        src: ['*.{scss,sass}'],
+                        dest: '.tmp/styles',
+                        ext: '.css'
+                    }
+                ]
             }
         },
 
@@ -190,12 +192,14 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         wiredep: {
             app: {
-                ignorePath: /^\/|\.\.\//,
+                exclude: [
+                    'bower_components/modernizr/modernizr.js'
+                ],
+                ignorePath: '../../',
                 src: ['<%= config.templates %>/layouts/base.hbs']
             },
             sass: {
-                src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-                ignorePath: /(\.\.\/){1,2}bower_components\//
+                src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}']
             }
         },
 

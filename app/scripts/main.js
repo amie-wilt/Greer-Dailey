@@ -2,6 +2,6 @@
 
 (function ($) {
     $(function () {
-        console.log('ha');
+        console.log('Greer Dailey, bitches.');
     });
 })(jQuery);
