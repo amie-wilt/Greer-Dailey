@@ -1,0 +1,20 @@
+<div class="primary-nav-container">
+    <ul class="nav-list">
+        {{#each global.pages }}
+            {{#isnt @key 'index' }}
+                <li>
+                    <a href="{{ @key }}.html">{{ name }}</a>
+                    {{#if sections }}
+                        <ul class="nav-dropdown-list">
+                            {{#each sections }}
+                                <li>
+                                    <a href="{{ ../name }}/#{{ @key }}">{{ name }}</a>
+                                </li>
+                            {{/each }}
+                        </ul>
+                    {{/if }}
+                </li>
+            {{/isnt }}
+        {{/each }}
+    </ul>
+</div>

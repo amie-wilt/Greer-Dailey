@@ -1,0 +1,82 @@
+{
+    "company": {
+        "name": "Greer | Dailey",
+        "address": {
+            "street-address": "2450 Mission Street / Suite 22",
+            "address-locality": "San Marino",
+            "address-region": "CA",
+            "postal-code": "91108"
+        },
+        "description": "Public Affairs Consulting",
+        "telephone": "213.615.1616",
+        "fax": "213.615.1625"
+    },
+    "pages": {
+        "index": {
+            "name": "Home",
+            "intro": {
+                "title": "Strategic Communication <em>Done. Right.</em>",
+                "content": "<strong>Greer/Dailey's approach to each challenge is both strategic and flexible,</strong> putting the right combination of skills together to achieve results. And at Greer/Dailey -- clients -- our most important asset get the full attention of the firm's principals.",
+                "button": "Find Out More"
+            },
+            "overview": {
+                "heading": "Our Areas of Expertise"
+            }
+        },
+        "expertise": {
+            "name": "Expertise",
+            "sections": {
+                "community-relations": {
+                    "name": "Community Relations"
+                },
+                "integrated-communications": {
+                    "name": "Integrated Communications"
+                },
+                "government-affairs": {
+                    "name": "Government Affairs"
+                },
+                "strategic-media-relations": {
+                    "name": "Strategic Media Relations"
+                },
+                "issues-management": {
+                    "name": "Issues Management"
+                },
+                "entitlements": {
+                    "name": "Entitlements"
+                }
+            }
+        },
+        "case-studies": {
+            "name": "Case Studies",
+            "intro": {
+                "title": "Case Studies",
+                "subtitle": "Lorem ipsum dolor sit amet.",
+                "content": "Nam condimentum ultricies erat, ut hendrerit ipsum scelerisque id. In cursus, dui non dapibus vulputate, odio lectus rutrum urna, eu fringilla turpis nunc eu ex. Pellentesque condimentum dui sed mi laoreet, eu aliquet dolor vestibulum. Morbi efficitur, arcu at porttitor semper, dolor nulla bibendum lacus, quis semper leo nunc pharetra urna. Nullam nec libero quis nibh vulputate placerat."
+            },
+            "callouts": {
+                "community-outreach": {
+                    "name": "Creating Community Outreach & Government Liasion Programs That Work",
+                    "section-content": "Greer/Dailey created and implemented community outreach and government liaison programs for one of the largest transit-oriented developments in Los Angeles County that will create new high-tech studio and office space, an enhanced theme park, new hotels, and thousands of much-needed jobs for the region. Greer/Dailey's outreach and work as a project liaison was instrumental in generating support from key decision-makers and more than 7,500 registered project supporters from surrounding communities, including community and union leaders, and business and residential stakeholders. Throughout the review process, which included multiple public hearings, hundreds of supporters submitted endorsement letters and attended and testified at pubic hearings. The project received unanimous approval from the Los Angeles City Council and the County Board of Supervisors."
+                },
+                "securing-neighborhood": {
+                    "name": "Securing Neighborhood, Community, and Stakeholder Support",
+                    "section-content": "Greer/Dailey worked with the project team to secure the support of the local City Councilmember, historic preservation organizations, neighborhood groups, and labor organizations for a 1.5 million square-foot mixed-use development, including high-end condominiums, retail, restaurants, and a complete hotel renovation, along with prime open space for the community. Greer/Dailey provided strategic counsel and called on strong community relationships to deliver endorsements from a wide cross-section of interests."
+                },
+                "providing-outreach": {
+                    "name": "Providing Outreach on Major Mixed-Use Development Projects",
+                    "section-content": "Greer/Dailey provided counsel and community outreach for a 2.5 million square-foot mixed use development project adjacent to a major Southern California transportation center. Overcoming decades of neighborhood skepticism and negativity, the comprehensive outreach plan won over knee-jerk opposition and generated substantial support for the project."
+                },
+                "obtaining-approval": {
+                    "name": "Obtaining Permitting Approval for Infrastructure Clients",
+                    "section-content": "Greer/Dailey worked to secure permitting and approval for several pipeline projects through multiple jurisdictions, helping the client avoid the controversy usually associated with energy infrastructure projects. Highlighting project benefits and key safety measures, Greer/Dailey effectively delivered the right messages to area stakeholders and decision-makers, thereby facilitating approvals. "
+                }
+            }
+        },
+        "team": {
+            "name": "Team"
+        },
+        "contact": {
+            "name": "Contact"
+        }
+    }
+}
