@@ -22,7 +22,8 @@ module.exports = function (grunt) {
     var config = {
         app: 'app',
         templates: 'app/templates',
-        dist: 'dist'
+        dist: 'dist',
+        support: 'support'
     };
 
     // Define the configuration for all the tasks
@@ -103,7 +104,8 @@ module.exports = function (grunt) {
             options: {
                 partials: ['<%= config.templates %>/partials/*.hbs'],
                 layout: ['<%= config.templates %>/layouts/base.hbs'],
-                data: ['<%= config.templates %>/data/*.{json,yml}']
+                data: ['<%= config.templates %>/data/*.{json,yml}'],
+                helpers: ['<%= config.support %>/helpers/gdz-helpers.js']
             },
             site: {
                 files: [
