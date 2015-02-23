@@ -27,22 +27,28 @@
             "name": "Expertise",
             "sections": {
                 "community-relations": {
-                    "name": "Community Relations"
+                    "name": "Community Relations",
+                    "summary": "Suspendisse vitae mi in lorem consequat ultricies. Fusce sit amet consequat sapien, eu luctus augue. Nunc turpis enim, lacinia eu consectetur sed, sagittis in odio. Proin malesuada egestas mi eget fringilla. Maecenas euismod a tellus nec elementum. Duis pellentesque nisi eros, eu consectetur metus imperdiet in. Cras aliquet lorem nec erat gravida blandit. Nulla facilisis vestibulum finibus. Sed lacus ex, venenatis id sapien et, rutrum condimentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac mollis felis, a pulvinar enim. Pellentesque ac erat sit amet mauris eleifend eleifend sed vel lorem. Suspendisse potenti."
                 },
                 "integrated-communications": {
-                    "name": "Integrated Communications"
+                    "name": "Integrated Communications",
+                    "summary": "Suspendisse vitae mi in lorem consequat ultricies. Fusce sit amet consequat sapien, eu luctus augue. Nunc turpis enim, lacinia eu consectetur sed, sagittis in odio. Proin malesuada egestas mi eget fringilla. Maecenas euismod a tellus nec elementum. Duis pellentesque nisi eros, eu consectetur metus imperdiet in. Cras aliquet lorem nec erat gravida blandit. Nulla facilisis vestibulum finibus. Sed lacus ex, venenatis id sapien et, rutrum condimentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac mollis felis, a pulvinar enim. Pellentesque ac erat sit amet mauris eleifend eleifend sed vel lorem. Suspendisse potenti."
                 },
                 "government-affairs": {
-                    "name": "Government Affairs"
+                    "name": "Government Affairs",
+                    "summary": "Suspendisse vitae mi in lorem consequat ultricies. Fusce sit amet consequat sapien, eu luctus augue. Nunc turpis enim, lacinia eu consectetur sed, sagittis in odio. Proin malesuada egestas mi eget fringilla. Maecenas euismod a tellus nec elementum. Duis pellentesque nisi eros, eu consectetur metus imperdiet in. Cras aliquet lorem nec erat gravida blandit. Nulla facilisis vestibulum finibus. Sed lacus ex, venenatis id sapien et, rutrum condimentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac mollis felis, a pulvinar enim. Pellentesque ac erat sit amet mauris eleifend eleifend sed vel lorem. Suspendisse potenti."
                 },
                 "strategic-media-relations": {
-                    "name": "Strategic Media Relations"
+                    "name": "Strategic Media Relations",
+                    "summary": "Suspendisse vitae mi in lorem consequat ultricies. Fusce sit amet consequat sapien, eu luctus augue. Nunc turpis enim, lacinia eu consectetur sed, sagittis in odio. Proin malesuada egestas mi eget fringilla. Maecenas euismod a tellus nec elementum. Duis pellentesque nisi eros, eu consectetur metus imperdiet in. Cras aliquet lorem nec erat gravida blandit. Nulla facilisis vestibulum finibus. Sed lacus ex, venenatis id sapien et, rutrum condimentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac mollis felis, a pulvinar enim. Pellentesque ac erat sit amet mauris eleifend eleifend sed vel lorem. Suspendisse potenti."
                 },
                 "issues-management": {
-                    "name": "Issues Management"
+                    "name": "Issues Management",
+                    "summary": "Suspendisse vitae mi in lorem consequat ultricies. Fusce sit amet consequat sapien, eu luctus augue. Nunc turpis enim, lacinia eu consectetur sed, sagittis in odio. Proin malesuada egestas mi eget fringilla. Maecenas euismod a tellus nec elementum. Duis pellentesque nisi eros, eu consectetur metus imperdiet in. Cras aliquet lorem nec erat gravida blandit. Nulla facilisis vestibulum finibus. Sed lacus ex, venenatis id sapien et, rutrum condimentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac mollis felis, a pulvinar enim. Pellentesque ac erat sit amet mauris eleifend eleifend sed vel lorem. Suspendisse potenti."
                 },
                 "entitlements": {
-                    "name": "Entitlements"
+                    "name": "Entitlements",
+                    "summary": "Suspendisse vitae mi in lorem consequat ultricies. Fusce sit amet consequat sapien, eu luctus augue. Nunc turpis enim, lacinia eu consectetur sed, sagittis in odio. Proin malesuada egestas mi eget fringilla. Maecenas euismod a tellus nec elementum. Duis pellentesque nisi eros, eu consectetur metus imperdiet in. Cras aliquet lorem nec erat gravida blandit. Nulla facilisis vestibulum finibus. Sed lacus ex, venenatis id sapien et, rutrum condimentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac mollis felis, a pulvinar enim. Pellentesque ac erat sit amet mauris eleifend eleifend sed vel lorem. Suspendisse potenti."
                 }
             }
         },
