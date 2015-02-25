@@ -1,0 +1,14 @@
+{{#with global.company.pages }}
+<div class="intro" style="background-image: url({{ image }});">
+    <h1 class="intro-title">{{{ title }}}</h1>
+    {{#if subtitle }}
+    <h2 class="intro-subtitle">{{{ subtitle }}}</h2>
+    {{/if}}
+    {{#if supporting-text }}
+        <p class="intro-supporting-text">{{{ supporting-text }}}</p>
+    {{/if}}
+    {{#if button }}
+        <button class="intro-button">{{ button }}</button>
+    {{/if}}
+</div>
+{{/with }}

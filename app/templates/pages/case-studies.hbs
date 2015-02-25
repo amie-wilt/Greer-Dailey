@@ -1,6 +1,6 @@
 {{#with global.pages.case-studies }}
-<div class="case-study-container">
-
+<div class="case-study-page">
+    {{> intro intro }}
     {{#each callouts }}
         <h2 class="case-study-heading">{{ name }}</h2>
         <p class="case-study-content">{{ section-content }}</p>
