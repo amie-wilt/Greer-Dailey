@@ -1,3 +1,17 @@
-<div class="intro-container">
-    {{> intro }}
-</div>
+{{#with global.pages.team }}
+    <div class="team-page">
+        <div class="team-intro">
+            {{> intro intro }}
+        </div>
+        <div class="team-content">
+            <h2 class="team-header">{{ team-header }}</h2>
+            <div class="team-member-info">
+                {{#each team-members }}
+                    <h3 class="team-member-name">{{ name }}</h3>
+                    <h4 class="team-member-title">{{ title }}</h4>
+                    <p class="team-member-bio">{{{ bio }}}</p>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+{{/with}}

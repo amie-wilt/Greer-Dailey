@@ -1,18 +1,21 @@
-{{#with global.pages }}
-
-    <div class="intro-container">
-        {{> intro }}
-    </div>
-
-    <div class="overview-container">
-        <h2 class="overview-header">{{ index.overview-header }}</h2>
-        <ul class="overview-list">
-            {{#each expertise.sections }}
-                <li>
-                    <a href="#">{{ name }}</a>
-                </li>
+{{#with global.pages.expertise }}
+    <div class="expertise-page">
+        <div class="expertise-intro">
+            {{> intro intro }}
+        </div>
+        <div class="expertise-content">
+            <h2 class="expertise-header">{{ subtitle }}</h2>
+            {{#each sections }}
+                <section id="{{ dasherize name }}">
+                    <header>
+                        <h1>{{ name }}</h1>
+                    </header>
+                    <p class="expertise-description">{{{ description }}}</p>
+                    <div class="expertise-summary">
+                        {{{ summary }}}
+                    </div>
+                </section>
             {{/each }}
-        </ul>
+        </div>
     </div>
-
 {{/with}}

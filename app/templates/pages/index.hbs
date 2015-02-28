@@ -1,18 +1,17 @@
 {{#with global.pages }}
-
-<div class="intro-container">
-    {{> intro }}
-</div>
-
-<div class="overview-container">
-    <h2 class="overview-header">{{ index.overview-header }}</h2>
-    <ul class="overview-list">
-        {{#each expertise.sections }}
-            <li>
-                <a href="#">{{ name }}</a>
-            </li>
-        {{/each }}
-    </ul>
-</div>
-
+    <div class="index-page">
+        <div class="index-intro">
+            {{> intro index.intro }}
+        </div>
+        <div class="index-content">
+            <h2 class="index-header">{{ index.index-header }}</h2>
+            <ul class="index-expertise-overview-list">
+                {{#each expertise.sections }}
+                    <li>
+                        <a href="#">{{ name }}</a>
+                    </li>
+                {{/each }}
+            </ul>
+        </div>
+    </div>
 {{/with}}
