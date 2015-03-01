@@ -1,0 +1,28 @@
+.case-study-heading-container,
+.case-study-section-content-container {
+    display: table;
+    width: 100%;
+}
+
+.case-study-heading-container {
+    height: 400px;
+    background: pink;
+}
+
+.case-study-section-content-container {
+    height: 300px;
+    background: $goldenrod;
+}
+
+.case-study-heading-inner-container,
+.case-study-section-content-inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.case-study-section-content {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+

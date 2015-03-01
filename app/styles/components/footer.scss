@@ -1,0 +1,15 @@
+.footer-container {
+    display: table;
+    width: 100%;
+    height: 300px;
+    background: $dark-blue;
+    color: white;
+}
+
+.footer-inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}

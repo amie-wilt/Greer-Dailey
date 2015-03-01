@@ -22,8 +22,12 @@
         <header>
             <div class="header-container">
                 <div class="header-inner-container">
-                    {{> logo-container }}
-                    {{> primary-navigation }}
+                    <div class="header-logo-container">
+                        {{> logo-container }}
+                    </div>
+                    <div class="header-primary-nav-container">
+                        {{> primary-navigation }}
+                    </div>
                 </div>
             </div>
         </header>
@@ -35,12 +39,18 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-inner-container">
-                    {{> logo-container }}
-                    {{> primary-navigation }}
-                </div>
-                {{> address }}
-                <div class="copyright-container">
-                    <span class="copyright">Copyright 2015 {{ global.company.name }}. All Rights Reserved.</span>
+                    <div class="footer-logo-container">
+                        {{> logo-container }}
+                    </div>
+                    <div class="footer-primary-nav-container">
+                        {{> primary-navigation }}
+                    </div>
+                    <div class="footer-address-container">
+                        {{> address }}
+                    </div>
+                    <div class="copyright-container">
+                        <span class="copyright">Copyright 2015 {{ global.company.name }}. All Rights Reserved.</span>
+                    </div>
                 </div>
             </div>
         </footer>
