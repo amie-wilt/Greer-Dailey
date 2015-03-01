@@ -1,0 +1,26 @@
+.team-content-container {
+    background: $light-green;
+}
+
+.team-content-inner-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.team-header {
+    text-align: center;
+}
+
+.team-member-name {
+    padding: 40px 0 10px 0;
+}
+
+.team-member-title {
+    padding-bottom: 30px;
+}
+
+.team-member-bio {
+    column-count: 2;
+    column-gap: 30px;
+}

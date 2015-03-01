@@ -3,14 +3,16 @@
         <div class="team-intro">
             {{> intro intro }}
         </div>
-        <div class="team-content">
-            <h2 class="team-header">{{ team-header }}</h2>
-            <div class="team-member-info">
-                {{#each team-members }}
-                    <h3 class="team-member-name">{{ name }}</h3>
-                    <h4 class="team-member-title">{{ title }}</h4>
-                    <p class="team-member-bio">{{{ bio }}}</p>
-                {{/each}}
+        <div class="team-content-container">
+            <div class="team-content-inner-container">
+                <h2 class="team-header">{{ team-header }}</h2>
+                <div class="team-member-info">
+                    {{#each team-members }}
+                        <h3 class="team-member-name">{{ name }}</h3>
+                        <h4 class="team-member-title">{{ title }}</h4>
+                        <div class="team-member-bio">{{{ bio }}}</div>
+                    {{/each}}
+                </div>
             </div>
         </div>
     </div>

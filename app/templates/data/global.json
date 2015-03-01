@@ -1,8 +1,8 @@
 {
     "company": {
-        "name": "Greer | Dailey",
+        "name": "Greer <span class=\"logo-pipe\">|</span> Dailey",
         "address": {
-            "street-address": "2450 Mission Street / Suite 22",
+            "street-address": "2450 Mission Street Suite 22",
             "address-locality": "San Marino",
             "address-region": "CA",
             "postal-code": "91108"

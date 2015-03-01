@@ -13,3 +13,28 @@
     max-width: 1024px;
     margin: 0 auto;
 }
+
+.footer-logo-container {
+    padding: 40px 0 20px 0;
+}
+
+.footer-logo-container .logo {
+
+}
+
+.footer-primary-nav-container {
+    padding-bottom: 20px;
+}
+
+.footer-primary-nav-container nav ul {
+    margin: 0 auto;
+    @include footer-900;
+}
+
+.copyright {
+    @include footer-300;
+}
+
+.copyright span {
+    color: #fff;
+}

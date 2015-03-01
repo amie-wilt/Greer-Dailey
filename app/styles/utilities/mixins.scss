@@ -8,3 +8,66 @@
     padding: 0;
     margin: 0;
 }
+
+// Font Mixins
+
+@mixin ex-lg-100 {
+    font-family: 'MuseoSans100', sans-serif;
+    font-size: 60px;
+}
+
+@mixin lg-100 {
+    font-family: 'MuseoSans100', sans-serif;
+    font-size: 40px;
+}
+
+@mixin med-100 {
+    font-family: 'MuseoSans100', sans-serif;
+    font-size: 30px;
+}
+
+@mixin sml-100 {
+    font-family: 'MuseoSans100', sans-serif;
+    font-size: 20px;
+}
+
+@mixin p-300 {
+    font-family: 'MuseoSans300', sans-serif;
+    font-size: 18px;
+}
+
+@mixin footer-300 {
+    font-family: 'MuseoSans300', sans-serif;
+    font-size: 14px;
+}
+
+@mixin ex-lg-900 {
+    font-family: 'MuseoSans900', sans-serif;
+    font-size: 60px;
+}
+
+@mixin lg-900 {
+    font-family: 'MuseoSans900', sans-serif;
+    font-size: 40px;
+}
+
+@mixin med-900 {
+    font-family: 'MuseoSans900', sans-serif;
+    font-size: 30px;
+}
+
+@mixin sml-900 {
+    font-family: 'MuseoSans900', sans-serif;
+    font-size: 20px;
+}
+
+@mixin p-900 {
+    font-family: 'MuseoSans900', sans-serif;
+    font-size: 18px;
+}
+
+@mixin footer-900 {
+    font-family: 'MuseoSans900', sans-serif;
+    font-size: 14px;
+}
+

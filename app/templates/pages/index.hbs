@@ -3,15 +3,17 @@
         <div class="index-intro">
             {{> intro index.intro }}
         </div>
-        <div class="index-content">
-            <h2 class="index-header">{{ index.index-header }}</h2>
-            <ul class="index-expertise-overview-list">
-                {{#each expertise.sections }}
-                    <li>
-                        <a href="#">{{ name }}</a>
-                    </li>
-                {{/each }}
-            </ul>
+        <div class="index-content-container">
+            <div class="index-content-inner-container">
+                <h2 class="index-header">{{ expertise.subtitle }}</h2>
+                <ul class="index-overview-list">
+                    {{#each expertise.sections }}
+                        <li>
+                            <a href="#">{{ name }}</a>
+                        </li>
+                    {{/each }}
+                </ul>
+            </div>
         </div>
     </div>
 {{/with}}

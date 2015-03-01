@@ -7,6 +7,7 @@
     width: 100%;
     height: 500px;
     background: $dark-green;
+    padding-top: 100px;
 }
 
 .intro {
@@ -21,4 +22,29 @@
     margin: 0 auto;
 }
 
+.intro-title {
+    @include ex-lg-100;
+    padding-bottom: 20px;
+}
+
+.intro-subtitle {
+    @include med-900;
+    padding-bottom: 40px;
+ }
+
+.intro-supporting-text {
+    @include p-300;
+    padding: 0 200px;
+    text-align: center;
+}
+
+.intro-button {
+    margin-top: 30px;
+    background: none;
+    text-transform: uppercase;
+    color: $goldenrod;
+    @include sml-900;
+    padding: 10px 20px;
+    border: 1px solid $goldenrod;
+}
 

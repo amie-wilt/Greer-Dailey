@@ -3,19 +3,21 @@
         <div class="expertise-intro">
             {{> intro intro }}
         </div>
-        <div class="expertise-content">
-            <h2 class="expertise-header">{{ subtitle }}</h2>
-            {{#each sections }}
-                <section id="{{ dasherize name }}">
-                    <header>
-                        <h1>{{ name }}</h1>
-                    </header>
-                    <p class="expertise-description">{{{ description }}}</p>
-                    <div class="expertise-summary">
-                        {{{ summary }}}
-                    </div>
-                </section>
-            {{/each }}
+        <div class="expertise-content-container">
+            <div class="expertise-content-inner-container">
+                <h2 class="expertise-header">{{ subtitle }}</h2>
+                {{#each sections }}
+                    <section id="{{ dasherize name }}">
+                        <header>
+                            <h1 class="expertise-section-header">{{ name }}</h1>
+                        </header>
+                        <p class="expertise-description">{{{ description }}}</p>
+                        <div class="expertise-summary">
+                            {{{ summary }}}
+                        </div>
+                    </section>
+                {{/each }}
+            </div>
         </div>
     </div>
 {{/with}}
