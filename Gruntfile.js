@@ -8,7 +8,7 @@
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
-                    middleware: function (connect) {
+                    middleware: function(connect) {
                         return [
                             connect.static('.tmp'),
                             connect().use('/bower_components', connect.static('./bower_components')),
@@ -155,13 +155,15 @@ module.exports = function (grunt) {
                 includePaths: ['bower_components']
             },
             dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/styles',
-                    src: ['*.{scss,sass}'],
-                    dest: '.tmp/styles',
-                    ext: '.css'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.app %>/styles',
+                        src: ['*.{scss,sass}'],
+                        dest: '.tmp/styles',
+                        ext: '.css'
+                    }
+                ]
             },
             server: {
                 files: [
@@ -382,7 +384,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
+    grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function(target) {
         if (grunt.option('allow-remote')) {
             grunt.config.set('connect.options.hostname', '0.0.0.0');
         }
@@ -401,7 +403,7 @@ module.exports = function (grunt) {
         ]);
     });
 
-    grunt.registerTask('server', function (target) {
+    grunt.registerTask('server', function(target) {
         grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
         grunt.task.run([target ? ('serve:' + target) : 'serve']);
     });

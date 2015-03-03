@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;mBACoB;EAChB,UAAU,EAAE,MAAM;;AAGtB,mBAAoB;EAChB,OAAO,EAAE,OAAO;;AAGpB,mBAAoB;EAChB,OAAO,EAAE,WAAW",
-"sources": ["case-studies.scss"],
-"names": [],
-"file": "case-studies.css"
-}

@@ -1,0 +1,7 @@
+html {
+    @include font-smoothing(on);
+}
+
+a {
+    text-decoration: none;
+}
