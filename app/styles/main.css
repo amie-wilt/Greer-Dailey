@@ -97,7 +97,7 @@ a {
 .contact-intro {
   display: table;
   width: 100%;
-  height: 500px;
+  height: 673px;
   background: #3A8A00;
   padding-top: 100px; }
 
@@ -120,6 +120,10 @@ a {
   font-family: 'MuseoSans900', sans-serif;
   font-size: 30px;
   padding-bottom: 40px; }
+
+.intro-title strong {
+  font-family: 'MuseoSans900', sans-serif;
+  font-size: 30px; }
 
 .intro-supporting-text {
   font-family: 'MuseoSans300', sans-serif;

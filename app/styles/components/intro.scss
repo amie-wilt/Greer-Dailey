@@ -5,7 +5,7 @@
 .contact-intro {
     display: table;
     width: 100%;
-    height: 500px;
+    height: 673px;
     background: $dark-green;
     padding-top: 100px;
 }
@@ -31,6 +31,10 @@
     @include med-900;
     padding-bottom: 40px;
  }
+
+.intro-title strong {
+    @include med-900;
+}
 
 .intro-supporting-text {
     @include p-300;

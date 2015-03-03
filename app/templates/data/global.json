@@ -25,8 +25,8 @@
             "name": "Expertise",
             "subtitle": "Our Areas of Expertise",
             "intro": {
-                "image": "path/to/image.jpg",
-                "title": "A recognized leader <strong>in community relations in Los Angeles</strong>",
+                "image": "../images/expertise-image.jpg",
+                "title": "A recognized leader<br><strong>in community relations in Los Angeles.</strong>",
                 "supporting-text": "<p>Greer/Dailey brings clients core capabilities in stakeholder outreach and coalition building, government affairs, advocacy, integrated communications, strategic media relations and project entitlements  – plus strong relationships with communities, decision-makers and local stakeholders throughout Southern California.</p><p>In addition, Greer/Dailey’s long-standing ties with an impressive group of associates and affiliated consultants brings clients expertise in a variety of areas, including public policy, energy, and litigation support, to name just a few of many disciplines.</p><p>Greer/Dailey’s approach to each challenge is both strategic and flexible, putting the right combination of skills and tools together to achieve results. And at Greer/Dailey -- clients -- our most important asset, get the full attention of the firm’s principals.</p>"
             },
             "sections": {
