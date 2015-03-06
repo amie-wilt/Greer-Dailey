@@ -1,0 +1,10 @@
+.transparent-goldenrod-button {
+    margin-top:40px;
+    background: none;
+    text-transform: uppercase;
+    color: $goldenrod;
+    @include medium;
+    font-weight: 900;
+    padding: 20px 50px;
+    border: 1px solid $goldenrod;
+}

@@ -15,24 +15,29 @@
 }
 
 .footer-logo-container {
-    padding: 40px 0 20px 0;
-}
-
-.footer-logo-container .logo {
-
+    padding: 75px 0 45px 0;
 }
 
 .footer-primary-nav-container {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .footer-primary-nav-container nav ul {
     margin: 0 auto;
-    @include footer-900;
+    @include very-small;
+
+    a {
+        color: $very-light-blue;
+        text-transform: uppercase;
+    }
+}
+
+.copyright-container {
+    padding-bottom: 200px;
 }
 
 .copyright {
-    @include footer-300;
+    @include very-small;
 }
 
 .copyright span {

@@ -1,5 +1,4 @@
 .header-container {
-    background: pink;
     position: absolute;
     width: 100%;
     padding: 30px 0;
@@ -25,12 +24,12 @@
 }
 
 .logo {
-    @include med-100;
+    @include semi-large;
     padding-bottom: 5px;
 }
 
 .tagline {
-    @include footer-300;
+    @include very-small;
     padding-left: 10px;
 }
 
@@ -38,26 +37,28 @@
     color: $goldenrod;
 }
 
-.nav-list {
+.primary-nav-list {
     display: table;
     margin-left: auto;
-}
 
-.nav-list > li {
-    display: table-cell;
-    padding-left: 20px;
+    > li {
+        display: table-cell;
+        padding-left: 40px;
+        @include medium;
+        font-weight: 900;
+    }
 }
 
 .nav-dropdown-list {
     display: none;
 }
 
-.nav-list,
+.primary-nav-list,
 .nav-dropdown-list {
-    @include sml-900;
+    @include medium;
 }
 
-.nav-list a {
+.primary-nav-list-link {
     color: #fff;
 }
 

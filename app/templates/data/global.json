@@ -15,8 +15,8 @@
         "index": {
             "name": "Home",
             "intro": {
-                "title": "Strategic Communication",
-                "subtitle": "<em>Done. Right.</em>",
+                "image": "../images/index-image.jpg",
+                "title": "Strategic Communication <em>Done. Right.</em>",
                 "supporting-text": "<strong>Greer/Dailey’s approach to each challenge is both strategic and flexible,</strong> putting the right combination of skills and tools together to achieve results. And at Greer/Dailey -- clients -- our most important asset, get the full attention of the firm's principals.",
                 "button": "Find Out More"
             }
@@ -93,7 +93,7 @@
         "team": {
             "name": "Team",
             "intro": {
-                "image": "path/to/image.jpg",
+                "image": "../images/team-image.jpg",
                 "title": "Our Team",
                 "subtitle": "<strong>The right combination of skills to achieve results</strong>"
             },
@@ -124,7 +124,7 @@
         "contact": {
             "name": "Contact",
             "intro": {
-                "image": "path/to/image.jpg",
+                "image": "../images/contact-image.jpg",
                 "title": "Contact",
                 "supporting-text": "Nam condimentum ultricies erat, ut hendrerit ipsum scelerisque id. In cursus, dui non dapibus vulputate, odio lectus rutrum urna, eu fringilla turpis nunc eu ex. Pellentesque condimentum dui sed mi laoreet, eu aliquet dolor vestibulum. Morbi efficitur, arcu at porttitor semper, dolor nulla bibendum lacus, quis semper leo nunc pharetra urna. Nullam nec libero quis nibh vulputate placerat."
             }

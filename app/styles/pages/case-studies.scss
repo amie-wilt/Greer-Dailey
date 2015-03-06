@@ -6,12 +6,19 @@
 
 .case-study-heading-container {
     height: 400px;
-    background: pink;
+    background: $med-blue;
+}
+
+.case-study-heading {
+    @include extra-large;
+    color: $lightest-blue;
+    font-weight: 100;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .case-study-section-content-container {
-    height: 300px;
-    background: $goldenrod;
+    background: $lightest-blue;
 }
 
 .case-study-heading-inner-container,
@@ -22,10 +29,10 @@
 }
 
 .case-study-section-content {
-    max-width: 1024px;
+    @include small;
+    font-weight: 300;
+    max-width: 800px;
+    padding: 85px 0;
     margin: 0 auto;
-    padding: 0 300px;
-    font-family: 'MuseoSans300';
-    font-weight: bold;
 }
 

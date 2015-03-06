@@ -1,61 +1,30 @@
 // Typography
-@mixin ex-lg-100 {
-    font-family: 'MuseoSans100', sans-serif;
+@mixin extra-large {
     font-size: 60px;
+    line-height: .9;
 }
 
-@mixin lg-100 {
-    font-family: 'MuseoSans100', sans-serif;
+@mixin large {
     font-size: 40px;
+    line-height: 1;
 }
 
-@mixin med-100 {
-    font-family: 'MuseoSans100', sans-serif;
+@mixin semi-large {
     font-size: 30px;
+    line-height: 1;
 }
 
-@mixin sml-100 {
-    font-family: 'MuseoSans100', sans-serif;
+@mixin medium {
     font-size: 20px;
+    line-height: 1.2;
 }
 
-@mixin p-300 {
-    font-family: 'MuseoSans300', sans-serif;
+@mixin small {
     font-size: 18px;
+    line-height: 1.4;
 }
 
-@mixin footer-300 {
-    font-family: 'MuseoSans300', sans-serif;
+@mixin very-small {
     font-size: 14px;
+    line-height: 1.3;
 }
-
-@mixin ex-lg-900 {
-    font-family: 'MuseoSans900', sans-serif;
-    font-size: 60px;
-}
-
-@mixin lg-900 {
-    font-family: 'MuseoSans900', sans-serif;
-    font-size: 40px;
-}
-
-@mixin med-900 {
-    font-family: 'MuseoSans900', sans-serif;
-    font-size: 30px;
-}
-
-@mixin sml-900 {
-    font-family: 'MuseoSans900', sans-serif;
-    font-size: 20px;
-}
-
-@mixin p-900 {
-    font-family: 'MuseoSans900', sans-serif;
-    font-size: 18px;
-}
-
-@mixin footer-900 {
-    font-family: 'MuseoSans900', sans-serif;
-    font-size: 14px;
-}
-

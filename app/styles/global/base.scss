@@ -1,7 +1,12 @@
 html {
     @include font-smoothing(on);
+    font-family: 'MuseoSans', sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+strong {
+    font-weight: 900;
 }
