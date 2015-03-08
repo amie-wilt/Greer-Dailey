@@ -7,6 +7,21 @@
     margin: 0 auto;
 }
 
+.expertise-page {
+
+    .intro-title {
+        color: $very-light-blue;
+
+        strong {
+            color: #fff;
+        }
+    }
+
+    .intro-supporting-text {
+        max-width: 720px;
+    }
+}
+
 .expertise-header {
     text-align: center;
     padding: 50px 0 30px 0;

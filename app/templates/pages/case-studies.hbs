@@ -5,16 +5,14 @@
         </div>
         <div class="case-study-content-container">
             {{#each callouts }}
-                <div class="case-study-heading-container">
-                    <div class="case-study-heading-inner-container">
+                <section class="case-study">
+                    <div class="case-study-heading-container" style="background-image: url({{ image }});">
                         <h2 class="case-study-heading">{{{ name }}}</h2>
                     </div>
-                </div>
-                <div class="case-study-section-content-container">
-                    <div class="case-study-section-content-inner-container">
-                        <p class="case-study-section-content">{{{ section-content }}}</p>
+                    <div class="case-study-summary-text-container">
+                        <p class="case-study-summary-text">{{{ section-content }}}</p>
                     </div>
-                </div>
+                </section>
             {{/each}}
         </div>
     </div>

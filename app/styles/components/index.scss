@@ -2,17 +2,10 @@
     background: $light-green;
 }
 
-.index-content-container,
 .index-overview-list {
     display: table;
     margin: 0 auto;
     width: 100%;
-}
-
-.index-content-inner-container {
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .index-header {
@@ -24,18 +17,23 @@
 }
 
 .index-overview-list {
-    padding-bottom: 120px;
     max-width: 1024px;
     text-align: center;
+    padding-bottom: 120px;
 
     li {
         display: table-cell;
+        padding-right: 80px;
+    }
+
+    li:last-child {
+        padding-right: 0;
     }
 }
 
 .expertise-list-link {
-    text-decoration: none;
     @include small;
+    text-decoration: none;
     font-weight: 900;
     color: $med-blue;
 }

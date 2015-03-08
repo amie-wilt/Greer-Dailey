@@ -5,11 +5,15 @@
 .team-content-inner-container {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding-bottom: 115px;
 }
 
 .team-header {
+    @include extra-large;
+    font-weight: 100;
     text-align: center;
+    padding: 115px 0 75px 0;
+    color:$med-blue;
 }
 
 .team-member-name {

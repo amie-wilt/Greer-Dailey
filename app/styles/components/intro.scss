@@ -4,6 +4,7 @@
     padding: 215px 0 130px 0;
     background-size: cover;
     background-position: center top;
+    background-color: $dark-green;
 }
 
 .intro-content-wrapper {
@@ -17,6 +18,7 @@
     max-width: 1024px;
     margin: 0 auto;
 }
+
 
 .intro-title {
     @include extra-large;
@@ -50,4 +52,7 @@
     text-align: center;
 }
 
+.intro-learn-more-button {
+    @extend %transparent-goldenrod-button;
+}
 

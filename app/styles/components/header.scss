@@ -1,14 +1,16 @@
-.header-container {
-    position: absolute;
-    width: 100%;
-    padding: 30px 0;
-}
-
-.header-inner-container {
+.header {
     display: table;
-    max-width: 1024px;
-    margin: 0 auto;
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    width: 1024px;
+    padding: 30px 0;
+    margin-left: (1024/2) * -1px;
+
+    @media #{$site-width-mq} {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
 }
 
 .header-logo-container,
@@ -46,6 +48,10 @@
         padding-left: 40px;
         @include medium;
         font-weight: 900;
+    }
+
+    :active, :hover {
+        color: $goldenrod;
     }
 }
 
