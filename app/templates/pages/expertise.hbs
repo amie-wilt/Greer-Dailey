@@ -4,20 +4,24 @@
             {{> intro intro }}
         </div>
         <div class="expertise-content-container">
-            <div class="expertise-content-inner-container">
-                <h2 class="expertise-header">{{ subtitle }}</h2>
-                {{#each sections }}
-                    <section id="{{ dasherize name }}">
-                        <header>
-                            <h1 class="expertise-section-header">{{ name }}</h1>
+            <h2 class="expertise-header">{{ subtitle }}</h2>
+            {{#each sections }}
+                <section id="{{ dasherize name }}" class="expertise-section">
+                    <button class="expertise-section-close-button">{{ button }}</button>
+                    <div class="expertise-header-summary-wrapper">
+                        <header class="expertise-section-header">
+                            <img src="../../images/icon-placeholder.png" class="expertise-header-icon">
+
+                            <h1 class="expertise-section-heading">{{ name }}</h1>
                         </header>
                         <p class="expertise-description">{{{ description }}}</p>
-                        <div class="expertise-summary">
-                            {{{ summary }}}
-                        </div>
-                    </section>
-                {{/each }}
-            </div>
+                    <div class="expertise-summary">
+                        {{{ summary }}}
+                    </div>
+                    </div>
+                    <button class="expertise-section-close-button">{{ button }}</button>
+                </section>
+            {{/each }}
         </div>
     </div>
 {{/with}}

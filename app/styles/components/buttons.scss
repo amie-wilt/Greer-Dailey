@@ -8,3 +8,15 @@
     padding: 20px 50px;
     border: 1px solid $goldenrod;
 }
+
+%solid-med-green-button {
+    @include small;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: $med-green;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border: none;
+}

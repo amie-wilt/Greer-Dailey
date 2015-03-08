@@ -2,8 +2,8 @@
     <ul class="primary-nav-list">
         {{#each global.pages }}
             {{#isnt @key 'index' }}
-                <li>
-                    <a href="{{ @key }}.html" class="primary-nav-list-link">{{ name }}</a>
+                <li {{#if sections}}class="dropdown"{{/if}}>
+                    <a href="{{ @key }}.html" class="primary-nav-list-link{{#is @key ../../basename}} active{{/is}}">{{ name }}</a>
                     {{#if sections }}
                         <ul class="nav-dropdown-list">
                             {{#each sections }}

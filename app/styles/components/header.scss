@@ -1,10 +1,12 @@
 .header {
+    @include full-width-padding;
+    box-sizing: border-box;
     display: table;
     position: absolute;
     left: 50%;
-    width: 1024px;
-    padding: 30px 0;
-    margin-left: (1024/2) * -1px;
+    width: $site-width;
+    padding-top: 30px;
+    margin-left: ($site-width/2) * -1;
 
     @media #{$site-width-mq} {
         width: 100%;
@@ -40,38 +42,58 @@
 }
 
 .primary-nav-list {
-    display: table;
+    display: flex;
+    justify-content: flex-end;
     margin-left: auto;
 
     > li {
-        display: table-cell;
-        padding-left: 40px;
-        @include medium;
-        font-weight: 900;
+        position: relative;
+    }
+}
+
+.primary-nav-list-link {
+    display: block;
+    @include medium;
+    font-weight: 900;
+    color: #fff;
+    padding: 20px;
+
+    &.active,
+    &:hover {
+        color: $goldenrod;
     }
 
-    :active, :hover {
+    .dropdown:hover & {
+        background: #fff;
         color: $goldenrod;
     }
 }
 
 .nav-dropdown-list {
+    top: 100%;
+    background: #fff;
+    padding: 35px 0;
     display: none;
+    position: absolute;
+
+    .dropdown:hover & {
+        display: block;
+    }
+
+    > li {
+        padding: 0 40px;
+    }
 }
 
-.primary-nav-list,
-.nav-dropdown-list {
-    @include medium;
-}
+.nav-dropdown-list-link {
+    @include small;
+    font-weight: 900;
+    color: $med-blue;
 
-.primary-nav-list-link {
-    color: #fff;
+    &:hover {
+        color: $goldenrod;
+    }
 }
-
-.nav-dropdown-list li:hover {
-    display: block;
-}
-
 
 
 

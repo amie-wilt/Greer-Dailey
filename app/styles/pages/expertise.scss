@@ -2,11 +2,6 @@
     background: $light-green;
 }
 
-.expertise-content-inner-container {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
 .expertise-page {
 
     .intro-title {
@@ -22,13 +17,50 @@
     }
 }
 
+.expertise-section {
+    background: $med-green;
+    padding: 70px 0 95px 0;
+}
+
+.expertise-section-close-button {
+    @extend %solid-med-green-button;
+}
+
+.expertise-header-summary-wrapper {
+    @include full-width-padding;
+    max-width: $site-width;
+    margin: 0 auto;
+}
+
 .expertise-header {
+    @include extra-large;
+    font-weight: 100;
+    color: $med-blue;
     text-align: center;
     padding: 50px 0 30px 0;
 }
 
+.expertise-header-icon,
 .expertise-section-header {
-    padding: 20px 0;
+    display: table;
+}
+
+.expertise-section-heading-closed {
+    @include large;
+    text-align: center;
+    color: $med-blue;
+}
+
+.expertise-section-heading {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.expertise-section-heading {
+    @include extra-large;
+    font-weight: 100;
+    color: #fff;
+    padding-left: 40px;
     text-align: center;
 }
 
@@ -37,6 +69,9 @@
 }
 
 .expertise-summary {
+    @include medium;
+    font-weight: 100;
     column-count: 2;
     column-gap: 30px;
 }
+

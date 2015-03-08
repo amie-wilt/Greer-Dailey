@@ -18,7 +18,7 @@
 }
 
 .footer-primary-nav-container nav ul {
-    margin: 0 auto;
+    justify-content: center;
     @include very-small;
 
     a {
