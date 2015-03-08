@@ -4,16 +4,19 @@
             {{> intro intro }}
         </div>
         <div class="team-content-container">
-            <div class="team-content-inner-container">
-                <h2 class="team-header">{{ team-header }}</h2>
-                <div class="team-member-info">
+            <h2 class="team-header">{{ team-header }}</h2>
+            <section class="team-member-info" itemscope itemtype="http://schema.org/Person">
+                <div class="team-member-info-wrapper">
                     {{#each team-members }}
-                        <h3 class="team-member-name">{{ name }}</h3>
-                        <h4 class="team-member-title">{{ title }}</h4>
+                        <button class="team-member-close-button">{{ button }}</button>
+                        <h3 class="team-member-name" itemprop="name">{{ name }}</h3>
+                        <h4 class="team-member-title" itemprop="jobTitle">{{ title }}</h4>
+
                         <div class="team-member-bio">{{{ bio }}}</div>
+                        <button class="team-member-close-button">{{ button }}</button>
                     {{/each}}
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 {{/with}}

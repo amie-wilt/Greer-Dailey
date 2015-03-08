@@ -1,3 +1,15 @@
+.case-study-page {
+    background-color: $dark-green;
+
+    .intro-subtitle {
+        padding-bottom: 15px;
+    }
+
+    .intro-supporting-text {
+        font-weight: 100;
+        max-width: 710px;
+    }
+}
 
 .case-study-heading-container {
     background-size: cover;

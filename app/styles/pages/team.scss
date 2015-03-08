@@ -1,11 +1,13 @@
-.team-content-container {
-    background: $light-green;
+.team-intro .intro {
+    padding: 200px 0 150px 0;
+
+    .intro-title {
+        color: $very-light-blue;
+    }
 }
 
-.team-content-inner-container {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding-bottom: 115px;
+.team-content-container {
+    background: $light-green;
 }
 
 .team-header {
@@ -16,15 +18,39 @@
     color:$med-blue;
 }
 
+.team-member-info {
+    background: $med-green;
+}
+
+.team-member-close-button {
+    @extend %solid-med-green-button;
+}
+
+.team-member-info-wrapper {
+    @include full-width-padding;
+    max-width: $site-width;
+    margin: 0 auto;
+}
+
 .team-member-name {
+    @include extra-large;
+    font-weight: 100;
+    color: #fff;
     padding: 40px 0 10px 0;
 }
 
 .team-member-title {
+    @include medium;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $light-blue;
     padding-bottom: 30px;
 }
 
 .team-member-bio {
+    @include small;
     column-count: 2;
     column-gap: 30px;
+    font-weight: 100;
+    color: $dark-grey;
 }
