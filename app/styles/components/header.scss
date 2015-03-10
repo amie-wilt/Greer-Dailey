@@ -19,6 +19,18 @@
 .header-primary-nav-container {
     display: table-cell;
     vertical-align: middle;
+
+    @media (max-width: 835px) {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media #{$mobile-width-mq} {
+    .header-primary-nav-container {
+        display: none;
+    }
 }
 
 .logo,
@@ -49,6 +61,11 @@
     > li {
         position: relative;
     }
+
+    @media (max-width: 835px) {
+        justify-content: center;
+        margin-top: 15px;
+    }
 }
 
 .primary-nav-list-link {
@@ -67,6 +84,10 @@
         background: #fff;
         color: $goldenrod;
     }
+
+    @media #{$site-width-mq} {
+        padding: 10px;
+    }
 }
 
 .nav-dropdown-list {
@@ -82,6 +103,7 @@
 
     > li {
         padding: 0 40px;
+        text-align: left;
     }
 }
 
@@ -89,6 +111,7 @@
     @include small;
     font-weight: 900;
     color: $med-blue;
+    white-space: nowrap;
 
     &:hover {
         color: $goldenrod;
