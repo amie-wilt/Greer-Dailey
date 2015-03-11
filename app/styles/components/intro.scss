@@ -6,7 +6,7 @@
     background-position: center top;
 
     @media #{$mobile-width-mq} {
-        padding: 170px 0 80px 0;
+        padding: 180px 0 95px 0;
     }
 }
 
@@ -26,13 +26,13 @@
 .intro-title {
     @include extra-large;
     font-weight: 100;
-    padding: 0 50px 45px 50px;
+    padding: 0 50px 35px 50px;
 
     em {
         font-size: 30px;
         font-weight: 900;
         display: block;
-        padding-top: 25px;
+        padding-top: 30px;
     }
 }
 
@@ -52,6 +52,10 @@
     max-width: 515px;
     margin: 0 auto;
     text-align: center;
+
+    @media #{$mobile-width-mq} {
+        padding: 0 60px;
+    }
 }
 
 .intro-learn-more-button {

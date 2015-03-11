@@ -19,38 +19,25 @@
 .header-primary-nav-container {
     display: table-cell;
     vertical-align: middle;
+}
 
-    @media (max-width: 835px) {
+.header-logo-container {
+    @media (max-width: 1024px) {
         display: block;
         text-align: center;
     }
 }
 
+.header-primary-nav-container {
 
-@media #{$mobile-width-mq} {
-    .header-primary-nav-container {
+
+    @media (max-width: 1024px) {
         display: none;
     }
 }
 
-.logo,
-.tagline {
-    text-transform: uppercase;
-    color: #fff;
-}
-
 .logo {
-    @include semi-large;
-    padding-bottom: 5px;
-}
-
-.tagline {
-    @include very-small;
-    padding-left: 10px;
-}
-
-.logo-pipe {
-    color: $goldenrod;
+    max-width: 205px;
 }
 
 .primary-nav-list {

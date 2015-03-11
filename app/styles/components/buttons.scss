@@ -3,9 +3,9 @@
     background: none;
     text-transform: uppercase;
     color: $goldenrod;
-    @include medium;
+    @include small;
     font-weight: 900;
-    padding: 20px 50px;
+    padding: 20px 45px;
     border: 1px solid $goldenrod;
 }
 

@@ -1,3 +1,21 @@
+.intro-continued-supporting-text-container {
+    padding: 50px 0 15px 0;
+    background: $med-blue;
+}
+
+.intro-continued-supporting-text {
+    @include small;
+    margin: 0 auto;
+    color: #fff;
+    max-width: 720px;
+    font-weight: 100;
+    text-align: center;
+
+    p {
+        padding-bottom: 35px;
+    }
+}
+
 .expertise-content-container {
     background: $light-green;
 }
@@ -63,6 +81,16 @@
     color: #fff;
     padding-left: 40px;
     text-align: center;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: $expertise-link-width;
+        height: $expertise-link-width;
+        background: $med-blue;
+        border-radius: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 .expertise-description {
@@ -75,5 +103,9 @@
     font-weight: 100;
     column-count: 2;
     column-gap: 30px;
+
+    p {
+        padding-bottom: 35px;
+    }
 }
 
