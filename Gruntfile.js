@@ -347,7 +347,10 @@ module.exports = function(grunt) {
                 dot: true,
                 cwd: '<%= config.app %>/styles',
                 dest: '.tmp/styles/',
-                src: '{,*/}*.css'
+                src: [
+                    '{,*/}*.css',
+                    'fonts/{,*/}*.*'
+                ]
             }
         },
 
