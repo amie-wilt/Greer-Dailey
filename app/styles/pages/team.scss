@@ -19,15 +19,24 @@
 }
 
 .team-member-info {
+    margin: 100px auto;
     background: $med-green;
+    @include full-width-padding;
 }
 
-.team-member-close-button {
+.team-member-top-close-button {
     @extend %solid-med-green-button;
+    position: relative;
+    bottom: 35px;
+}
+
+.team-member-bottom-close-button {
+    @extend %solid-med-green-button;
+    position: relative;
+    top: 33px;
 }
 
 .team-member-info-wrapper {
-    @include full-width-padding;
     max-width: $site-width;
     margin: 0 auto;
 }

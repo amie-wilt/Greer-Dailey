@@ -39,10 +39,21 @@
 .expertise-section {
     background: $med-green;
     padding: 70px 0 95px 0;
+    margin: 100px 0;
 }
 
-.expertise-section-close-button {
+.expertise-section-top-close-button,
+.expertise-section-bottom-close-button {
     @extend %solid-med-green-button;
+    position: relative;
+}
+
+.expertise-section-top-close-button {
+    bottom: 102px;
+}
+
+.expertise-section-bottom-close-button {
+    top: 130px;
 }
 
 .expertise-header-summary-wrapper {
@@ -79,22 +90,16 @@
     @include extra-large;
     font-weight: 100;
     color: #fff;
-    padding-left: 40px;
     text-align: center;
-
-    &:before {
-        content: "";
-        display: inline-block;
-        width: $expertise-link-width;
-        height: $expertise-link-width;
-        background: $med-blue;
-        border-radius: 100%;
-        margin-bottom: 10px;
-    }
+    padding-bottom: 10px;
 }
 
 .expertise-description {
-    padding-bottom: 10px;
+    @include small;
+    font-weight: 900;
+    color: $dark-blue;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .expertise-summary {

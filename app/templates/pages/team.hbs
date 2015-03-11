@@ -5,18 +5,18 @@
         </div>
         <div class="team-content-container">
             <h2 class="team-header">{{ team-header }}</h2>
-            <section class="team-member-info" itemscope itemtype="http://schema.org/Person">
-                <div class="team-member-info-wrapper">
-                    {{#each team-members }}
-                        <button class="team-member-close-button">{{ button }}</button>
+            {{#each team-members }}
+                <section class="team-member-info" itemscope itemtype="http://schema.org/Person">
+                    <div class="team-member-info-wrapper">
+                        <button class="team-member-top-close-button">{{ button }}</button>
                         <h3 class="team-member-name" itemprop="name">{{ name }}</h3>
                         <h4 class="team-member-title" itemprop="jobTitle">{{ title }}</h4>
 
                         <div class="team-member-bio">{{{ bio }}}</div>
-                        <button class="team-member-close-button">{{ button }}</button>
-                    {{/each}}
-                </div>
-            </section>
+                        <button class="team-member-bottom-close-button">{{ button }}</button>
+                    </div>
+                </section>
+            {{/each}}
         </div>
     </div>
 {{/with}}
