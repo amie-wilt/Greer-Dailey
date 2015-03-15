@@ -4,6 +4,14 @@
     .intro-title {
         color: $very-light-blue;
     }
+
+    .intro-subtitle {
+
+        @media #{$mobile-width-mq} {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .team-content-container {
@@ -16,6 +24,11 @@
     text-align: center;
     padding: 115px 0 75px 0;
     color:$med-blue;
+
+    @media #{$mobile-width-mq} {
+        max-width: 440px;
+        margin: 0 auto;
+    }
 }
 
 .team-member-info {
@@ -41,11 +54,52 @@
     margin: 0 auto;
 }
 
+.team-member-name-open-trigger-container {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+$team-hr-width: 2000px;
+$team-hr-height: 1px;
+.team-member-name-open-trigger {
+    @include large;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 100;
+    text-align: center;
+    color: $med-blue;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: $team-hr-width;
+        height: $team-hr-height;
+        background-color: $very-light-blue;
+        top: 50%;
+    }
+
+    &:before {
+        left: ($team-hr-width + 35px) * -1;
+
+    }
+
+    &:after {
+        right: ($team-hr-width + 35px) * -1;
+    }
+}
+
 .team-member-name {
     @include extra-large;
     font-weight: 100;
     color: #fff;
     padding: 40px 0 10px 0;
+
+    @media #{$mobile-width-mq} {
+        text-align: center;
+    }
 }
 
 .team-member-title {
@@ -54,14 +108,24 @@
     text-transform: uppercase;
     color: $light-blue;
     padding-bottom: 30px;
+
+    @media #{$mobile-width-mq} {
+        text-align: center;
+    }
 }
 
 .team-member-bio {
     @include small;
     column-count: 2;
     column-gap: 30px;
+    column-width: 400px;
     font-weight: 100;
     color: $dark-grey;
+
+    @media #{$mobile-width-mq} {
+        max-width: 440px;
+        margin: 0 auto;
+    }
 
     p {
         padding-bottom: 35px;

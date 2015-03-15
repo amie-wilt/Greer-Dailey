@@ -19,7 +19,9 @@
     color: $med-blue;
 
     @media #{$mobile-width-mq} {
+        max-width: 515px;
         padding-bottom: 50px;
+        margin: 0 auto;
     }
 }
 
@@ -28,6 +30,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media #{$mobile-width-mq} {
+        padding: 0 50px;
+    }
 
     li {
         flex-shrink: 0;

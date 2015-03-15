@@ -3,20 +3,22 @@
         <div class="team-intro">
             {{> intro intro }}
         </div>
-        <div class="team-content-container">
-            <h2 class="team-header">{{ team-header }}</h2>
+        <section class="team-content-container">
+            <h1 class="team-header">{{ team-header }}</h1>
             {{#each team-members }}
-                <section class="team-member-info" itemscope itemtype="http://schema.org/Person">
+                <span class="team-member-name-open-trigger-container">
+                    <a href="#" class="team-member-name-open-trigger">{{ name }}</a>
+                </span>
+                <div class="team-member-info" itemscope itemtype="http://schema.org/Person">
                     <div class="team-member-info-wrapper">
                         <button class="team-member-top-close-button">{{ button }}</button>
-                        <h3 class="team-member-name" itemprop="name">{{ name }}</h3>
-                        <h4 class="team-member-title" itemprop="jobTitle">{{ title }}</h4>
-
+                        <h2 class="team-member-name" itemprop="name">{{ name }}</h2>
+                        <h3 class="team-member-title" itemprop="jobTitle">{{ title }}</h3>
                         <div class="team-member-bio">{{{ bio }}}</div>
                         <button class="team-member-bottom-close-button">{{ button }}</button>
                     </div>
-                </section>
+                </div>
             {{/each}}
-        </div>
+        </section>
     </div>
 {{/with}}

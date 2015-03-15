@@ -1,22 +1,48 @@
+%base-button {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
 %transparent-goldenrod-button {
-    margin-top:40px;
-    background: none;
+    @extend %base-button;
+    @include small;
     text-transform: uppercase;
     color: $goldenrod;
-    @include small;
     font-weight: 900;
     padding: 20px 45px;
     border: 1px solid $goldenrod;
 }
 
 %solid-med-green-button {
+    @extend %base-button;
     @include small;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    background: $med-green;
+    font-weight: 900;
+    background-color: $med-green;
     color: #fff;
     text-transform: uppercase;
     padding: 20px 35px;
-    border: none;
+}
+
+%solid-light-blue-button {
+    @extend %base-button;
+    @include small;
+    font-weight: 900;
+    padding: 20px 60px;
+    background-color: $light-blue;
+    color: #fff;
+}
+
+%transparent-light-blue-button {
+    @extend %base-button;
+    @include small;
+    border: 1px solid $light-blue;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 20px 60px;
 }

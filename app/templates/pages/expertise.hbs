@@ -6,24 +6,24 @@
         <div class="intro-continued-supporting-text-container">
             <div class="intro-continued-supporting-text">{{{ intro.continued-supporting-text }}}</div>
         </div>
-        <div class="expertise-content-container">
-            <h2 class="expertise-header">{{ subtitle }}</h2>
+        <section class="expertise-content-container">
+            <h1 class="expertise-header">{{ subtitle }}</h1>
             {{#each sections }}
-                <section id="{{ dasherize name }}" class="expertise-section">
+                <span class="expertise-section-open-trigger-container">
+                    <a href="#" class="expertise-section-open-trigger">{{ name }}</a>
+                </span>
+                <div id="{{ dasherize name }}" class="expertise-section">
                     <button class="expertise-section-top-close-button">{{ button }}</button>
                     <div class="expertise-header-summary-wrapper">
-                        <header class="expertise-section-header">
-                            <h1 class="expertise-section-heading">{{ name }}</h1>
-                        </header>
+                        <h2 class="expertise-section-heading">{{ name }}</h2>
                         <p class="expertise-description">{{{ description }}}</p>
-
                         <div class="expertise-summary">
                             {{{ summary }}}
                         </div>
                     </div>
                     <button class="expertise-section-bottom-close-button">{{ button }}</button>
-                </section>
+                </div>
             {{/each }}
-        </div>
+        </section>
     </div>
 {{/with}}
