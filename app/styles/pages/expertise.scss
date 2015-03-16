@@ -32,7 +32,7 @@
         strong {
             color: #fff;
 
-            @media #{$small-mobile-mq} {
+            @media (max-width: 600px) {
                 @include medium;
             }
         }

@@ -25,11 +25,6 @@
     padding-right: 30px;
 }
 
-@mixin small-mobile-width-padding {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 %site-container {
     margin: 0 auto;
     max-width: $site-width;

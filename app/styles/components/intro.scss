@@ -26,7 +26,7 @@
     }
 
     @media #{$small-mobile-mq} {
-        @include small-mobile-width-padding;
+        @include full-width-padding;
     }
 }
 
@@ -76,6 +76,6 @@
 
 .intro-learn-more-button {
     @extend %transparent-goldenrod-button;
-    margin-top: 50px;
+    display: block;
 }
 

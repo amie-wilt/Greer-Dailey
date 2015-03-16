@@ -21,7 +21,7 @@
     }
 
     @media #{$small-mobile-mq} {
-        @include small-mobile-width-padding;
+        @include full-width-padding;
     }
 }
 
@@ -49,7 +49,7 @@
     }
 
     @media #{$small-mobile-mq} {
-        @include small-mobile-width-padding;
+        @include full-width-padding;
     }
 }
 
