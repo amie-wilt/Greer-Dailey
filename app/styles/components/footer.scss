@@ -2,18 +2,28 @@
     background: $dark-blue;
     color: white;
 
-    .primary-nav {
-
+    .logo-container {
+        padding: 75px 0 25px 0;
     }
 
-    .primary-nav-link {
-
+    .primary-nav-container {
+        padding-bottom: 20px;
     }
 
+    .primary-nav-list {
+        justify-content: center;
+    }
 
+    .primary-nav-list-link {
+        color: $very-light-blue;
+        text-transform: uppercase;
+        @include very-small;
+    }
+
+    .dropdown:hover & {
+        display: none;
+    }
 }
-
-
 
 .footer-inner-container {
     text-align: center;
@@ -21,21 +31,20 @@
     margin: 0 auto;
 }
 
-.footer-logo-container {
-    padding: 75px 0 45px 0;
+.street-address,
+.suite-number,
+.postal-code,
+.phone-number {
+    &:after {
+        content: "/";
+        padding-left: 5px;
+    }
 }
 
-.footer-primary-nav-container {
-    padding-bottom: 40px;
-}
-
-.footer-primary-nav-container nav ul {
-    justify-content: center;
-    @include very-small;
-
-    a {
-        color: $very-light-blue;
-        text-transform: uppercase;
+.postal-code:after {
+    @media #{$mid-width-mq} {
+        content: "\A";
+        white-space: pre;
     }
 }
 

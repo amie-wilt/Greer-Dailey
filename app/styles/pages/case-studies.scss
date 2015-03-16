@@ -6,7 +6,7 @@
     }
 
     .intro-supporting-text {
-        font-weight: 100;
+        font-weight: 300;
         max-width: 710px;
     }
 }
@@ -15,6 +15,14 @@
     background-size: cover;
     background-position: center top;
     padding: 155px 0 130px 0;
+
+    @media #{$mid-width-mq} {
+        @include full-width-padding
+    }
+
+    @media #{$small-mobile-mq} {
+        @include small-mobile-width-padding;
+    }
 }
 
 .case-study-heading {
@@ -26,19 +34,29 @@
     margin: 0 auto;
 
     @media #{$mobile-width-mq} {
+        @include large;
+        font-weight: 100;
         max-width: 430px;
     }
 }
 
 .case-study-summary-text-container {
     background: $lightest-blue;
+    padding: 85px 0;
+
+    @media #{$mid-width-mq} {
+        @include full-width-padding;
+    }
+
+    @media #{$small-mobile-mq} {
+        @include small-mobile-width-padding;
+    }
 }
 
 .case-study-summary-text {
     @include small;
     font-weight: 300;
     max-width: 800px;
-    padding: 85px 0;
     margin: 0 auto;
     text-align: center;
 

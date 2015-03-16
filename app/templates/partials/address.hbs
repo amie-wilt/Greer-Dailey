@@ -1,12 +1,13 @@
 {{#with global.company }}
 <div class="address-container" itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
     {{#with address }}
-    <span itemprop="streetAddress">{{ street-address }}</span>
-    <span itemprop="addressLocality">{{ address-locality }}</span>
-    <abbr itemprop="addressRegion" title="California">{{ address-region }}</abbr>
-    <span itemprop="postalCode">{{ postal-code }}</span>
+    <span class="street-address" itemprop="streetAddress">{{ street-address }}</span>
+    <span class="suite-number">{{ suite-number }}</span>
+    <span class="address-locality" itemprop="addressLocality">{{ address-locality }}</span>
+    <abbr class="address-region" itemprop="addressRegion" title="California">{{ address-region }}</abbr>
+    <span class="postal-code" itemprop="postalCode">{{ postal-code }}</span>
     {{/with }}
     <a href="tel:+12136151616" itemprop="telephone" class="phone-number">Tel {{ telephone }}</a>
-    <span>Fax {{ fax }}</span>
+    <span class="fax-number">Fax {{ fax }}</span>
 </div>
 {{/with }}

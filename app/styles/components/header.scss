@@ -5,7 +5,7 @@
     position: absolute;
     left: 50%;
     width: $site-width;
-    padding-top: 30px;
+    padding-top: 50px;
     margin-left: ($site-width/2) * -1;
 
     @media #{$site-width-mq} {
@@ -30,7 +30,6 @@
 
 .header-primary-nav-container {
 
-
     @media (max-width: 1024px) {
         display: none;
     }
@@ -47,11 +46,6 @@
 
     > li {
         position: relative;
-    }
-
-    @media (max-width: 835px) {
-        justify-content: center;
-        margin-top: 15px;
     }
 }
 

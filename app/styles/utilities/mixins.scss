@@ -21,8 +21,13 @@
 }
 
 @mixin full-width-padding {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@mixin small-mobile-width-padding {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 %site-container {

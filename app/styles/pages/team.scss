@@ -29,6 +29,10 @@
         max-width: 440px;
         margin: 0 auto;
     }
+
+    @media #{$small-mobile-mq} {
+        @include large;
+    }
 }
 
 .team-member-info {
@@ -41,12 +45,24 @@
     @extend %solid-med-green-button;
     position: relative;
     bottom: 35px;
+    display: block;
+    margin: 0 auto;
+
+    @media #{$small-mobile-mq} {
+        @include very-small;
+    }
 }
 
 .team-member-bottom-close-button {
     @extend %solid-med-green-button;
     position: relative;
     top: 33px;
+    display: block;
+    margin: 0 auto;
+
+    @media #{$small-mobile-mq} {
+        @include very-small;
+    }
 }
 
 .team-member-info-wrapper {
@@ -60,7 +76,7 @@
     overflow: hidden;
 }
 
-$team-hr-width: 2000px;
+$team-hr-width: 4000px;
 $team-hr-height: 1px;
 .team-member-name-open-trigger {
     @include large;
@@ -70,6 +86,12 @@ $team-hr-height: 1px;
     text-align: center;
     color: $med-blue;
     position: relative;
+
+    @media #{$mobile-width-mq} {
+        @include semi-large;
+        font-weight: 100;
+    }
+
 
     &:before,
     &:after {
@@ -84,10 +106,18 @@ $team-hr-height: 1px;
     &:before {
         left: ($team-hr-width + 35px) * -1;
 
+        @media #{$small-mobile-mq} {
+            left: ($team-hr-width + 10px) * -1;
+        }
+
     }
 
     &:after {
         right: ($team-hr-width + 35px) * -1;
+
+        @media #{$small-mobile-mq} {
+            right: ($team-hr-width + 10px) * -1;
+        }
     }
 }
 
@@ -99,6 +129,10 @@ $team-hr-height: 1px;
 
     @media #{$mobile-width-mq} {
         text-align: center;
+    }
+
+    @media #{$small-mobile-mq} {
+        @include semi-large;
     }
 }
 
@@ -112,6 +146,10 @@ $team-hr-height: 1px;
     @media #{$mobile-width-mq} {
         text-align: center;
     }
+
+    @media #{$small-mobile-mq} {
+        @include very-small;
+    }
 }
 
 .team-member-bio {
@@ -119,7 +157,7 @@ $team-hr-height: 1px;
     column-count: 2;
     column-gap: 30px;
     column-width: 400px;
-    font-weight: 100;
+    font-weight: 300;
     color: $dark-grey;
 
     @media #{$mobile-width-mq} {
