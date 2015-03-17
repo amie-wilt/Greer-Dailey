@@ -81,6 +81,7 @@
 
 .expertise-description {
     @include small-supporting-text-under-white-subheading;
+    color: $dark-blue;
 }
 
 .expertise-summary {
