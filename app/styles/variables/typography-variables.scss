@@ -1,22 +1,22 @@
 // Typography
 @mixin extra-large {
     font-size: 60px;
-    line-height: 1;
+    line-height: 65px;
 }
 
 @mixin large {
     font-size: 40px;
-    line-height: 1;
+    line-height: 45px;
 }
 
 @mixin semi-large {
     font-size: 30px;
-    line-height: 1;
+    line-height: 33px;
 }
 
 @mixin medium {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 23px;
 }
 
 @mixin small {

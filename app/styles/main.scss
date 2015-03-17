@@ -6,11 +6,11 @@
 @import "variables/color-variables";
 @import "variables/typography-variables";
 @import "variables/structure-variables";
+@import "variables/mq-variables";
 
 // Utilities
 @import "utilities/resets";
 @import "utilities/mixins";
-@import "utilities/mq-mixins";
 @import "utilities/fonts";
 
 @import "global/base";

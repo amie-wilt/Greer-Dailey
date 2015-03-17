@@ -1,4 +1,7 @@
 %base-button {
+    @include small;
+    line-height: 1;
+    font-weight: 900;
     cursor: pointer;
     padding: 0;
     margin: 0;
@@ -11,18 +14,14 @@
 
 %transparent-goldenrod-button {
     @extend %base-button;
-    @include small;
     text-transform: uppercase;
     color: $goldenrod;
-    font-weight: 900;
     padding: 20px 45px;
     border: 1px solid $goldenrod;
 }
 
 %solid-med-green-button {
     @extend %base-button;
-    @include small;
-    font-weight: 900;
     background-color: $med-green;
     color: #fff;
     text-transform: uppercase;
@@ -31,8 +30,6 @@
 
 %solid-light-blue-button {
     @extend %base-button;
-    @include small;
-    font-weight: 900;
     padding: 20px 60px;
     background-color: $light-blue;
     color: #fff;
@@ -40,9 +37,7 @@
 
 %transparent-light-blue-button {
     @extend %base-button;
-    @include small;
     border: 1px solid $light-blue;
     text-transform: uppercase;
-    font-weight: 900;
     padding: 20px 60px;
 }

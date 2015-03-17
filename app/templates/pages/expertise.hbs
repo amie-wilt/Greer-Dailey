@@ -13,15 +13,17 @@
                     <a href="#" class="expertise-section-open-trigger">{{ name }}</a>
                 </span>
                 <div id="{{ dasherize name }}" class="expertise-section">
-                    <button class="expertise-section-top-close-button">{{ button }}</button>
-                    <div class="expertise-header-summary-wrapper">
+                    <div class="expertise-header-summary-wrapper"
+                       {{#is name 'Integrated Communications'}} style="display: block;"{{/is}}
+                            >
+                        <button class="expertise-section-top-close-button">{{ button }}</button>
                         <h2 class="expertise-section-heading">{{ name }}</h2>
                         <p class="expertise-description">{{{ description }}}</p>
                         <div class="expertise-summary">
                             {{{ summary }}}
                         </div>
+                        <button class="expertise-section-bottom-close-button">{{ button }}</button>
                     </div>
-                    <button class="expertise-section-bottom-close-button">{{ button }}</button>
                 </div>
             {{/each }}
         </section>

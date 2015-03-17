@@ -10,7 +10,9 @@
                     <a href="#" class="team-member-name-open-trigger">{{ name }}</a>
                 </span>
                 <div class="team-member-info" itemscope itemtype="http://schema.org/Person">
-                    <div class="team-member-info-wrapper">
+                    <div class="team-member-info-wrapper"
+                        {{#is name 'Joan Kradin'}} style="display: block;"{{/is}}
+                            >
                         <button class="team-member-top-close-button">{{ button }}</button>
                         <h2 class="team-member-name" itemprop="name">{{ name }}</h2>
                         <h3 class="team-member-title" itemprop="jobTitle">{{ title }}</h3>

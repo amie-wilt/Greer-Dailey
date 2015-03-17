@@ -3,7 +3,7 @@
     color: white;
 
     .logo-container {
-        padding: 75px 0 25px 0;
+        padding-bottom: 25px;
     }
 
     .primary-nav-container {
@@ -18,6 +18,10 @@
         color: $very-light-blue;
         text-transform: uppercase;
         @include very-small;
+
+        &:hover, &:active {
+            color: goldenrod;
+        }
     }
 
     .dropdown:hover & {
@@ -26,9 +30,9 @@
 }
 
 .footer-inner-container {
+    @extend %site-container;
     text-align: center;
-    max-width: $site-width;
-    margin: 0 auto;
+    padding: 100px 0;
 }
 
 .street-address,
@@ -54,10 +58,6 @@
 
 .phone-number {
     color: #fff;
-}
-
-.copyright-container {
-    padding-bottom: 200px;
 }
 
 .copyright {
