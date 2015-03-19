@@ -1,6 +1,14 @@
 .team-intro .intro {
     padding: 200px 0 150px 0;
 
+    @media #{$mid-width-mq} {
+        padding: 150px 0 112px 0;
+    }
+
+    @media #{$mobile-width-mq} {
+        padding: 100px 0 75px 0;
+    }
+
     .intro-title {
         color: $very-light-blue;
     }
@@ -33,12 +41,12 @@
 }
 
 .team-member-top-close-button {
-    @extend %solid-med-green-button;
+    @include solid-med-green-button;
     @include green-white-top-close-button;
 }
 
 .team-member-bottom-close-button {
-    @extend %solid-med-green-button;
+    @include solid-med-green-button;
     @include green-white-bottom-close-button;
 }
 
@@ -60,12 +68,92 @@
 
 .team-member-title {
     @include small-supporting-text-under-white-subheading;
+    margin-bottom: 50px;
+
+    @media #{$mid-width-mq} {
+        padding-bottom: 37.5px;
+    }
+
+    @media #{$mobile-width-mq} {
+        padding-bottom: 25px;
+    }
 }
 
 .team-member-bio {
-    @extend %column-container;
+    display: table;
+    width: 100%;
+
+    .team-member-quote {
+        position: relative;
+        color: #fff;
+        margin: 140px 0;
+
+        @media #{$mid-width-mq} {
+            margin: 105px 0;
+        }
+
+        @media #{$mobile-width-mq} {
+            margin: 70px 0;
+        }
+    }
+}
+
+.team-member-bio-column-one {
+    padding-right: 45px;
+}
+
+.team-member-bio-column-two {
+    padding-left: 45px;
+}
+
+.team-member-bio-column-one,
+.team-member-bio-column-two {
+    display: table-cell;
+    width: 50%;
+
+    @media #{$mid-width-mq} {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     p {
         @include paragraph-text-in-columns;
+    }
+}
+
+.team-member-quote:before,
+.team-member-quote:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 300px;
+    background-color: $light-blue;
+    display: block;
+}
+
+.team-member-quote:before {
+    top: -70px;
+
+    @media #{$mid-width-mq} {
+        top: -53px;
+    }
+
+    @media #{$mobile-width-mq} {
+        top: -35px;
+    }
+}
+
+.team-member-quote:after {
+    bottom: -70px;
+
+    @media #{$mid-width-mq} {
+        bottom: -53px;
+    }
+
+    @media #{$mobile-width-mq} {
+        bottom: -35px;
     }
 }

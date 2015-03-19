@@ -1,9 +1,15 @@
 .intro-continued-supporting-text-container {
-    padding: 50px 0 15px 0;
+    @include full-width-padding;
+    padding-top: 50px;
+    padding-bottom: 15px;
     background: $med-blue;
 
     @media #{$mid-width-mq} {
-        @include full-width-padding;
+        padding: 27.5px 0 10px 0;
+    }
+
+    @media #{$mobile-width-mq} {
+        padding: 25px 0 7.5px 0;
     }
 }
 
@@ -14,6 +20,16 @@
     max-width: 720px;
     font-weight: 100;
     text-align: center;
+
+    @media #{$mid-width-mq} {
+        @include very-small;
+        max-width: 540px;
+    }
+
+    @media #{$mobile-width-mq} {
+        @include mobile-very-small;
+        max-width: 220px;
+    }
 }
 
 .expertise-content-container {
@@ -24,12 +40,18 @@
 
     .intro-title {
         color: $very-light-blue;
+        padding-left: 0;
+        padding-right: 0;
 
         strong {
             color: #fff;
 
+            @media #{$mid-width-mq} {
+                @include small;
+            }
+
             @media #{$mobile-width-mq} {
-                @include medium;
+                @include mobile-medium;
             }
         }
     }
@@ -38,8 +60,12 @@
         max-width: 720px;
         font-weight: 100;
 
+        @media #{$mid-width-mq} {
+            max-width: 540px;
+        }
+
         @media #{$mobile-width-mq} {
-            max-width: 420px;
+            max-width: 210px;
         }
     }
 }
@@ -49,17 +75,30 @@
 }
 
 .expertise-section-top-close-button {
-    @extend %solid-med-green-button;
+    @include solid-med-green-button;
     @include green-white-top-close-button;
 }
 
 .expertise-section-bottom-close-button {
-    @extend %solid-med-green-button;
+    @include solid-med-green-button;
     @include green-white-bottom-close-button;
 }
 
 .expertise-header-summary-wrapper {
    @include med-green-section-inner-wrapper;
+
+    .expertise-summary-column-one p:first-of-type {
+        @include semi-large;
+        font-weight: 100;
+
+        @media #{$mid-width-mq} {
+            @include medium;
+        }
+
+        @media #{$mobile-width-mq} {
+            @include mobile-semi-large;
+        }
+    }
 }
 
 .expertise-header {
@@ -85,7 +124,31 @@
 }
 
 .expertise-summary {
-    @extend %column-container;
+    display: table;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.expertise-summary-column-one {
+    padding-right: 45px;
+}
+
+.expertise-summary-column-two {
+    padding-left: 45px;
+}
+
+.expertise-summary-column-one,
+.expertise-summary-column-two {
+    display: table-cell;
+    width: 50%;
+
+    @media #{$mid-width-mq} {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     p {
         @include paragraph-text-in-columns;

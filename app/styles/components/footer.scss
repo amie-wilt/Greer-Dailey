@@ -4,10 +4,18 @@
 
     .logo-container {
         padding-bottom: 25px;
+
+        @media #{$mobile-width-mq} {
+            padding-bottom: 12.5px;
+        }
     }
 
     .primary-nav-container {
         padding-bottom: 20px;
+
+        @media #{$mobile-width-mq} {
+            padding-bottom: 10px;
+        }
     }
 
     .primary-nav-list {
@@ -15,9 +23,13 @@
     }
 
     .primary-nav-list-link {
+        @include very-small;
         color: $very-light-blue;
         text-transform: uppercase;
-        @include very-small;
+
+        @media #{$mobile-width-mq} {
+            @include mobile-very-small;
+        }
 
         &:hover, &:active {
             color: goldenrod;
@@ -33,6 +45,18 @@
     @extend %site-container;
     text-align: center;
     padding: 100px 0;
+
+    @media #{$mobile-width-mq} {
+        padding: 50px 0;
+    }
+}
+
+.address-container {
+    @include very-small;
+
+    @media #{$mobile-width-mq} {
+        @include mobile-very-small;
+    }
 }
 
 .street-address,
@@ -42,15 +66,16 @@
     &:after {
         content: "/";
         padding-left: 5px;
-    }
 
-    @media #{$small-mobile-mq} {
-        @include very-small;
+        @media #{$mobile-width-mq} {
+            padding-left: 2.5px;
+        }
     }
 }
 
 .postal-code:after {
-    @media #{$mid-width-mq} {
+
+    @media #{$mobile-width-mq} {
         content: "\A";
         white-space: pre;
     }
@@ -62,6 +87,10 @@
 
 .copyright {
     @include very-small;
+
+    @media #{$mobile-width-mq} {
+        @include mobile-very-small;
+    }
 }
 
 .copyright span {

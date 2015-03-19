@@ -2,12 +2,28 @@
     background-color: $dark-green;
 
     .intro-subtitle {
-        padding-bottom: 15px;
+        padding: 0 30px 15px 30px;
+
+        @media #{$mid-width-mq} {
+            padding: 0 22.5px 11px 22.5px;
+        }
+
+        @media #{$mobile-width-mq} {
+            padding: 0 15px 7.5px 15px;
+        }
     }
 
     .intro-supporting-text {
         font-weight: 300;
         max-width: 710px;
+
+        @media #{$mid-width-mq} {
+            max-width: 530px;
+        }
+
+        @media #{$mobile-width-mq} {
+            max-width: 215px;
+        }
     }
 }
 
@@ -17,11 +33,11 @@
     padding: 155px 0 130px 0;
 
     @media #{$mid-width-mq} {
-        @include full-width-padding
+        padding: 116px 0 98px 0;
     }
 
-    @media #{$small-mobile-mq} {
-        @include full-width-padding;
+    @media #{$mobile-width-mq} {
+        padding: 77.5px 0 65px 0;
     }
 }
 
@@ -33,10 +49,15 @@
     max-width: 800px;
     margin: 0 auto;
 
-    @media #{$mobile-width-mq} {
+    @media #{$mid-width-mq} {
         @include large;
+        max-width: 450px;
+    }
+
+    @media #{$mobile-width-mq} {
+        @include mobile-extra-large;
         font-weight: 100;
-        max-width: 430px;
+        max-width: 215px;
     }
 }
 
@@ -45,11 +66,11 @@
     padding: 85px 0;
 
     @media #{$mid-width-mq} {
-        @include full-width-padding;
+        padding: 64px;
     }
 
-    @media #{$small-mobile-mq} {
-        @include full-width-padding;
+    @media #{$mobile-width-mq} {
+        padding: 42.5px;
     }
 }
 
@@ -60,8 +81,14 @@
     margin: 0 auto;
     text-align: center;
 
+    @media #{$mid-width-mq} {
+        @include very-small;
+        max-width: 450px;
+    }
+
     @media #{$mobile-width-mq} {
-        max-width: 430px;
+        @include mobile-very-small;
+        max-width: 215px;
     }
 }
 

@@ -1,4 +1,4 @@
-%base-button {
+@mixin base-button {
     @include small;
     line-height: 1;
     font-weight: 900;
@@ -10,33 +10,57 @@
     background-color: transparent;
     border: none;
     text-align: center;
+
+    @media #{$mid-width-mq} {
+        @include very-small;
+    }
+
+    @media #{$mobile-width-mq} {
+        @include mobile-small;
+    }
 }
 
-%transparent-goldenrod-button {
-    @extend %base-button;
+@mixin transparent-goldenrod-button {
+    @include base-button;
     text-transform: uppercase;
     color: $goldenrod;
     padding: 20px 45px;
     border: 1px solid $goldenrod;
+
+    @media #{$mid-width-mq} {
+        padding: 15px 35px;
+    }
+
+    @media #{$mobile-width-mq} {
+        padding: 10px 23px;
+    }
 }
 
-%solid-med-green-button {
-    @extend %base-button;
+@mixin solid-med-green-button {
+    @include base-button;
     background-color: $med-green;
     color: #fff;
     text-transform: uppercase;
-    padding: 20px 35px;
+    padding: 20px 40px;
+
+    @media #{$mid-width-mq} {
+        padding: 15px 30px;
+    }
+
+    @media #{$mobile-width-mq} {
+        padding: 10px 20px;
+    }
 }
 
-%solid-light-blue-button {
-    @extend %base-button;
+@mixin solid-light-blue-button {
+    @include base-button;
     padding: 20px 60px;
     background-color: $light-blue;
     color: #fff;
 }
 
-%transparent-light-blue-button {
-    @extend %base-button;
+@mixin transparent-light-blue-button {
+    @include base-button;
     border: 1px solid $light-blue;
     text-transform: uppercase;
     padding: 20px 60px;

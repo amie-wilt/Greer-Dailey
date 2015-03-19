@@ -21,8 +21,8 @@
 }
 
 @mixin full-width-padding {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 @mixin extra-large-dark-blue-header {
@@ -32,8 +32,16 @@
     text-align: center;
     padding: 115px 0 75px 0;
 
-    @media #{$small-mobile-mq} {
+    @media #{$mid-width-mq} {
         @include large;
+        padding-top: 86px;
+        padding-bottom: 56px;
+    }
+
+    @media #{$mobile-width-mq} {
+        @include mobile-extra-large;
+        padding-top: 57.5px;
+        padding-bottom: 37.5px;
     }
 }
 
@@ -49,8 +57,12 @@
     color: $med-blue;
     position: relative;
 
-    @media #{$mobile-width-mq} {
+    @media #{$mid-width-mq} {
         @include semi-large;
+    }
+
+    @media #{$mobile-width-mq} {
+        @include mobile-large;
         font-weight: 100;
     }
 
@@ -67,16 +79,24 @@
     &:before {
         left: ($line-width + 35px) * -1;
 
-        @media #{$small-mobile-mq} {
-            left: ($line-width + 10px) * -1;
+        @media #{$mid-width-mq} {
+            left: ($line-width + 20px) * -1;
+        }
+
+        @media #{mobile-width-mq} {
+            left: ($line-width + 5px) * -1;
         }
     }
 
     &:after {
         right: ($line-width + 35px) * -1;
 
-        @media #{$small-mobile-mq} {
-            right: ($line-width + 10px) * -1;
+        @media #{$mid-width-mq} {
+            right: ($line-width + 20px) * -1;
+        }
+
+        @media #{$mobile-width-mq} {
+            right: ($line-width + 5px) * -1;
         }
     }
 }
@@ -87,10 +107,13 @@
     padding-bottom: 100px;
     margin: 0 auto;
     max-width: $site-width;
-    display: none;
 
-    @media #{$small-mobile-mq} {
-        @include very-small;
+    @media #{$mid-width-mq} {
+        padding: 75px 0;
+    }
+
+    @media #{$mobile-width-mq} {
+        padding: 50px 0;
     }
 }
 
@@ -100,21 +123,44 @@
     left: 50%;
     margin-left: -70px;
 
+    @media #{$mid-width-mq} {
+        width: 105px;
+        margin-left: -52.5px;
+    }
 
-    @media #{$small-mobile-mq} {
-        @include very-small;
+    @media #{$mobile-width-mq} {
+        width: 70px;
+        margin-left: -35px;
     }
 }
 
 $close-button-offset: -25px;
+$mid-close-button-offset: -18.75px;
+$mobile-close-button-offset: -12.5px;
 @mixin green-white-top-close-button {
     @include green-white-close-button;
     top: $close-button-offset;
+
+    @media #{$mid-width-mq} {
+        top: $mid-close-button-offset;
+    }
+
+    @media #{$mobile-width-mq} {
+        top: $mobile-close-button-offset;
+    }
 }
 
 @mixin green-white-bottom-close-button {
     @include green-white-close-button;
-    bottom: $close-button-offset;
+    bottom: $mobile-close-button-offset;
+
+    @media #{$mid-width-mq} {
+        bottom: $mid-close-button-offset;
+    }
+
+    @media #{$mobile-width-mq} {
+        bottom: $mobile-close-button-offset;
+    }
 }
 
 @mixin extra-large-white-subheading {
@@ -123,13 +169,18 @@ $close-button-offset: -25px;
     color: #fff;
     margin-bottom: 10px;
 
-    @media #{$mobile-width-mq} {
+    @media #{$mid-width-mq} {
+        @include large;
+        @include full-width-padding;
         text-align: center;
+        margin-bottom: 7.5px;
     }
 
-    @media #{$small-mobile-mq} {
-        @include semi-large;
+    @media #{$mobile-width-mq} {
+        @include mobile-extra-large;
+        margin-bottom: 5px;
     }
+
 }
 
 @mixin small-supporting-text-under-white-subheading {
@@ -137,14 +188,17 @@ $close-button-offset: -25px;
     font-weight: 900;
     color: $light-blue;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
-    @media #{$mobile-width-mq} {
+    @media #{$mid-width-mq} {
+        @include full-width-padding;
+        @include very-small;
         text-align: center;
+        margin-bottom: 0;
     }
 
-    @media #{$small-mobile-mq} {
-        @include very-small;
+    @media #{$mobile-width-mq} {
+        @include mobile-small;
     }
 }
 
@@ -152,12 +206,25 @@ $close-button-offset: -25px;
     @include small;
     font-weight: 300;
     color: $dark-grey;
+
+    @media #{$mid-width-mq} {
+        @include very-small;
+    }
+
+    @media #{$mobile-width-mq} {
+        @include mobile-small;
+    }
 }
 
 
 %site-container {
     margin: 0 auto;
     max-width: $site-width;
+}
+
+%mobile-site-container {
+    margin: 0 auto;
+    max-width: $mobile-width;
 }
 
 %med-green-section-full-width-wrapper {
@@ -170,11 +237,5 @@ $close-button-offset: -25px;
     display: block;
     text-align: center;
     overflow: hidden;
-}
-
-%column-container {
-    column-count: 2;
-    column-gap: 30px;
-    column-width: 400px;
 }
 
