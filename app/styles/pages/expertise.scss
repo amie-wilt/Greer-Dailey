@@ -5,11 +5,13 @@
     background: $med-blue;
 
     @media #{$mid-width-mq} {
-        padding: 27.5px 0 10px 0;
+        padding-top: 27.5px;
+        padding-bottom: 10px;
     }
 
     @media #{$mobile-width-mq} {
-        padding: 25px 0 7.5px 0;
+        padding-top: 25px;
+        padding-bottom: 7.5px;
     }
 }
 
