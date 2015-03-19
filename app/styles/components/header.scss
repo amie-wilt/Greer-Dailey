@@ -21,30 +21,37 @@
     vertical-align: middle;
 }
 
+.header-primary-nav-container {
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
 .header-logo-container {
     @media (max-width: 1024px) {
         text-align: center;
     }
 }
 
-.header-primary-nav-container {
+//.header-primary-nav-container {
+//
+//    @media (max-width: 1024px) {
+//        display: none;
+//    }
+//}
 
-    @media (max-width: 1024px) {
-        display: none;
-    }
-}
-
-.header-mobile-nav-container {
-    display: none;
-
-    @media (max-width: 1024px) {
-        display: block;
-        position: absolute;
-        text-align: right;
-        background-color: #fff;
-        right: 100px;
-    }
-}
+//.header-mobile-nav-container {
+//    display: none;
+//
+//    @media (max-width: 1024px) {
+//        display: block;
+//        position: absolute;
+//        text-align: right;
+//        background-color: #fff;
+//        right: 100px;
+//        left: 47%;
+//    }
+//}
 
 .logo {
    width: 205px;
@@ -64,9 +71,9 @@
     }
 }
 
-.mobile-primary-nav-list {
-    display: block;
-}
+//.mobile-primary-nav-list {
+//    display: block;
+//}
 
 .primary-nav-list-link {
     display: block;
@@ -90,10 +97,10 @@
     }
 }
 
-.mobile-primary-nav-list-link {
-    @include mobile-medium;
-    color: $med-blue;
-}
+//.mobile-primary-nav-list-link {
+//    @include mobile-medium;
+//    color: $med-blue;
+//}
 
 .nav-dropdown-list {
     top: 100%;
@@ -110,11 +117,25 @@
         padding: 0 40px;
         text-align: left;
     }
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
-.mobile-nav-dropdown-list {
-    display: block;
-}
+//.mobile-nav-dropdown-list {
+//    display: none;
+//
+//    @media (max-width: 1024px) {
+//        display: block;
+//        position: inherit;
+//    }
+//
+//    > li {
+//        text-align: right;
+//        padding: 0;
+//    }
+//}
 
 .nav-dropdown-list-link {
     @include small;
@@ -127,10 +148,10 @@
     }
 }
 
-.mobile-nav-dropdown-list-link {
-    @include mobile-very-small;
-    text-align: right;
-}
+//.mobile-nav-dropdown-list-link {
+//    @include mobile-very-small;
+//    text-align: right;
+//}
 
 
 
