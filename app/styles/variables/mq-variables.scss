@@ -1,7 +1,6 @@
 // Media Queries
-$site-width-mq: '(max-width: #{$site-width})';
-$mobile-width-mq: '(max-width: #{$mobile-width})';
-$mid-width-mq: '(max-width: #{$mid-width})';
-
+$site-width-mq: '(max-width: #{$site-width})'; //1200
+$mid-width-mq: '(max-width: #{$mid-width})'; // 900
+$mobile-width-mq: '(max-width: #{$mobile-width})'; // 500
 
 

@@ -43,7 +43,7 @@
     li {
         flex-shrink: 0;
 
-        @media (max-width: 1024px) {
+        @media #{$mid-width-mq} {
             width: 33%;
             padding-bottom: 80px;
 
@@ -70,7 +70,7 @@ $expertise-link-width: 150px;
     text-align: center;
     margin: 0 auto;
 
-    @media (max-width: 1024px) {
+    @media #{$mid-width-mq} {
         max-width: none;
     }
 
