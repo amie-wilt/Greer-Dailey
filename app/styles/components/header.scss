@@ -13,6 +13,62 @@
         left: 0;
         margin-left: 0;
     }
+
+    .primary-nav-list {
+        @media #{$mid-width-mq} {
+            display: block;
+        }
+    }
+
+    .primary-nav-list-link {
+        @media #{$site-width-mq} {
+            @include small;
+            text-transform: uppercase;
+            display: block;
+            color: $med-blue;
+            padding: 0;
+            margin-bottom: 15px;
+
+            &.active,
+            &:hover {
+                color: $goldenrod;
+            }
+        }
+    }
+
+    .nav-dropdown-list {
+
+        @media #{$mid-width-mq} {
+            display: block;
+            position: relative;
+            right: 0;
+            margin-bottom: 15px;
+            padding: 0;
+        }
+
+        > li {
+            @media #{$mid-width-mq} {
+                display: block;
+                text-align: right;
+                position: relative;
+                margin-bottom: 5px;
+                padding: 0;
+            }
+        }
+    }
+
+    .nav-dropdown-list-link {
+        @media #{$mid-width-mq} {
+            @include small;
+            font-weight: 300;
+            display: block;
+            text-align: right;
+        }
+
+        @media #{$mobile-width-mq} {
+            @include mobile-small;
+        }
+    }
 }
 
 .header-logo-container,
@@ -55,14 +111,18 @@
 }
 
 .mobile-menu-trigger {
-    @include base-button;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 80px;
-    height: 70px;
-    background-color: #fff;
-    transform: translate3d(0, 100%, 0);
+    display: none;
+
+    @media #{$mid-width-mq} {
+        @include base-button;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 80px;
+        height: 70px;
+        background-color: #fff;
+        transform: translate3d(0, 100%, 0);
+    }
 
 }
 
@@ -74,6 +134,7 @@
     top: 50%;
     left: 50%;
     margin: -2px 0 0 -22px;
+    transition: background-color .5s;
 
     &:before,
     &:after {
@@ -83,6 +144,8 @@
         width: 100%;
         left: 0;
         background-color: $dark-green;
+        transition: transform .5s ease-in-out;
+        transform-origin: 0 0;
     }
 
     &:before {
@@ -94,115 +157,21 @@
     }
 
     .mobile-menu-active & {
+        background-color: transparent;
 
+        &:before {
+            transform: rotate(45deg) translate3d(5px, 0, 0);
+        }
+
+        &:after {
+            transform: rotate(-45deg) translate3d(5px, 0, 0);
+        }
     }
 }
 
 .mobile-menu-trigger-text {
     @extend %visuallyhidden;
 }
-
-.primary-nav-list {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-
-    @media #{$mid-width-mq} {
-        display: block;
-    }
-
-    > li {
-        position: relative;
-    }
-}
-
-.primary-nav-list-link {
-    display: block;
-    @include medium;
-    font-weight: 900;
-    color: #fff;
-    padding: 20px;
-
-    &.active,
-    &:hover {
-        color: $goldenrod;
-    }
-
-    .dropdown:hover & {
-        background: #fff;
-        color: $goldenrod;
-    }
-
-    @media #{$site-width-mq} {
-        @include small;
-        text-transform: uppercase;
-        display: block;
-        color: $med-blue;
-        padding: 0;
-        margin-bottom: 15px;
-
-        &.active,
-        &:hover {
-            color: $goldenrod;
-        }
-    }
-}
-
-.nav-dropdown-list {
-    top: 100%;
-    background: #fff;
-    padding: 35px 0;
-    display: none;
-    position: absolute;
-
-    .dropdown:hover & {
-        display: block;
-    }
-
-    @media #{$mid-width-mq} {
-        display: block;
-        position: relative;
-        right: 0;
-        margin-bottom: 15px;
-        padding: 0;
-    }
-
-    > li {
-        padding: 0 40px;
-        text-align: left;
-
-        @media #{$mid-width-mq} {
-            display: block;
-            text-align: right;
-            position: relative;
-            margin-bottom: 5px;
-            padding: 0;
-        }
-    }
-}
-
-.nav-dropdown-list-link {
-    @include small;
-    font-weight: 900;
-    color: $med-blue;
-    white-space: nowrap;
-
-    @media #{$mid-width-mq} {
-        @include small;
-        font-weight: 300;
-        display: block;
-        text-align: right;
-    }
-
-    @media #{$mobile-width-mq} {
-        @include mobile-small;
-    }
-
-    &:hover {
-        color: $goldenrod;
-    }
-}
-
 
 
 

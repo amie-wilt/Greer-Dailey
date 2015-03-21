@@ -1,0 +1,56 @@
+.primary-nav-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+
+    > li {
+        position: relative;
+    }
+}
+
+.primary-nav-list-link {
+    display: block;
+    @include medium;
+    font-weight: 900;
+    color: #fff;
+    padding: 20px;
+
+    &.active,
+    &:hover {
+        color: $goldenrod;
+    }
+
+    .dropdown:hover & {
+        background: #fff;
+        color: $goldenrod;
+    }
+}
+
+.nav-dropdown-list {
+    top: 100%;
+    background: #fff;
+    padding: 35px 0;
+    display: none;
+    position: absolute;
+
+    .dropdown:hover & {
+        display: block;
+    }
+
+    > li {
+        padding: 0 40px;
+        text-align: left;
+    }
+}
+
+.nav-dropdown-list-link {
+    @include small;
+    font-weight: 900;
+    color: $med-blue;
+    white-space: nowrap;
+
+    &:hover {
+        color: $goldenrod;
+    }
+}
+

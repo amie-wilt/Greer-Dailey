@@ -13,16 +13,18 @@
 @import "utilities/mixins";
 @import "utilities/fonts";
 
+// Global
 @import "global/base";
 
 // Components
 @import "components/buttons";
 @import "components/header";
+@import "components/primary-nav";
 @import "components/intro";
 @import "components/footer";
-@import "components/index";
 
 // Pages
+@import "pages/index";
 @import "pages/expertise";
 @import "pages/case-studies";
 @import "pages/team";

@@ -31,14 +31,24 @@
             @include mobile-very-small;
         }
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
             color: goldenrod;
+        }
+
+    }
+
+    .dropdown:hover {
+
+        .primary-nav-list-link {
+            background-color: transparent;
+        }
+
+        .nav-dropdown-list {
+            display: none;
         }
     }
 
-    .dropdown:hover & {
-        display: none;
-    }
 }
 
 .footer-inner-container {

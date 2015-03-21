@@ -10,12 +10,10 @@
             <h1 class="expertise-header">{{ subtitle }}</h1>
             {{#each sections }}
                 <span class="expertise-section-open-trigger-container">
-                    <a href="#" class="expertise-section-open-trigger">{{ name }}</a>
+                    <a href="#{{ dasherize name }}" class="expertise-section-open-trigger">{{ name }}</a>
                 </span>
                 <div id="{{ dasherize name }}" class="expertise-section">
-                    <div class="expertise-header-summary-wrapper"
-                       {{#is name 'Integrated Communications'}} style="display: block;"{{/is}}
-                            >
+                    <div class="expertise-header-summary-wrapper">
                         <button class="expertise-section-top-close-button">{{ button }}</button>
                         <h2 class="expertise-section-heading">{{ name }}</h2>
                         <p class="expertise-description">{{{ description }}}</p>
