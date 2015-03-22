@@ -62,106 +62,6 @@
     }
 }
 
-@mixin heading-with-lines-on-sides {
-    $line-width: 2000px;
-    $line-height: 1px;
-
-    @include large;
-    display: inline-block;
-    vertical-align: top;
-    font-weight: 100;
-    text-align: center;
-    color: $med-blue;
-    position: relative;
-
-    @media #{$mid-width-mq} {
-        @include semi-large;
-    }
-
-    @media #{$mobile-width-mq} {
-        @include mobile-large;
-        font-weight: 100;
-    }
-
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        width: $line-width;
-        height: $line-height;
-        background-color: $very-light-blue;
-        top: 50%;
-    }
-
-    &:before {
-        left: ($line-width + 35px) * -1;
-
-        @media #{$mid-width-mq} {
-            left: ($line-width + 20px) * -1;
-        }
-
-        @media #{mobile-width-mq} {
-            left: ($line-width + 5px) * -1;
-        }
-    }
-
-    &:after {
-        right: ($line-width + 35px) * -1;
-
-        @media #{$mid-width-mq} {
-            right: ($line-width + 20px) * -1;
-        }
-
-        @media #{$mobile-width-mq} {
-            right: ($line-width + 5px) * -1;
-        }
-    }
-}
-
-@mixin med-green-section-inner-wrapper {
-    @include full-width-padding;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin: 0 auto;
-    max-width: $site-width;
-    display: none;
-
-    @media #{$mid-width-mq} {
-        padding: 75px 0;
-    }
-
-    @media #{$mobile-width-mq} {
-        padding: 50px 0;
-    }
-}
-
-@mixin green-white-close-button {
-    position: absolute;
-    width: 140px;
-    left: 50%;
-    margin-left: -70px;
-
-    @media #{$mid-width-mq} {
-        width: 105px;
-        margin-left: -52.5px;
-    }
-
-    @media #{$mobile-width-mq} {
-        width: 70px;
-        margin-left: -35px;
-    }
-}
-
-$close-button-offset: -25px;
-@mixin green-white-top-close-button {
-    @include green-white-close-button;
-    top: $close-button-offset;
-}
-
-@mixin green-white-bottom-close-button {
-    @include green-white-close-button;
-    bottom: $close-button-offset;
-}
 
 @mixin extra-large-white-subheading {
     @include extra-large;
@@ -180,7 +80,6 @@ $close-button-offset: -25px;
         @include mobile-extra-large;
         margin-bottom: 5px;
     }
-
 }
 
 @mixin small-supporting-text-under-white-subheading {
@@ -232,15 +131,17 @@ $close-button-offset: -25px;
     margin-bottom: 95px;
 }
 
-%med-green-section-full-width-wrapper {
-    background: $med-green;
-    margin: 65px 0;
-    position: relative;
+@mixin contact-form-label {
+    @include medium;
+    font-weight: 300;
+    color: $dark-grey;
 }
 
-%open-trigger-container {
-    display: block;
-    text-align: center;
-    overflow: hidden;
+@mixin contact-form-input {
+    @include medium;
+    font-weight: 900;
+    background-color: transparent;
+    border: none;
+    padding: 50px 0 30px 0;
+    color: $light-blue;
 }
-

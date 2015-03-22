@@ -13,5 +13,126 @@
             max-width: 435px;
         }
     }
-
 }
+
+.contact-form {
+    max-width: 655px;
+    margin: 0 auto;
+    padding: 95px;
+
+    button[type="submit"] {
+        display: block;
+    }
+}
+
+.label-input-wrapper {
+    display: block;
+    border-bottom: 1px solid $light-blue;
+}
+
+.first-name-label,
+.last-name-label,
+.email-label {
+    @include contact-form-label;
+    margin-right: 25px;
+}
+
+.first-name-input,
+.last-name-input,
+.email-input {
+    @include contact-form-input;
+}
+
+.questions-comments-fieldset {
+    margin: 110px 0 55px 0;
+}
+
+.questions-comments-label {
+    @include contact-form-label;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.questions-comments-textarea {
+    @include medium;
+    font-family: MuseoSans, sans-serif;
+    font-weight: 300;
+    color: $dark-grey;
+    display: block;
+    width: 100%;
+    height: 165px;
+    border: none;
+}
+
+.direct-email-fieldset {
+    margin-bottom: 70px;
+}
+
+.direct-email-label {
+    @include medium;
+    font-weight: 900;
+    color: $dark-grey;
+    text-align: center;
+}
+
+.sydney-dailey-email-button,
+.joan-kradin-email-button {
+    @include small;
+    @include transparent-light-blue-button;
+    font-weight: 900;
+    text-transform: inherit;
+
+    &:hover {
+        background-color: $light-blue;
+        color: white;
+    }
+}
+
+.submit-button {
+    $line-width: 2000px;
+    $line-height: 1px;
+
+    @include solid-med-green-button;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: $line-width;
+        height: $line-height;
+        background-color: $very-light-blue;
+        top: 50%;
+    }
+
+    &:before {
+        left: ($line-width + 35px) * -1;
+
+        @media #{$mid-width-mq} {
+            left: ($line-width + 20px) * -1;
+        }
+
+        @media #{mobile-width-mq} {
+            left: ($line-width + 5px) * -1;
+        }
+    }
+
+    &:after {
+        right: ($line-width + 35px) * -1;
+
+        @media #{$mid-width-mq} {
+            right: ($line-width + 20px) * -1;
+        }
+
+        @media #{$mobile-width-mq} {
+            right: ($line-width + 5px) * -1;
+        }
+    }
+}
+
+

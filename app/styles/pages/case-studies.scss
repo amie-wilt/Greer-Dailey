@@ -9,7 +9,7 @@
         }
 
         @media #{$mobile-width-mq} {
-            padding: 0 15px 7.5px 15px;
+            padding: 0 15px 11px 15px;
         }
     }
 
@@ -55,7 +55,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        @include mobile-extra-large;
+        @include mobile-large;
         font-weight: 100;
         max-width: 215px;
     }
@@ -87,7 +87,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        @include mobile-very-small;
+        @include mobile-small;
         max-width: 215px;
     }
 }

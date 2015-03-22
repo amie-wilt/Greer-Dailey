@@ -6,17 +6,16 @@
         $('.header-primary-nav-container').toggleClass('mobile-menu-active');
     });
 
-    $('.expertise-section-open-trigger').on('click', function(e) {
+    $('[data-drawer="toggle-trigger"]').on('click', function(e) {
         e.preventDefault();
         $($(this).attr('href'))
-            .find('.expertise-header-summary-wrapper')
+            .find('[data-drawer="content"]')
             .slideToggle();
     });
 
-    $('.expertise-section-top-close-button, .expertise-section-bottom-close-button').on('click', function() {
+    $('[data-drawer="close-trigger"]').on('click', function() {
         $(this)
-            .closest('.expertise-section')
-            .find('.expertise-header-summary-wrapper')
+            .closest('[data-drawer="content"]')
             .slideUp();
     });
 

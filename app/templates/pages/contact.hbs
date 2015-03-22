@@ -5,3 +5,34 @@
         </div>
     </div>
 {{/with }}
+
+<form class="contact-form">
+
+    <fieldset>
+        <div class="label-input-wrapper">
+            <label for="first-name" class="first-name-label">First Name</label>
+            <input type="text" id="first-name" name="first-name" class="first-name-input">
+        </div>
+        <div class="label-input-wrapper">
+            <label for="last-name" class="last-name-label">Last Name</label>
+            <input type="text" id="last-name" name="last-name" class="last-name-input">
+        </div>
+        <div class="label-input-wrapper">
+            <label for="email" class="email-label">Email</label>
+            <input type="email" id="email" name="email" class="email-input">
+        </div>
+    </fieldset>
+
+    <fieldset class="questions-comments-fieldset">
+        <label for="questions-comments" class="questions-comments-label">Questions/Comments</label>
+        <textarea id="questions-comments" name="questions-comments" class="questions-comments-textarea"></textarea>
+    </fieldset>
+
+    <fieldset class="direct-email-fieldset">
+        <p class="direct-email-label">Please direct my email to...</p>
+        <button type="button" class="sydney-dailey-email-button">Sydney Daily</button>
+        <button type="button" class="joan-kradin-email-button">Joan Kradin</button>
+    </fieldset>
+
+    <button type="submit" class="submit-button">Submit</button>
+</form>

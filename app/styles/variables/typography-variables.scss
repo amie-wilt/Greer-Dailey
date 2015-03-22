@@ -41,7 +41,7 @@
 
 @mixin mobile-large {
     font-size: 20px;
-    line-height: 22.5px;
+    line-height: 1;
 }
 
 @mixin mobile-semi-large {
@@ -56,7 +56,7 @@
 
 @mixin mobile-small {
     font-size: 9px;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
 @mixin mobile-very-small {

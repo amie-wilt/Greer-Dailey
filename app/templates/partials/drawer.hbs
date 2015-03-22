@@ -1,0 +1,31 @@
+<div class="drawer" data-drawer>
+    <span class="drawer-open-trigger-container">
+        <a href="#{{ dasherize name }}" class="drawer-open-trigger" data-drawer="toggle-trigger">{{ name }}</a>
+    </span>
+
+    <div id="{{ dasherize name }}" class="drawer-content">
+        <div class="drawer-content-wrapper" data-drawer="content">
+            <button class="drawer-content-top-close-button" data-drawer="close-trigger">Close</button>
+
+            {{#is page 'expertise' }}
+                <!-- Expertise Page -->
+                <h2 class="expertise-section-heading">{{ name }}</h2>
+                <p class="expertise-description">{{{ description }}}</p>
+                <div class="expertise-summary">
+                    {{{ summary }}}
+                </div>
+            {{/is}}
+
+            {{#is page 'team' }}
+                <!-- Team Page -->
+               <div itemscope itemtype="http://schema.org/Person">
+                    <h2 class="team-member-name" itemprop="name">{{ name }}</h2>
+                    <p class="team-member-title" itemprop="jobTitle">{{ title }}</p>
+                    <div class="team-member-bio">{{{ bio }}}</div>
+                </div>
+            {{/is}}
+
+            <button class="drawer-content-bottom-close-button" data-drawer="close-trigger">Close</button>
+        </div>
+    </div>
+</div>

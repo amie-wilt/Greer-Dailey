@@ -1,4 +1,4 @@
-.team-intro .intro {
+.team-page .intro {
     padding: 200px 0 150px 0;
 
     @media #{$mid-width-mq} {
@@ -6,7 +6,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        padding: 100px 0 75px 0;
+        padding: 93px 0 67px 0;
     }
 
     .intro-title {
@@ -24,6 +24,10 @@
 
 .team-content-container {
     @extend %main-content-wrapper;
+
+    @media #{$mobile-width-mq} {
+        margin-bottom: 44px;
+    }
 }
 
 .team-header {
@@ -34,37 +38,10 @@
         max-width: 440px;
         margin: 0 auto;
         padding-top: 52.5px;
-        padding-bottom: 38px;
+        padding-bottom: 6px;
     }
 
 
-}
-
-.team-member-info {
-    @extend %med-green-section-full-width-wrapper;
-}
-
-.team-member-top-close-button {
-    @include solid-med-green-button;
-    @include green-white-top-close-button;
-}
-
-.team-member-bottom-close-button {
-    @include solid-med-green-button;
-    @include green-white-bottom-close-button;
-}
-
-.team-member-info-wrapper {
-    @include med-green-section-inner-wrapper;
-}
-
-.team-member-name-open-trigger-container {
-    @extend %open-trigger-container;
-    margin-bottom: 65px;
-}
-
-.team-member-name-open-trigger {
-  @include heading-with-lines-on-sides;
 }
 
 .team-member-name {
