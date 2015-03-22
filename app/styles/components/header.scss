@@ -21,6 +21,12 @@
     }
 
     .primary-nav-list-link {
+        @include medium;
+        display: block;
+        font-weight: 900;
+        color: #fff;
+        padding: 20px;
+
         @media #{$site-width-mq} {
             @include small;
             text-transform: uppercase;
@@ -33,6 +39,11 @@
             &:hover {
                 color: $goldenrod;
             }
+        }
+
+        &.active,
+        &:hover {
+            color: $goldenrod;
         }
     }
 
@@ -160,11 +171,11 @@
         background-color: transparent;
 
         &:before {
-            transform: rotate(45deg) translate3d(5px, 0, 0);
+            transform: rotate(43deg) translate3d(5px, -6px, 0);
         }
 
         &:after {
-            transform: rotate(-45deg) translate3d(5px, 0, 0);
+            transform: rotate(-50deg) translate3d(2px, 6px, 0);
         }
     }
 }

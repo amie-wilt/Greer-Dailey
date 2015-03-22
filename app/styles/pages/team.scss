@@ -23,7 +23,7 @@
 }
 
 .team-content-container {
-    background: $light-green;
+    @extend %main-content-wrapper;
 }
 
 .team-header {
@@ -33,7 +33,11 @@
     @media #{$mobile-width-mq} {
         max-width: 440px;
         margin: 0 auto;
+        padding-top: 52.5px;
+        padding-bottom: 38px;
     }
+
+
 }
 
 .team-member-info {
@@ -56,6 +60,7 @@
 
 .team-member-name-open-trigger-container {
     @extend %open-trigger-container;
+    margin-bottom: 65px;
 }
 
 .team-member-name-open-trigger {

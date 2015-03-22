@@ -29,6 +29,7 @@
 
         @media #{$mobile-width-mq} {
             @include mobile-very-small;
+            padding: 10px;
         }
 
         &:hover,
@@ -57,7 +58,7 @@
     padding: 100px 0;
 
     @media #{$mobile-width-mq} {
-        padding: 50px 0;
+        padding: 38px 0 63px 0;
     }
 }
 

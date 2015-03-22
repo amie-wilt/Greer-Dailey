@@ -35,7 +35,11 @@
 }
 
 .expertise-content-container {
-    background: $light-green;
+    @extend %main-content-wrapper;
+
+    @media #{$mobile-width-mq} {
+        margin-bottom: 47.5px;
+    }
 }
 
 .expertise-page {
@@ -74,6 +78,10 @@
 
 .expertise-section {
     @extend %med-green-section-full-width-wrapper;
+
+    @media #{$mobile-width-mq} {
+        margin: 0;
+    }
 }
 
 .expertise-section-top-close-button {
@@ -106,10 +114,20 @@
 .expertise-header {
     @include extra-large-dark-blue-header;
     @include full-width-padding;
+
+    @media #{$mobile-width-mq} {
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
 }
 
 .expertise-section-open-trigger-container {
     @extend %open-trigger-container;
+    margin-bottom: 65px;
+
+    @media #{$mobile-width-mq} {
+        margin: 32.5px 0;
+    }
 }
 
 .expertise-section-open-trigger {

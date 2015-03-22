@@ -98,5 +98,10 @@
 
 .intro-learn-more-button {
    @include transparent-goldenrod-button;
+
+    &:hover {
+        background-color: $goldenrod;
+        color: #fff;
+    }
 }
 

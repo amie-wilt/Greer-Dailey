@@ -59,8 +59,6 @@
 
     @media #{$mobile-width-mq} {
         @include mobile-extra-large;
-        padding-top: 57.5px;
-        padding-bottom: 37.5px;
     }
 }
 
@@ -126,6 +124,7 @@
     padding-bottom: 100px;
     margin: 0 auto;
     max-width: $site-width;
+    display: none;
 
     @media #{$mid-width-mq} {
         padding: 75px 0;
@@ -154,32 +153,14 @@
 }
 
 $close-button-offset: -25px;
-$mid-close-button-offset: -18.75px;
-$mobile-close-button-offset: -12.5px;
 @mixin green-white-top-close-button {
     @include green-white-close-button;
     top: $close-button-offset;
-
-    @media #{$mid-width-mq} {
-        top: $mid-close-button-offset;
-    }
-
-    @media #{$mobile-width-mq} {
-        top: $mobile-close-button-offset;
-    }
 }
 
 @mixin green-white-bottom-close-button {
     @include green-white-close-button;
-    bottom: $mobile-close-button-offset;
-
-    @media #{$mid-width-mq} {
-        bottom: $mid-close-button-offset;
-    }
-
-    @media #{$mobile-width-mq} {
-        bottom: $mobile-close-button-offset;
-    }
+    bottom: $close-button-offset;
 }
 
 @mixin extra-large-white-subheading {
@@ -246,8 +227,12 @@ $mobile-close-button-offset: -12.5px;
     max-width: $mobile-width;
 }
 
+%main-content-wrapper {
+    background: $light-green;
+    margin-bottom: 95px;
+}
+
 %med-green-section-full-width-wrapper {
-    display: none;
     background: $med-green;
     margin: 65px 0;
     position: relative;
