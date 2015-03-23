@@ -65,4 +65,8 @@
     border: 1px solid $light-blue;
     text-transform: uppercase;
     padding: 20px 60px;
+
+    @media #{$mobile-width-mq} {
+        padding: 10px 25px;
+    }
 }

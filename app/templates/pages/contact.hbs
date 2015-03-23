@@ -23,6 +23,8 @@
         </div>
     </fieldset>
 
+    <p class="contact-form-error-message">Please include an '@' in the email address. 'Test' is missing an '@'.</p>
+
     <fieldset class="questions-comments-fieldset">
         <label for="questions-comments" class="questions-comments-label">Questions/Comments</label>
         <textarea id="questions-comments" name="questions-comments" class="questions-comments-textarea"></textarea>
@@ -30,8 +32,11 @@
 
     <fieldset class="direct-email-fieldset">
         <p class="direct-email-label">Please direct my email to...</p>
-        <button type="button" class="sydney-dailey-email-button">Sydney Daily</button>
-        <button type="button" class="joan-kradin-email-button">Joan Kradin</button>
+
+        <div class="direct-email-button-wrapper">
+            <button type="button" class="sydney-dailey-email-button">Sydney Daily</button>
+            <button type="button" class="joan-kradin-email-button">Joan Kradin</button>
+        </div>
     </fieldset>
 
     <button type="submit" class="submit-button">Submit</button>

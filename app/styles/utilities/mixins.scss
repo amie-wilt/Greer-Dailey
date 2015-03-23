@@ -135,6 +135,10 @@
     @include medium;
     font-weight: 300;
     color: $dark-grey;
+
+    @media #{$mobile-width-mq} {
+        @include mobile-medium;
+    }
 }
 
 @mixin contact-form-input {
@@ -144,4 +148,9 @@
     border: none;
     padding: 50px 0 30px 0;
     color: $light-blue;
+
+    @media #{$mobile-width-mq} {
+        @include mobile-medium;
+        padding: 25px 0 15px 0;
+    }
 }
