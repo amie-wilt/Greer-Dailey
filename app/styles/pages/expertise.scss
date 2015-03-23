@@ -95,6 +95,7 @@
 .expertise-header {
     @include extra-large-dark-blue-header;
     @include full-width-padding;
+    padding-bottom: 25px;
 
     @media #{$mobile-width-mq} {
         padding-top: 45px;

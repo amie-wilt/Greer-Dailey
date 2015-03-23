@@ -2,6 +2,7 @@
     text-align: center;
     display: block;
     overflow: hidden;
+    padding: 48px 0;
 }
 
 .drawer-open-trigger {
@@ -15,7 +16,6 @@
     text-align: center;
     color: $med-blue;
     position: relative;
-    margin-bottom: 64px;
 
     @media #{$mid-width-mq} {
         @include semi-large;
@@ -63,21 +63,21 @@
 }
 
 .drawer-content {
-    background: $med-green;
+    display: none;
     position: relative;
-
-    @media #{$mobile-width-mq} {
-        margin: 0;
-    }
+    padding: 25px 0;
 }
 
 .drawer-content-wrapper {
+    background-color: $med-green;
+}
+
+.drawer-content-inner {
     @include full-width-padding;
+    margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin: 0 auto;
     max-width: $site-width;
-    display: none;
 
     @media #{$mid-width-mq} {
         padding: 75px 0;
@@ -106,7 +106,7 @@
     }
 }
 
-$close-button-offset: -25px;
+$close-button-offset: 0;
 .drawer-content-top-close-button {
     @include drawer-close-button;
     top: $close-button-offset;

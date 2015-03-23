@@ -9,7 +9,6 @@
     $('[data-drawer="toggle-trigger"]').on('click', function(e) {
         e.preventDefault();
         $($(this).attr('href'))
-            .find('[data-drawer="content"]')
             .slideToggle();
     });
 
