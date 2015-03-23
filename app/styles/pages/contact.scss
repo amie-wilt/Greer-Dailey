@@ -158,6 +158,9 @@
     margin: 0 auto;
     position: relative;
 
+    &:hover {
+        background-color: $light-blue;
+    }
 
     &:before,
     &:after {

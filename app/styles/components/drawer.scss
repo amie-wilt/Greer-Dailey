@@ -110,11 +110,19 @@ $close-button-offset: 0;
 .drawer-content-top-close-button {
     @include drawer-close-button;
     top: $close-button-offset;
+
+    &:hover {
+        background-color: $light-blue;
+    }
 }
 
 .drawer-content-bottom-close-button {
     @include drawer-close-button;
     bottom: $close-button-offset;
+
+    &:hover {
+        background-color: $light-blue;
+    }
 }
 
 
