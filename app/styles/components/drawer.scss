@@ -3,6 +3,10 @@
     display: block;
     overflow: hidden;
     padding: 48px 0;
+
+    @media #{$mobile-width-mq} {
+        padding: 0;
+    }
 }
 
 .drawer-open-trigger {
