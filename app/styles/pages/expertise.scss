@@ -54,7 +54,7 @@
         }
 
         @media #{$mobile-width-mq} {
-            @include mobile-semi-large;
+            @include very-small;
         }
     }
 }

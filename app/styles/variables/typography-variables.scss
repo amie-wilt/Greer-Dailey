@@ -36,34 +36,3 @@
     line-height: 1;
 }
 
-//Mobile
-
-@mixin mobile-extra-large {
-    font-size: 30px;
-    line-height: 1;
-}
-
-@mixin mobile-large {
-    font-size: 20px;
-    line-height: 1;
-}
-
-@mixin mobile-semi-large {
-    font-size: 15px;
-    line-height: 1;
-}
-
-@mixin mobile-medium {
-    font-size: 10px;
-    line-height: 11.5px;
-}
-
-@mixin mobile-small {
-    font-size: 9px;
-    line-height: 1.4;
-}
-
-@mixin mobile-very-small {
-    font-size: 7px;
-    line-height: 1;
-}

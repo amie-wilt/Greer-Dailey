@@ -29,7 +29,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        @include mobile-extra-large;
+        @include semi-large;
         padding-bottom: 30px;
     }
 }
@@ -80,7 +80,7 @@ $expertise-link-width: 150px;
     }
 
     @media #{$mobile-width-mq} {
-        @include mobile-small;
+        @include smallest;
         max-width: $expertise-link-width / 2;
     }
 

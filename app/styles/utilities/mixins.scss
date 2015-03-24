@@ -63,7 +63,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        @include mobile-extra-large;
+        @include semi-large;
     }
 }
 
@@ -82,7 +82,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        @include mobile-extra-large;
+        @include semi-large;
         margin-bottom: 5px;
     }
 }
@@ -138,7 +138,7 @@
     color: $dark-grey;
 
     @media #{$mobile-width-mq} {
-        @include mobile-medium;
+        @include smallest;
     }
 }
 
@@ -151,7 +151,7 @@
     color: $light-blue;
 
     @media #{$mobile-width-mq} {
-        @include mobile-medium;
+        @include smallest;
         padding: 25px 0 15px 0;
     }
 }

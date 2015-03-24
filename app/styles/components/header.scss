@@ -28,6 +28,11 @@
         color: #fff;
         padding: 20px;
 
+        &.active,
+        &:hover {
+            color: $goldenrod;
+        }
+
         @media #{$mid-width-mq} {
             @include small;
             text-transform: uppercase;
@@ -35,17 +40,12 @@
             color: $med-blue;
             padding: 0;
             margin-bottom: 15px;
-
-            &.active,
-            &:hover {
-                color: $goldenrod;
-            }
         }
 
-        &.active,
-        &:hover {
-            color: $goldenrod;
+        @media #{$mobile-width-mq} {
+            @include very-small;
         }
+
     }
 
     .nav-dropdown-list {
@@ -78,7 +78,7 @@
         }
 
         @media #{$mobile-width-mq} {
-            @include mobile-small;
+            @include smallest;
         }
     }
 }
@@ -116,6 +116,10 @@
         transform: translate3d(0, -100%, 0);
         transition: transform .5s ease-in-out;
 
+        @media #{$mobile-width-mq} {
+            padding: 40px 30px 25px 0;
+        }
+
         &.mobile-menu-active {
             transform: translate3d(0, 0, 0);
         }
@@ -134,6 +138,12 @@
         height: 70px;
         background-color: #fff;
         transform: translate3d(0, 100%, 0);
+
+
+        @media #{$mobile-width-mq} {
+            width: 50px;
+            height: 50px;
+        }
     }
 }
 
@@ -146,6 +156,11 @@
     left: 50%;
     margin: -2px 0 0 -22px;
     transition: background-color .5s;
+
+    @media #{$mobile-width-mq} {
+        width: 30px;
+        margin-left: -15px;
+    }
 
     &:before,
     &:after {
@@ -161,10 +176,18 @@
 
     &:before {
         top: -14px;
+
+        @media #{$mobile-width-mq} {
+            top: -10px;
+        }
     }
 
     &:after {
         bottom: -14px;
+
+        @media #{$mobile-width-mq} {
+            bottom: -10px;
+        }
     }
 
     .mobile-menu-active & {

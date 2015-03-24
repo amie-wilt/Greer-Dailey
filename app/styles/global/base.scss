@@ -6,10 +6,6 @@ html {
 
 p {
     margin-bottom: 35px;
-
-    @media #{$mid-width-mq} {
-        margin-bottom: 26px;
-    }
 }
 
 a {
