@@ -2,14 +2,10 @@
     .intro-title {
         color: $very-light-blue;
     }
-
-    .intro-supporting-text {
-        font-weight: 100;
-    }
 }
 
 .contact-form {
-    @include full-width-padding;
+    @include full-width-side-padding;
     max-width: 655px;
     margin: 0 auto;
     padding-top: 45px;
@@ -129,16 +125,9 @@
 
 .sydney-dailey-email-button,
 .joan-kradin-email-button {
-    @include small;
     @include transparent-light-blue-button;
-    font-weight: 900;
     text-transform: inherit;
     margin: 0 20px;
-
-    &:hover {
-        background-color: $light-blue;
-        color: white;
-    }
 }
 
 .submit-button {
@@ -146,14 +135,9 @@
     $line-height: 1px;
 
     @include solid-med-green-button;
-    font-size: 18px;
     display: inline-block;
     margin: 0 auto;
     position: relative;
-
-    &:hover {
-        background-color: $light-blue;
-    }
 
     &:before,
     &:after {

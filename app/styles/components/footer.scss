@@ -4,18 +4,10 @@
 
     .logo-container {
         padding-bottom: 25px;
-
-        @media #{$mobile-width-mq} {
-            padding-bottom: 12.5px;
-        }
     }
 
     .primary-nav-container {
         padding-bottom: 20px;
-
-        @media #{$mobile-width-mq} {
-            padding-bottom: 10px;
-        }
     }
 
     .primary-nav-list {
@@ -28,8 +20,8 @@
         text-transform: uppercase;
 
         @media #{$mobile-width-mq} {
-            @include mobile-very-small;
-            padding: 10px;
+            @include smallest;
+            padding: 5px;
         }
 
         &:hover,
@@ -58,7 +50,7 @@
     padding: 100px 0;
 
     @media #{$mobile-width-mq} {
-        padding: 38px 0 63px 0;
+        padding: 50px 0;
     }
 }
 
@@ -66,7 +58,7 @@
     @include very-small;
 
     @media #{$mobile-width-mq} {
-        @include mobile-very-small;
+        @include smallest;
     }
 }
 
@@ -100,7 +92,7 @@
     @include very-small;
 
     @media #{$mobile-width-mq} {
-        @include mobile-very-small;
+        @include smallest;
     }
 }
 

@@ -5,12 +5,8 @@
     background-size: cover;
     background-position: center top;
 
-    @media #{$mid-width-mq} {
-        padding: 154.5px 0 97.5px;
-    }
-
     @media #{$mobile-width-mq} {
-        padding: 103px 0 65px 0;
+        padding: 120px 0 60px 0;
     }
 }
 
@@ -29,79 +25,59 @@
 
 .intro-title {
     @include extra-large;
-    @include full-width-padding;
+    @include full-width-side-padding;
     font-weight: 100;
     padding-bottom: 35px;
 
-    @media #{$mid-width-mq} {
-        @include large;
-        padding-bottom: 26px;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-extra-large;
-        padding-bottom: 13px;
+        @include semi-large;
+        @include clear-side-padding;
+        padding-bottom: 20px;
     }
 
-    em {
+    em,
+    strong {
         @include semi-large;
-        @include full-width-padding;
+        @include full-width-side-padding;
         font-weight: 900;
         display: block;
         padding-top: 30px;
 
-        @media #{$mid-width-mq} {
-            @include medium;
-            padding-top: 22.5px;
-        }
-
         @media #{$mobile-width-mq} {
-            @include mobile-semi-large;
-            padding-top: 15px;
+            @include small;
+            @include clear-side-padding;
+            padding-top: 10px;
         }
     }
 }
 
-.intro-subtitle,
-.intro-title strong {
-    @include full-width-padding;
+.intro-subtitle {
+    @include full-width-side-padding;
     @include semi-large;
     font-weight: 900;
 
-    @media #{$mid-width-mq} {
-        @include medium;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-semi-large;
+        @include small;
+        @include clear-side-padding;
+        margin-bottom: 20px;
     }
 }
 
 .intro-supporting-text {
     @include small;
-    font-weight: 900;
+    font-weight: 100;
     max-width: 515px;
     margin: 0 auto;
     text-align: center;
 
-    @media #{$mid-width-mq} {
-        @include full-width-padding;
-        @include very-small;
-        max-width: 386px;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-small;
-        max-width: 258px;
+        @include very-small;
+        @include full-width-side-padding;
+        max-width: none;
     }
 }
 
 .intro-learn-more-button {
    @include transparent-goldenrod-button;
-
-    &:hover {
-        background-color: $goldenrod;
-        color: #fff;
-    }
 }
 

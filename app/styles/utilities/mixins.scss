@@ -39,9 +39,14 @@
     }
 }
 
-@mixin full-width-padding {
+@mixin full-width-side-padding {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+@mixin clear-side-padding {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 @mixin extra-large-dark-blue-header {
@@ -71,7 +76,7 @@
 
     @media #{$mid-width-mq} {
         @include large;
-        @include full-width-padding;
+        @include full-width-side-padding;
         text-align: center;
         margin-bottom: 7.5px;
     }
@@ -90,14 +95,14 @@
     margin-bottom: 25px;
 
     @media #{$mid-width-mq} {
-        @include full-width-padding;
+        @include full-width-side-padding;
         @include very-small;
         text-align: center;
         margin-bottom: 0;
     }
 
     @media #{$mobile-width-mq} {
-        @include mobile-small;
+        @include smallest;
     }
 }
 
@@ -106,12 +111,8 @@
     font-weight: 300;
     color: $dark-grey;
 
-    @media #{$mid-width-mq} {
-        @include very-small;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-small;
+        @include smallest;
     }
 }
 

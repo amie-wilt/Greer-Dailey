@@ -1,13 +1,8 @@
 .intro-continued-supporting-text-container {
-    @include full-width-padding;
+    @include full-width-side-padding;
     padding-top: 50px;
     padding-bottom: 15px;
     background: $med-blue;
-
-    @media #{$mid-width-mq} {
-        padding-top: 27.5px;
-        padding-bottom: 10px;
-    }
 
     @media #{$mobile-width-mq} {
         padding-top: 25px;
@@ -23,14 +18,9 @@
     font-weight: 100;
     text-align: center;
 
-    @media #{$mid-width-mq} {
-        @include very-small;
-        max-width: 540px;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-very-small;
-        max-width: 220px;
+        @include smallest;
+        max-width: none;
     }
 }
 
@@ -46,32 +36,9 @@
 
     .intro-title {
         color: $very-light-blue;
-        padding-left: 0;
-        padding-right: 0;
 
         strong {
             color: #fff;
-
-            @media #{$mid-width-mq} {
-                @include small;
-            }
-
-            @media #{$mobile-width-mq} {
-                @include mobile-medium;
-            }
-        }
-    }
-
-    .intro-supporting-text {
-        max-width: 720px;
-        font-weight: 100;
-
-        @media #{$mid-width-mq} {
-            max-width: 540px;
-        }
-
-        @media #{$mobile-width-mq} {
-            max-width: 210px;
         }
     }
 }
@@ -94,7 +61,7 @@
 
 .expertise-header {
     @include extra-large-dark-blue-header;
-    @include full-width-padding;
+    @include full-width-side-padding;
     padding-bottom: 25px;
 
     @media #{$mobile-width-mq} {

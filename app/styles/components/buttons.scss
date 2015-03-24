@@ -11,12 +11,8 @@
     border: none;
     text-align: center;
 
-    @media #{$mid-width-mq} {
-        @include very-small;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-small;
+        @include smallest;
     }
 }
 
@@ -27,12 +23,31 @@
     padding: 20px 45px;
     border: 1px solid $goldenrod;
 
-    @media #{$mid-width-mq} {
-        padding: 15px 35px;
+    &:hover {
+        background-color: $goldenrod;
+        color: #fff;
     }
 
     @media #{$mobile-width-mq} {
-        padding: 10px 23px;
+        padding: 15px 35px;
+    }
+}
+
+@mixin transparent-light-blue-button {
+    @include base-button;
+    color: $light-blue;
+    border: 1px solid $light-blue;
+    text-transform: uppercase;
+    padding: 20px 60px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        background-color: $light-blue;
+        color: #fff;
+    }
+
+    @media #{$mobile-width-mq} {
+        padding: 10px 25px;
     }
 }
 
@@ -43,30 +58,15 @@
     text-transform: uppercase;
     padding: 20px 40px;
 
+    &:hover {
+        background-color: $light-blue;
+    }
+
     @media #{$mid-width-mq} {
         padding: 15px 30px;
     }
 
     @media #{$mobile-width-mq} {
         padding: 10px 20px;
-    }
-}
-
-@mixin solid-light-blue-button {
-    @include base-button;
-    padding: 20px 60px;
-    background-color: $light-blue;
-    color: #fff;
-}
-
-@mixin transparent-light-blue-button {
-    @include base-button;
-    color: $light-blue;
-    border: 1px solid $light-blue;
-    text-transform: uppercase;
-    padding: 20px 60px;
-
-    @media #{$mobile-width-mq} {
-        padding: 10px 25px;
     }
 }

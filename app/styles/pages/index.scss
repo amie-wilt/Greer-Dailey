@@ -17,7 +17,7 @@
 
 .expertise-overview-header {
     @include extra-large;
-    @include full-width-padding;
+    @include full-width-side-padding;
     text-align: center;
     padding-bottom: 60px;
     font-weight: 100;
@@ -35,7 +35,7 @@
 }
 
 .expertise-overview-list {
-    @include full-width-padding;
+    @include full-width-side-padding;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

@@ -1,31 +1,13 @@
 .case-study-page {
     background-color: $dark-green;
 
-    .intro-subtitle {
-        padding: 0 30px 15px 30px;
-
-        @media #{$mid-width-mq} {
-            padding: 0 22.5px 11px 22.5px;
-        }
-
+    .intro-title {
         @media #{$mobile-width-mq} {
-            padding: 0 15px 11px 15px;
-        }
-    }
-
-    .intro-supporting-text {
-        font-weight: 300;
-        max-width: 710px;
-
-        @media #{$mid-width-mq} {
-            max-width: 530px;
-        }
-
-        @media #{$mobile-width-mq} {
-            max-width: 215px;
+            padding-bottom: 10px;
         }
     }
 }
+
 
 .case-study-heading-container {
     background-size: cover;
@@ -49,15 +31,9 @@
     max-width: 800px;
     margin: 0 auto;
 
-    @media #{$mid-width-mq} {
-        @include large;
-        max-width: 450px;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-large;
-        font-weight: 100;
-        max-width: 215px;
+        @include small;
+        @include full-width-side-padding;
     }
 }
 
@@ -65,12 +41,8 @@
     background: $lightest-blue;
     padding: 85px 0;
 
-    @media #{$mid-width-mq} {
-        padding: 64px;
-    }
-
     @media #{$mobile-width-mq} {
-        padding: 42.5px;
+        padding: 40px 0;
     }
 }
 
@@ -81,14 +53,9 @@
     margin: 0 auto;
     text-align: center;
 
-    @media #{$mid-width-mq} {
-        @include very-small;
-        max-width: 450px;
-    }
-
     @media #{$mobile-width-mq} {
-        @include mobile-small;
-        max-width: 215px;
+        @include smallest;
+        @include full-width-side-padding;
     }
 }
 

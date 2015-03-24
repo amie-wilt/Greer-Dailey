@@ -1,5 +1,5 @@
 .header {
-    @include full-width-padding;
+    @include full-width-side-padding;
     box-sizing: border-box;
     display: table;
     position: absolute;
@@ -12,6 +12,7 @@
         width: 100%;
         left: 0;
         margin-left: 0;
+        padding-top: 30px;
     }
 
     .primary-nav-list {
@@ -98,7 +99,7 @@
     width: 205px;
 
     @media #{$mobile-width-mq} {
-        width: 102.5px;
+        width: 135px;
     }
 }
 
@@ -129,7 +130,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 80px;
+        width: 70px;
         height: 70px;
         background-color: #fff;
         transform: translate3d(0, 100%, 0);

@@ -31,6 +31,10 @@
     line-height: 1.3;
 }
 
+@mixin smallest {
+    font-size: 12px;
+    line-height: 1;
+}
 
 //Mobile
 

@@ -1,24 +1,7 @@
 .team-page .intro {
-    padding: 200px 0 150px 0;
-
-    @media #{$mid-width-mq} {
-        padding: 150px 0 112px 0;
-    }
-
-    @media #{$mobile-width-mq} {
-        padding: 93px 0 67px 0;
-    }
 
     .intro-title {
         color: $very-light-blue;
-    }
-
-    .intro-subtitle {
-
-        @media #{$mobile-width-mq} {
-            max-width: 400px;
-            margin: 0 auto;
-        }
     }
 }
 
@@ -32,7 +15,7 @@
 
 .team-header {
     @include extra-large-dark-blue-header;
-    @include full-width-padding;
+    @include full-width-side-padding;
 
     @media #{$mobile-width-mq} {
         max-width: 440px;
@@ -40,8 +23,6 @@
         padding-top: 52.5px;
         padding-bottom: 6px;
     }
-
-
 }
 
 .team-member-name {
@@ -51,10 +32,6 @@
 .team-member-title {
     @include small-supporting-text-under-white-subheading;
     margin-bottom: 50px;
-
-    @media #{$mid-width-mq} {
-        padding-bottom: 37.5px;
-    }
 
     @media #{$mobile-width-mq} {
         padding-bottom: 25px;
@@ -69,10 +46,6 @@
         position: relative;
         color: #fff;
         margin: 140px 0;
-
-        @media #{$mid-width-mq} {
-            margin: 105px 0;
-        }
 
         @media #{$mobile-width-mq} {
             margin: 70px 0;

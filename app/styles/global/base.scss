@@ -10,10 +10,6 @@ p {
     @media #{$mid-width-mq} {
         margin-bottom: 26px;
     }
-
-    @media #{$mobile-width-mq} {
-        margin-bottom: 17.5px;
-    }
 }
 
 a {
