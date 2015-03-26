@@ -9,7 +9,7 @@
                             <li class="overview-nav-header">Overview</li>
                             {{#each sections }}
                                 <li>
-                                    <a href="{{ dasherize ../name }}.html#{{ @key }}" class="nav-dropdown-list-link">{{ name }}</a>
+                                    <a href="{{ dasherize ../name }}.html#{{ @key }}" class="nav-dropdown-list-link" data-dropdown-link="{{ @key }}">{{ name }}</a>
                                 </li>
                             {{/each }}
                         </ul>
