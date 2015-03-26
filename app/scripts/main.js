@@ -8,10 +8,11 @@
 
     $('[data-drawer="drawer"]').each(function() {
         var $this = $(this),
-            $dropdownLink = $('[data-dropdown-link]'),
             $toggleTrigger = $this.find('[data-drawer="toggle-trigger"]'),
             $closeTrigger = $this.find('[data-drawer="close-trigger"]'),
-            $content = $this.find('[data-drawer="content"]');
+            $content = $this.find('[data-drawer="content"]'),
+            drawerId = $content.attr('id'),
+            $dropdownLink = $('[data-dropdown-link="' + drawerId + '"]');
 
         $toggleTrigger.on('click', function(e) {
             e.preventDefault();
