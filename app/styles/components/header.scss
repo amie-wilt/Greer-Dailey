@@ -48,6 +48,12 @@
 
     }
 
+    .overview-nav-header {
+        @media #{$mid-width-mq} {
+            display: none;
+        }
+    }
+
     .nav-dropdown-list {
 
         @media #{$mid-width-mq} {
@@ -138,7 +144,6 @@
         height: 70px;
         background-color: #fff;
         transform: translate3d(0, 100%, 0);
-
 
         @media #{$mobile-width-mq} {
             width: 50px;

@@ -32,6 +32,7 @@
     @media #{$mobile-width-mq} {
         @include semi-large;
         @include clear-side-padding;
+        margin-bottom: 0;
     }
 
     em,
@@ -40,12 +41,13 @@
         @include full-width-side-padding;
         font-weight: 900;
         display: block;
-        padding-top: 30px;
+        margin-top: 30px;
 
         @media #{$mobile-width-mq} {
             @include small;
             @include clear-side-padding;
-            padding-top: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
     }
 }
