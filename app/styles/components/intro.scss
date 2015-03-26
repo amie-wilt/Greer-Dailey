@@ -25,14 +25,13 @@
 
 .intro-title {
     @include extra-large;
-    @include full-width-side-padding;
+    line-height: 30px;
     font-weight: 100;
-    padding-bottom: 35px;
+    margin-bottom: 25px;
 
     @media #{$mobile-width-mq} {
         @include semi-large;
         @include clear-side-padding;
-        padding-bottom: 20px;
     }
 
     em,
@@ -55,24 +54,23 @@
     @include full-width-side-padding;
     @include semi-large;
     font-weight: 900;
+    margin-bottom: 20px;
 
     @media #{$mobile-width-mq} {
         @include small;
-        @include clear-side-padding;
-        margin-bottom: 20px;
     }
 }
 
 .intro-supporting-text {
+    @include full-width-side-padding;
     @include small;
     font-weight: 100;
-    max-width: 515px;
+    max-width: 720px;
     margin: 0 auto;
     text-align: center;
 
     @media #{$mobile-width-mq} {
         @include very-small;
-        @include full-width-side-padding;
         max-width: none;
     }
 }

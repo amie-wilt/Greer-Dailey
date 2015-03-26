@@ -32,7 +32,7 @@
     margin: 0 auto;
 
     @media #{$mobile-width-mq} {
-        @include small;
+        @include semi-large;
         @include full-width-side-padding;
     }
 }
@@ -54,7 +54,7 @@
     text-align: center;
 
     @media #{$mobile-width-mq} {
-        @include smallest;
+        @include very-small;
         @include full-width-side-padding;
     }
 }

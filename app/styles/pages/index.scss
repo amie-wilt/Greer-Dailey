@@ -80,7 +80,7 @@ $expertise-link-width: 150px;
     }
 
     @media #{$mobile-width-mq} {
-        @include smallest;
+        @include very-small;
         max-width: $expertise-link-width / 2;
     }
 

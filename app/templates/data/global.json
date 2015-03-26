@@ -25,6 +25,7 @@
         "expertise": {
             "name": "Expertise",
             "subtitle": "Our Areas of Expertise",
+            "supporting-tagline": "Click specific areas to learn more",
             "intro": {
                 "image": "images/expertise-image.jpg",
                 "title": "A recognized leader<br><strong>in community relations in Los Angeles.</strong>",
@@ -108,6 +109,7 @@
                 "subtitle": "<strong>The right combination of skills to achieve results</strong>"
             },
             "team-header": "Our Team Members",
+            "supporting-tagline": "Click specific areas to learn more",
             "team-members": {
                 "sydney-bailey": {
                     "page": "team",

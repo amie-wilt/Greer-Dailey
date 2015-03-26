@@ -16,6 +16,7 @@
 .team-header {
     @include extra-large-dark-blue-header;
     @include full-width-side-padding;
+    padding-bottom: 5px;
 
     @media #{$mobile-width-mq} {
         max-width: 440px;
@@ -30,12 +31,16 @@
 }
 
 .team-member-title {
-    @include small-supporting-text-under-white-subheading;
+    @include small-supporting-lightblue-uppercase-text;
     margin-bottom: 50px;
 
     @media #{$mobile-width-mq} {
         padding-bottom: 25px;
     }
+}
+
+.supporting-tagline {
+    @include small-supporting-lightblue-uppercase-text;
 }
 
 .team-member-bio {

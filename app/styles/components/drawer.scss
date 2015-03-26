@@ -26,7 +26,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        @include small;
+        @include medium;
         font-weight: 100;
         margin: 32px 0;
     }
