@@ -72,7 +72,7 @@
     &.filled {
         display: block;
     }
-    
+
     @media #{$mobile-width-mq} {
         @include very-small;
         padding: 15px 15px;
@@ -152,7 +152,7 @@
     margin: 0 20px;
 
     @media #{$mobile-width-mq} {
-        margin: 0 5px;
+        margin: 5px 5px;
     }
 
     .checkbox-active & {
