@@ -107,12 +107,17 @@ $expertise-link-width: 150px;
 
 .expertise-icon-wrapper {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: $med-blue;
     border-radius: 50%;
     position: relative;
     margin-bottom: 20px;
+
+    @media #{$mobile-width-mq} {
+        width: 100px;
+        height: 100px;
+    }
 
     &:hover {
         opacity: 0.5;
@@ -122,6 +127,11 @@ $expertise-link-width: 150px;
 .expertise-icon {
     background-color: $med-blue;
     position: absolute;
+    width: 75px;
+
+    @media #{$mobile-width-mq} {
+        width: 57px;
+    }
 
     &:hover {
         opacity: 0.5;
@@ -129,31 +139,62 @@ $expertise-link-width: 150px;
 }
 
 .community-relations-icon {
-    top: 23%;
-    left: 22%;
+    top: 27%;
+    left: 24%;
+
+    @media #{$mobile-width-mq} {
+        top: 23%;
+        left: 22%;
+    }
 }
 
 .integrated-communications-icon {
     top: 29%;
     left: 26%;
+
+    @media #{$mobile-width-mq} {
+        top: 23%;
+        left: 22%;
+    }
 }
 
 .government-affairs-icon {
     top: 23%;
-    left: 28%;
+    left: 25%;
+
+    @media #{$mobile-width-mq} {
+        top: 23%;
+        left: 22%;
+    }
 }
 
 .strategic-media-relations-icon {
     top: 26%;
-    left: 27%;
+    left: 25%;
+
+    @media #{$mobile-width-mq} {
+        top: 23%;
+        left: 22%;
+    }
 }
 
 .issues-management-icon {
-    top: 25%;
-    left: 32%;
+    top: 21%;
+    left: 29%;
+    width: 65px;
+
+    @media #{$mobile-width-mq} {
+        top: 21%;
+        left: 27%;
+        width: 45px;
+    }
 }
 
 .entitlements-icon {
     top: 19%;
     left: 25%;
+
+    @media #{$mobile-width-mq} {
+        left: 20%;
+    }
 }
