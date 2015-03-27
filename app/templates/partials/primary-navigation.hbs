@@ -6,6 +6,9 @@
                     <a href="{{ @key }}.html" class="primary-nav-list-link{{#is @key ../../basename}} active{{/is}}">{{ name }}</a>
                     {{#if sections }}
                         <ul class="nav-dropdown-list">
+                            <li>
+                                <a href="/greer-dailey/dist/expertise.html" class="nav-dropdown-list-link">Overview</a>
+                            </li>
                             {{#each sections }}
                                 <li>
                                     <a href="{{ dasherize ../name }}.html#{{ @key }}" class="nav-dropdown-list-link" data-dropdown-link="{{ @key }}">{{ name }}</a>
