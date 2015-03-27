@@ -1,12 +1,11 @@
 <nav class="primary-nav-container">
     <ul class="primary-nav-list">
         {{#each global.pages }}
-            {{#isnt @key 'index' }}
+            {{#if inNav }}
                 <li {{#if sections}}class="dropdown"{{/if}}>
                     <a href="{{ @key }}.html" class="primary-nav-list-link{{#is @key ../../basename}} active{{/is}}">{{ name }}</a>
                     {{#if sections }}
                         <ul class="nav-dropdown-list">
-                            <li class="overview-nav-header">Overview</li>
                             {{#each sections }}
                                 <li>
                                     <a href="{{ dasherize ../name }}.html#{{ @key }}" class="nav-dropdown-list-link" data-dropdown-link="{{ @key }}">{{ name }}</a>
@@ -15,7 +14,7 @@
                         </ul>
                     {{/if }}
                 </li>
-            {{/isnt }}
+            {{/if }}
         {{/each }}
     </ul>
 </nav>

@@ -28,7 +28,6 @@
         &:active {
             color: goldenrod;
         }
-
     }
 
     .dropdown:hover {
@@ -41,7 +40,6 @@
             display: none;
         }
     }
-
 }
 
 .footer-inner-container {
@@ -56,10 +54,6 @@
 
 .address-container {
     @include very-small;
-
-    @media #{$mobile-width-mq} {
-        @include smallest;
-    }
 }
 
 .street-address,
@@ -90,10 +84,6 @@
 
 .copyright {
     @include very-small;
-
-    @media #{$mobile-width-mq} {
-        @include smallest;
-    }
 }
 
 .copyright span {

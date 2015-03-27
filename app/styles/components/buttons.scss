@@ -16,7 +16,7 @@
     }
 
     @media #{$mobile-width-mq} {
-        @include smallest;
+        @include very-small;
     }
 }
 

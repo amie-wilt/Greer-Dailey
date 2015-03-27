@@ -23,6 +23,7 @@
             }
         },
         "expertise": {
+            "inNav": true,
             "name": "Expertise",
             "subtitle": "Our Areas of Expertise",
             "supporting-tagline": "Click specific areas to learn more",
@@ -72,6 +73,7 @@
             }
         },
         "case-studies": {
+            "inNav": true,
             "name": "Case Studies",
             "intro": {
                 "title": "Case Studies",
@@ -102,6 +104,7 @@
             }
         },
         "team": {
+            "inNav": true,
             "name": "Team",
             "intro": {
                 "image": "images/team-image.jpg",
@@ -138,11 +141,23 @@
             }
         },
         "contact": {
+            "inNav": true,
             "name": "Contact",
             "intro": {
                 "image": "images/contact-image.jpg",
                 "title": "Contact",
                 "supporting-text": "If you would like to know more about Greer/Dailey or want to get in touch with us, please fill out your contact information below or telephone us directly at 213.615.1616."
+            },
+            "submit-response": {
+                "title": "Thank You",
+                "supporting-text": "We have received your submission and we will respond as quickly as possible."
+            }
+        },
+        "error": {
+            "name": "404",
+            "intro": {
+                "title": "Uh-oh!",
+                "supporting-text": "The content you are looking for is not available. Please use the menu above to navigate this site. If you feel you have reached this page as an error, please contact us at <a href=\"mailto:info@greerdailey.com\" class=\"greer-dailey-email\">info@greerdailey.com</a>"
             }
         }
     }

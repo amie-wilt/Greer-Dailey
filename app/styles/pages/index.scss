@@ -71,17 +71,8 @@ $expertise-link-width: 150px;
     margin: 0 auto;
 
     @media #{$mid-width-mq} {
+        @include very-small;
         max-width: none;
-    }
-
-    @media #{$mid-width-mq} {
-        @include very-small;
-        max-width: $expertise-link-width / 1.5;
-    }
-
-    @media #{$mobile-width-mq} {
-        @include very-small;
-        max-width: $expertise-link-width / 2;
     }
 
     &:before {

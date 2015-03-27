@@ -1,81 +1,79 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>{{{ global.company.name }}} - {{{ global.company.description }}}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <title>{{{ global.company.name }}} - {{{ global.company.description }}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
 
-    </head>
-    <body itemscope>
+</head>
+<body itemscope>
 
-        <header class="header">
-            <div class="header-logo-container">
-                {{> logo-container }}
-            </div>
-            <div class="header-primary-nav-container">
-                {{> primary-navigation }}
-                <button class="mobile-menu-trigger">
+<header class="header">
+    <div class="header-logo-container">
+        {{> logo-container }}
+    </div>
+    <div class="header-primary-nav-container">
+        {{> primary-navigation }}
+        <button class="mobile-menu-trigger">
                     <span class="mobile-menu-trigger-text-wrapper">
                         <span class="mobile-menu-trigger-text">Click to open the mobile menu</span>
                     </span>
-                </button>
-            </div>
-        </header>
+        </button>
+    </div>
+</header>
 
-        <main class="container" role="main">
-            {{> body }}
-        </main>
-        <footer class="footer">
-            <div class="footer-inner-container">
-                {{> logo-container }}
-                {{> primary-navigation }}
-                <div class="address-container">
-                    {{> address }}
-                </div>
-                <div class="copyright-container">
-                    <span class="copyright">Copyright 2015 {{{ global.company.name }}}. All Rights Reserved.</span>
-                </div>
-            </div>
-        </footer>
+<main class="container" role="main">
+    {{> body }}
+</main>
+<footer class="footer">
+    <div class="footer-inner-container">
+        {{> logo-container }}
+        {{> primary-navigation }}
+        {{> address }}
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2015 {{{ global.company.name }}}. All Rights Reserved.</span>
+        </div>
+    </div>
+</footer>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-        <!-- Google Analytics -->
-        <script>
-            (function(b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                        function() {
-                            (b[l].q = b[l].q || []).push(arguments)
-                        });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = '//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-1056841-32');
-            ga('send', 'pageview');
-        </script>
+<!-- Google Analytics -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-1056841-32');
+    ga('send', 'pageview');
+</script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 
-    </body>
+</body>
 </html>

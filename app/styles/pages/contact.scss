@@ -16,14 +16,15 @@
     }
 
     @media #{$mobile-width-mq} {
-        padding: 15px 0 70px 0;
+        padding-top: 15px;
+        padding-bottom: 70px;
     }
 }
 
 .label-input-wrapper {
-    display: block;
+    display: table;
+    width: 100%;
     border-bottom: 1px solid $light-blue;
-    margin: 0 50px;
     padding: 50px 0 30px 0;
 
     @media #{$mobile-width-mq} {
@@ -35,6 +36,7 @@
 .last-name-label,
 .email-label {
     @include contact-form-label;
+    display: table-cell;
     margin-right: 25px;
 }
 
@@ -42,6 +44,8 @@
 .last-name-input,
 .email-input {
     @include contact-form-input;
+    display: table-cell;
+    width: 100%;
 
     @media #{$mobile-width-mq} {
         padding-left: 0;
@@ -63,7 +67,6 @@
     padding: 30px 30px;
     background-color: $goldenrod;
     color: $dark-blue;
-    margin: 0 50px;
 
     @media #{$mobile-width-mq} {
         @include very-small;
@@ -133,8 +136,8 @@
     }
 }
 
-.sydney-dailey-email-button,
-.joan-kradin-email-button {
+.team-member-email-button,
+.team-member-email-button {
     @include transparent-light-blue-button;
     text-transform: inherit;
     margin: 0 20px;

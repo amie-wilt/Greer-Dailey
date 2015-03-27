@@ -25,6 +25,7 @@
 
 .case-study-heading {
     @include extra-large;
+    @include full-width-side-padding;
     color: $lightest-blue;
     font-weight: 100;
     text-align: center;
@@ -38,8 +39,10 @@
 }
 
 .case-study-summary-text-container {
+    @include full-width-side-padding;
     background: $lightest-blue;
-    padding: 85px 0;
+    padding-top: 85px;
+    padding-bottom: 85px;
 
     @media #{$mobile-width-mq} {
         padding: 40px 0;
