@@ -99,7 +99,7 @@ $expertise-link-width: 150px;
 
 .expertise-list-link-title {
     display: block;
-    
+
     &:hover {
         opacity: 0.5;
     }
@@ -122,11 +122,38 @@ $expertise-link-width: 150px;
 .expertise-icon {
     background-color: $med-blue;
     position: absolute;
-    top: 25%;
-    left: 26%;
 
     &:hover {
         opacity: 0.5;
     }
 }
 
+.community-relations-icon {
+    top: 23%;
+    left: 22%;
+}
+
+.integrated-communications-icon {
+    top: 29%;
+    left: 26%;
+}
+
+.government-affairs-icon {
+    top: 23%;
+    left: 28%;
+}
+
+.strategic-media-relations-icon {
+    top: 26%;
+    left: 32%;
+}
+
+.issues-management-icon {
+    top: 23%;
+    left: 28%;
+}
+
+.entitlements-icon {
+    top: 19%;
+    left: 25%;
+}
