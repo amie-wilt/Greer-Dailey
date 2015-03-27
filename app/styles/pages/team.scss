@@ -85,7 +85,7 @@
     }
 
     p:last-of-type {
-        margin-bottom: 0;
+        margin: 30px 0;
         color: #fff;
     }
 }
@@ -98,12 +98,12 @@
     left: 0;
 
     &:before {
-        font-size: 37px;
+        font-size: 27px;
         color: $light-blue;
         position: relative;
         z-index: 2;
         background-color: $med-green;
-        padding: 0 10px;
+        padding: 0 20px;
         height: 26px;
         display: inline-block;
         vertical-align: top;
