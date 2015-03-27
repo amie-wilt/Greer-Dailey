@@ -383,6 +383,19 @@ module.exports = function(grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        //Webfont
+        webfont: {
+            icons: {
+                src: 'app/styles/fonts/icons/*.svg',
+                dest: 'build/fonts',
+                destCss: 'build/css',
+                options: {
+                    stylesheet: 'scss',
+                    relativeFontPath: 'build/fonts'
+                }
+            }
         }
     });
 
@@ -431,4 +444,6 @@ module.exports = function(grunt) {
         'newer:jshint',
         'build'
     ]);
+
+    grunt.loadNpmTasks('grunt-webfont');
 };
