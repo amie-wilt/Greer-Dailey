@@ -37,6 +37,11 @@
     }
 }
 
+@mixin solid-light-blue-button {
+    background-color: $light-blue;
+    color: #fff;
+}
+
 @mixin transparent-light-blue-button {
     @include base-button;
     color: $light-blue;
@@ -46,8 +51,7 @@
     transition: 0.1s ease-in-out;
 
     &:hover {
-        background-color: $light-blue;
-        color: #fff;
+        @include solid-light-blue-button;
     }
 
     @media #{$mobile-width-mq} {

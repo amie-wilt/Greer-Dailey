@@ -35,4 +35,13 @@
 
     });
 
+    $('[data-checkbox]').GDZ_Checkbox();
+
+    $('[data-contact-form]').parsley({
+        errorsContainer: function(field) {
+            var $el = field.$element;
+            return $el.closest('.field');
+        }
+    });
+
 })(jQuery);

@@ -1,14 +1,15 @@
 {
-    "name": "64i-webapp",
-    "private": true,
-    "dependencies": {
-        "jquery": "~2.1.3",
-        "modernizr": "~2.8.2",
-        "meyer-reset": "*"
-    },
-    "overrides": {
-        "meyer-reset": {
-            "main": "stylesheets/_meyer-reset.scss"
-        }
+  "name": "64i-webapp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "modernizr": "~2.8.2",
+    "meyer-reset": "*",
+    "parsleyjs": "~2.0.7"
+  },
+  "overrides": {
+    "meyer-reset": {
+      "main": "stylesheets/_meyer-reset.scss"
     }
+  }
 }

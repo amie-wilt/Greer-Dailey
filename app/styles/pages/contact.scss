@@ -61,13 +61,18 @@
     }
 }
 
-.contact-form-error-message {
+.parsley-errors-list {
     @include very-small;
     font-weight: 900;
     padding: 30px 30px;
     background-color: $goldenrod;
     color: $dark-blue;
+    display: none;
 
+    &.filled {
+        display: block;
+    }
+    
     @media #{$mobile-width-mq} {
         @include very-small;
         padding: 15px 15px;
@@ -136,8 +141,12 @@
     }
 }
 
-.team-member-email-button,
-.team-member-email-button {
+.team-member-email-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.team-member-email-option-label {
     @include transparent-light-blue-button;
     text-transform: inherit;
     margin: 0 20px;
@@ -145,6 +154,15 @@
     @media #{$mobile-width-mq} {
         margin: 0 5px;
     }
+
+    .checkbox-active & {
+        @include solid-light-blue-button;
+    }
+
+}
+
+.team-member-email-option-checkbox {
+    @extend %visuallyhidden;
 }
 
 .submit-button {

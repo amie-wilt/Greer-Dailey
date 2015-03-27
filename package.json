@@ -35,8 +35,5 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "dependencies": {
-    "parsleyjs": "^2.0.7"
   }
 }
