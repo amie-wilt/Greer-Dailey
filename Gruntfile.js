@@ -389,11 +389,12 @@ module.exports = function(grunt) {
         webfont: {
             icons: {
                 src: 'app/styles/fonts/icons/*.svg',
-                dest: 'build/fonts',
-                destCss: 'build/css',
+                dest: 'app/styles/fonts',
+                destCss: 'app/styles/utilities',
                 options: {
                     stylesheet: 'scss',
-                    relativeFontPath: 'build/fonts'
+                    relativeFontPath: 'fonts',
+                    demoHtml: false
                 }
             }
         }

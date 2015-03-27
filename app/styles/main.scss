@@ -2,9 +2,6 @@
 @import "../../bower_components/meyer-reset/stylesheets/_meyer-reset.scss";
 // endbower
 
-// Webfont
-@import "../../build/css/icons";
-
 // Variables
 @import "variables/color-variables";
 @import "variables/typography-variables";
@@ -15,6 +12,7 @@
 @import "utilities/resets";
 @import "utilities/mixins";
 @import "utilities/fonts";
+@import "utilities/icons";
 
 // Global
 @import "global/base";
