@@ -9,7 +9,8 @@
                 <ul class="expertise-overview-list">
                     {{#each expertise.sections }}
                         <li>
-                            <a href="/expertise.html#{{ dasherize name }}" class="expertise-list-link icon icon_{{ dasherize name }}">
+                            <a href="/expertise.html#{{ dasherize name }}" class="expertise-list-link">
+                                <img src="images/expertise-icons/{{ dasherize name }}.svg" alt="" role="presentation"/>
                                 <span class="expertise-list-link-title">{{ name }}</span>
                             </a>
                         </li>

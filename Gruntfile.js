@@ -327,7 +327,8 @@ module.exports = function(grunt) {
                         src: [
                             '*.{ico,png,txt}',
                             'images/{,*/}*.webp',
-                            'styles/fonts/{,*/}*.*'
+                            'styles/fonts/{,*/}*.*',
+                            '!styles/fonts/icons'
                         ]
                     },
                     {
@@ -349,7 +350,8 @@ module.exports = function(grunt) {
                 dest: '.tmp/styles/',
                 src: [
                     '{,*/}*.css',
-                    'fonts/{,*/}*.*'
+                    'fonts/{,*/}*.*',
+                    '!fonts/icons'
                 ]
             }
         },
@@ -394,7 +396,8 @@ module.exports = function(grunt) {
                 options: {
                     stylesheet: 'scss',
                     relativeFontPath: 'fonts',
-                    demoHtml: false
+                    demoHtml: false,
+                    template: 'support/webfont/webfont-template.css'
                 }
             }
         }
