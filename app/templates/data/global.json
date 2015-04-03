@@ -16,7 +16,7 @@
         "index": {
             "name": "Home",
             "intro": {
-                "image": "images/index-image.jpg",
+                "image": "images/index.jpg",
                 "title": "Strategic Communication <em>Done. Right.</em>",
                 "supporting-text": "<p><strong>Greer/Dailey’s approach to each challenge is both strategic and flexible, putting the right combination of skills and tools together to achieve results. And at Greer/Dailey -- clients -- our most important asset, get the full attention of the firm's principals.</strong></p>",
                 "button": "Find Out More"
@@ -28,7 +28,7 @@
             "subtitle": "Our Areas of Expertise",
             "supporting-tagline": "Click specific areas to learn more",
             "intro": {
-                "image": "images/expertise-image.jpg",
+                "image": "images/expertise.jpg",
                 "title": "A recognized leader<br><strong>in community relations in Los Angeles.</strong>",
                 "supporting-text": "<p>Greer/Dailey brings clients core capabilities in stakeholder outreach and coalition building, government affairs, advocacy, integrated communications, strategic media relations and project entitlements  – plus strong relationships with communities, decision-makers and local stakeholders throughout Southern California.</p>",
                 "continued-supporting-text": "<p>In addition, Greer/Dailey’s long-standing ties with an impressive group of associates and affiliated consultants bring clients expertise in a variety of areas, including public policy, energy, and litigation support, to name just a few of many disciplines.</p><p>Greer/Dailey’s approach to each challenge is both strategic and flexible, putting the right combination of skills and tools together to achieve results. And at Greer/Dailey, clients, our most important asset, get the full attention of the firm’s principals.</p>"
@@ -76,6 +76,7 @@
             "inNav": true,
             "name": "Case Studies",
             "intro": {
+                "image": "images/case-studies.jpg",
                 "title": "Case Studies",
                 "subtitle": "Our work on complex projects results in success.",
                 "supporting-text": "Whether a project is large and complicated, small but contentious, or just controversial, Greer/Dailey has a proven track record in delivering results for clients. We know how to develop successful strategies, craft effective messages, target and organize the right support, and mobilize that support at critical decision points."
@@ -107,12 +108,12 @@
             "inNav": true,
             "name": "Team",
             "intro": {
-                "image": "images/team-image.jpg",
+                "image": "images/team.jpg",
                 "title": "Our Team",
                 "subtitle": "<strong>The right combination of skills to achieve results</strong>"
             },
             "team-header": "Our Team Members",
-            "supporting-tagline": "Click specific areas to learn more",
+            "supporting-tagline": "Click names to view bio",
             "team-members": {
                 "sydney-dailey": {
                     "email-recipient": true,
@@ -146,7 +147,7 @@
             "inNav": true,
             "name": "Contact",
             "intro": {
-                "image": "images/contact-image.jpg",
+                "image": "images/contact.jpg",
                 "title": "Contact",
                 "supporting-text": "If you would like to know more about Greer/Dailey or want to get in touch with us, please fill out your contact information below or telephone us directly at 213.615.1616."
             },

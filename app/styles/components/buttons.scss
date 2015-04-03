@@ -20,15 +20,15 @@
     }
 }
 
-@mixin transparent-goldenrod-button {
+@mixin transparent-dark-blue-button {
     @include base-button;
     text-transform: uppercase;
-    color: $goldenrod;
+    color: $med-blue;
     padding: 20px 45px;
-    border: 1px solid $goldenrod;
+    border: 1px solid $med-blue;
 
     &:hover {
-        background-color: $goldenrod;
+        background-color: $med-blue;
         color: #fff;
     }
 

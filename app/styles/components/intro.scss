@@ -39,6 +39,7 @@
     strong {
         @include semi-large;
         @include full-width-side-padding;
+        color: $med-blue;
         font-weight: 900;
         display: block;
         margin-top: 30px;
@@ -55,6 +56,7 @@
 .intro-subtitle {
     @include full-width-side-padding;
     @include semi-large;
+    color: $med-blue;
     font-weight: 900;
     margin-bottom: 20px;
 
@@ -78,6 +80,6 @@
 }
 
 .intro-learn-more-button {
-   @include transparent-goldenrod-button;
+   @include transparent-dark-blue-button;
 }
 

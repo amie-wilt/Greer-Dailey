@@ -32,17 +32,6 @@
     }
 }
 
-.expertise-page {
-
-    .intro-title {
-        color: $very-light-blue;
-
-        strong {
-            color: #fff;
-        }
-    }
-}
-
 .expertise-summary-column-one p:first-of-type {
     @include semi-large;
     font-weight: 100;
