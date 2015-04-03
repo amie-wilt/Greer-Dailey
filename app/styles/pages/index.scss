@@ -6,12 +6,8 @@
     @extend %site-container;
     padding: 105px 0 120px 0;
 
-    @media #{$mid-width-mq} {
-        padding: 78px 0 90px 0;
-    }
-
-    @media #{$mobile-width-mq} {
-        padding: 52.5px 0 60px 0;
+    .supporting-tagline {
+        color: $dark-green;
     }
 }
 
@@ -19,19 +15,8 @@
     @include extra-large;
     @include full-width-side-padding;
     text-align: center;
-    padding-bottom: 60px;
     font-weight: 100;
     color: $med-blue;
-
-    @media #{$mid-width-mq} {
-        @include large;
-        padding-bottom: 45px;
-    }
-
-    @media #{$mobile-width-mq} {
-        @include semi-large;
-        padding-bottom: 30px;
-    }
 }
 
 .expertise-overview-list {
@@ -39,44 +24,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
 
     li {
         flex-shrink: 0;
 
         @media #{$mid-width-mq} {
             width: 33%;
-            padding-bottom: 80px;
-
-            @media #{$mid-width-mq} {
-                padding-bottom: 60px;
-            }
         }
 
         @media (max-width: 600px) {
             width: 50%;
-            padding-bottom: 40px;
         }
     }
 }
 
-$expertise-link-width: 150px;
+$expertise-link-width: 180px;
+$expertise-link-height: 250px;
 .expertise-list-link {
-    @include small;
     text-decoration: none;
-    font-weight: 900;
-    color: $med-blue;
-    max-width: $expertise-link-width;
-    display: block;
+    width: $expertise-link-width;
+    height: $expertise-link-height;
+    display: table;
     text-align: center;
     margin: 0 auto;
 
     &:hover {
-        .expertise-icon-wrapper {
-            border: inset 10px solid $med-green;
-        }
+        background-color: #fff;
 
         .expertise-list-link-title {
-            color: $med-green;
+            color: $dark-green;
         }
     }
 
@@ -86,9 +63,24 @@ $expertise-link-width: 150px;
     }
 }
 
+.expertise-icon-link-title-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
+.expertise-icon-wrapper {
+    margin-bottom: 30px;
+}
+
+.expertise-icon {
+    width: 112px;
+}
 
 .expertise-list-link-title {
+    @include small;
     display: block;
-    margin-top: 35px;
+    font-weight: 900;
+    color: $med-blue;
 }

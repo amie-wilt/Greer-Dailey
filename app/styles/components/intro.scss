@@ -1,13 +1,9 @@
 .intro {
     display: table;
     width: 100%;
-    padding: 205px 0 130px 0;
+    height: 673px;
     background-size: cover;
     background-position: center top;
-
-    @media #{$mobile-width-mq} {
-        padding: 120px 0 60px 0;
-    }
 }
 
 .intro-content-wrapper {

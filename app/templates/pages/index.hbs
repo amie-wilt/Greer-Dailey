@@ -6,16 +6,18 @@
         <section class="expertise-overview">
             <div class="expertise-overview-container">
                 <h1 class="expertise-overview-header">{{ expertise.subtitle }}</h1>
+                <p class="supporting-tagline">{{ index.supporting-tagline }}</p>
                 <ul class="expertise-overview-list">
                     {{#each expertise.sections }}
                         <li>
                             <a href="/expertise.html#{{ dasherize name }}" class="expertise-list-link">
-                                <div class="expertise-icon-outer-wrapper">
-                                    <span class="expertise-icon-wrapper">
-                                        <img src="images/expertise-icons/{{ dasherize name }}.svg" alt="" role="presentation" class="expertise-icon {{ dasherize name}}-icon"/>
-                                    </span>
+                                <div class="expertise-icon-link-title-wrapper">
+                                    <div class="expertise-icon-wrapper">
+                                        <img src="images/expertise-icons/{{ dasherize name }}.svg" alt=""
+                                             role="presentation" class="expertise-icon {{ dasherize name}}-icon"/>
+                                    </div>
+                                    <span class="expertise-list-link-title">{{ name }}</span>
                                 </div>
-                                <span class="expertise-list-link-title">{{ name }}</span>
                             </a>
                         </li>
                     {{/each }}

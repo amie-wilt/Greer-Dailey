@@ -95,10 +95,6 @@
         @include very-small;
         text-align: center;
     }
-
-    @media #{$mobile-width-mq} {
-        @include very-small;
-    }
 }
 
 @mixin paragraph-text-in-columns {

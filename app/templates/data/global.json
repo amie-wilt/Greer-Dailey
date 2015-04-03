@@ -15,6 +15,7 @@
     "pages": {
         "index": {
             "name": "Home",
+            "supporting-tagline": "Rollover to learn more",
             "intro": {
                 "image": "images/index.jpg",
                 "title": "Strategic Communication <em>Done. Right.</em>",
@@ -173,6 +174,7 @@
         "error": {
             "name": "404",
             "intro": {
+                "image": "images/404.jpg",
                 "title": "Uh-oh!",
                 "supporting-text": "The content you are looking for is not available. Please use the menu above to navigate this site. If you feel you have reached this page as an error, please contact us at <a href=\"mailto:info@greerdailey.com\" class=\"greer-dailey-email\">info@greerdailey.com</a>"
             }
