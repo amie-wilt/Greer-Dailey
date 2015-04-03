@@ -88,13 +88,12 @@
     font-weight: 900;
     color: $light-blue;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin: 0;
 
     @media #{$mid-width-mq} {
         @include full-width-side-padding;
         @include very-small;
         text-align: center;
-        margin-bottom: 0;
     }
 
     @media #{$mobile-width-mq} {

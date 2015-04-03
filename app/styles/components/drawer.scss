@@ -47,10 +47,6 @@
         @media #{$mid-width-mq} {
             left: ($line-width + 20px) * -1;
         }
-
-        @media #{mobile-width-mq} {
-            left: ($line-width + 5px) * -1;
-        }
     }
 
     &:after {
@@ -58,10 +54,6 @@
 
         @media #{$mid-width-mq} {
             right: ($line-width + 20px) * -1;
-        }
-
-        @media #{$mobile-width-mq} {
-            right: ($line-width + 5px) * -1;
         }
     }
 }

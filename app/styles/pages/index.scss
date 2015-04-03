@@ -70,131 +70,25 @@ $expertise-link-width: 150px;
     text-align: center;
     margin: 0 auto;
 
+    &:hover {
+        .expertise-icon-wrapper {
+            border: inset 10px solid $med-green;
+        }
+
+        .expertise-list-link-title {
+            color: $med-green;
+        }
+    }
+
     @media #{$mid-width-mq} {
         @include very-small;
         max-width: none;
     }
-
-    //    &:before {
-    //        content: "";
-    //        display: inline-block;
-    //        width: $expertise-link-width;
-    //        height: $expertise-link-width;
-    //        //background-color: $med-blue;
-    //        border-radius: 100%;
-    //        margin-bottom: 10px;
-    //
-    //        @media #{$mid-width-mq} {
-    //            width: $expertise-link-width / 1.5;
-    //            height: $expertise-link-width / 1.5;
-    //        }
-    //
-    //        @media #{$mobile-width-mq} {
-    //            width: $expertise-link-width / 2;
-    //            height: $expertise-link-width / 2;
-    //            margin-bottom: 5px;
-    //        }
-    //     }
 }
+
+
 
 .expertise-list-link-title {
     display: block;
-
-    &:hover {
-        opacity: 0.5;
-    }
-}
-
-.expertise-icon-wrapper {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: $med-blue;
-    border-radius: 50%;
-    position: relative;
-    margin-bottom: 20px;
-
-    @media #{$mobile-width-mq} {
-        width: 100px;
-        height: 100px;
-    }
-
-    &:hover {
-        opacity: 0.5;
-    }
-}
-
-.expertise-icon {
-    background-color: $med-blue;
-    position: absolute;
-    width: 75px;
-
-    @media #{$mobile-width-mq} {
-        width: 57px;
-    }
-
-    &:hover {
-        opacity: 0.5;
-    }
-}
-
-.community-relations-icon {
-    top: 27%;
-    left: 24%;
-
-    @media #{$mobile-width-mq} {
-        top: 23%;
-        left: 22%;
-    }
-}
-
-.integrated-communications-icon {
-    top: 29%;
-    left: 26%;
-
-    @media #{$mobile-width-mq} {
-        top: 23%;
-        left: 22%;
-    }
-}
-
-.government-affairs-icon {
-    top: 23%;
-    left: 25%;
-
-    @media #{$mobile-width-mq} {
-        top: 23%;
-        left: 22%;
-    }
-}
-
-.strategic-media-relations-icon {
-    top: 26%;
-    left: 25%;
-
-    @media #{$mobile-width-mq} {
-        top: 23%;
-        left: 22%;
-    }
-}
-
-.issues-management-icon {
-    top: 21%;
-    left: 29%;
-    width: 65px;
-
-    @media #{$mobile-width-mq} {
-        top: 21%;
-        left: 27%;
-        width: 45px;
-    }
-}
-
-.entitlements-icon {
-    top: 19%;
-    left: 25%;
-
-    @media #{$mobile-width-mq} {
-        left: 20%;
-    }
+    margin-top: 35px;
 }

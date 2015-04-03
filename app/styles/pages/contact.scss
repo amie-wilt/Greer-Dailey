@@ -152,13 +152,12 @@
     margin: 0 20px;
 
     @media #{$mobile-width-mq} {
-        margin: 5px 5px;
+        margin: 5px;
     }
 
     .checkbox-active & {
         @include solid-light-blue-button;
     }
-
 }
 
 .team-member-email-option-checkbox {
@@ -190,10 +189,6 @@
         @media #{$mid-width-mq} {
             left: ($line-width + 20px) * -1;
         }
-
-        @media #{mobile-width-mq} {
-            left: ($line-width + 5px) * -1;
-        }
     }
 
     &:after {
@@ -201,10 +196,6 @@
 
         @media #{$mid-width-mq} {
             right: ($line-width + 20px) * -1;
-        }
-
-        @media #{$mobile-width-mq} {
-            right: ($line-width + 5px) * -1;
         }
     }
 }

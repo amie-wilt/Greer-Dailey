@@ -10,9 +10,19 @@
 
                 {{#is page 'expertise' }}
                     <!-- Expertise Page -->
-                    <h2 class="expertise-section-heading">{{ name }}</h2>
+                    <div class="expertise-icon-heading-description-wrapper">
+                        <div class="expertise-icon-outer-wrapper">
+                             <span class="expertise-icon-wrapper">
+                                        <img src="images/expertise-icons/{{ dasherize name }}.svg" alt=""
+                                             role="presentation" class="expertise-icon {{ dasherize name}}-icon"/>
+                            </span>
+                        </div>
+                        <div class="expertise-heading-description-wrapper">
+                            <h2 class="expertise-section-heading">{{ name }}</h2>
 
-                    <p class="expertise-description">{{{ description }}}</p>
+                            <p class="expertise-description">{{{ description }}}</p>
+                        </div>
+                    </div>
 
                     <div class="expertise-summary">
                         {{{ summary }}}
