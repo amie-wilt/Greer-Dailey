@@ -96,19 +96,28 @@
     }
 
     @media #{$mobile-width-mq} {
-        margin-left: -35px;
+        margin-left: -41px;
     }
 }
 
 $close-button-offset: 0;
+$close-button-mobile-offset: 10px;
 .drawer-content-top-close-button {
     @include drawer-close-button;
     top: $close-button-offset;
+
+    @media #{$mobile-width-mq} {
+        top: $close-button-mobile-offset;
+    }
 }
 
 .drawer-content-bottom-close-button {
     @include drawer-close-button;
     bottom: $close-button-offset;
+
+    @media #{$mobile-width-mq} {
+        bottom: $close-button-mobile-offset;
+    }
 }
 
 
