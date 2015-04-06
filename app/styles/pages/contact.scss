@@ -73,6 +73,15 @@
     }
 }
 
+.parsley-type:before,
+.parsley-required:before {
+    @extend %icon;
+    content: "\f101";
+    background-color: #fff;
+    padding: 5px 0 5px 11px;
+    margin-right: 10px;
+}
+
 .questions-comments-label {
     @include contact-form-label;
     text-align: center;
