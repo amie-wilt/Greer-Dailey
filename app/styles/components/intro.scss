@@ -4,6 +4,10 @@
     height: 673px;
     background-size: cover;
     background-position: center top;
+
+    @media #{$mobile-width-mq} {
+        height: 600px;
+    }
 }
 
 .intro-content-wrapper {
