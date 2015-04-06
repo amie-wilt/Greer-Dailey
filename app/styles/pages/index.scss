@@ -24,16 +24,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 20px;
 
     li {
         flex-shrink: 0;
 
-        @media #{$mid-width-mq} {
+        @media #{$site-width-mq} {
             width: 33%;
         }
 
-        @media (max-width: 600px) {
+        @media #{$mobile-width-mq} {
             width: 50%;
         }
     }

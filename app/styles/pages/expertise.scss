@@ -37,7 +37,6 @@
     width: 100%;
 }
 
-.expertise-icon-wrapper,
 .expertise-heading-description-wrapper {
     display: table-cell;
     vertical-align: middle;
@@ -48,6 +47,7 @@
 
     @media #{$mid-width-mq} {
         display: block;
+        text-align: center;
     }
 }
 
