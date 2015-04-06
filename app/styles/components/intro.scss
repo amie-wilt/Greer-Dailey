@@ -13,12 +13,6 @@
     color: #fff;
 }
 
-.intro-content {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-
 .intro-title {
     @include extra-large;
     line-height: 30px;
@@ -27,7 +21,6 @@
 
     @media #{$mobile-width-mq} {
         @include semi-large;
-        @include clear-side-padding;
         margin-bottom: 0;
     }
 
