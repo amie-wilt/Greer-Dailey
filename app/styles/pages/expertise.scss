@@ -5,6 +5,7 @@
     background: $light-blue;
 
     @media #{$mobile-width-mq} {
+        @include mobile-width-side-padding;
         padding-top: 25px;
         padding-bottom: 7.5px;
     }
@@ -19,7 +20,7 @@
     text-align: center;
 
     @media #{$mobile-width-mq} {
-        @include very-small;
+        @include small;
         max-width: none;
     }
 }

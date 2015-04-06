@@ -44,6 +44,11 @@
     padding-right: 50px;
 }
 
+@mixin mobile-width-side-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 @mixin clear-side-padding {
     padding-left: 0;
     padding-right: 0;
@@ -60,10 +65,6 @@
         @include large;
         padding-top: 86px;
     }
-
-    @media #{$mobile-width-mq} {
-        @include semi-large;
-    }
 }
 
 @mixin extra-large-white-subheading {
@@ -76,10 +77,6 @@
         @include large;
         @include full-width-side-padding;
         text-align: center;
-    }
-
-    @media #{$mobile-width-mq} {
-        @include semi-large;
     }
 }
 

@@ -87,14 +87,16 @@
 @mixin drawer-close-button {
     @include solid-med-green-button;
     position: absolute;
-    width: 140px;
     left: 50%;
     margin-left: -70px;
 
     @media #{$mid-width-mq} {
         @include smallest;
-        width: 105px;
         margin-left: -52.5px;
+    }
+
+    @media #{$mobile-width-mq} {
+        margin-left: -35px;
     }
 }
 

@@ -52,8 +52,13 @@
     }
 }
 
-.address-container {
+.address-container,
+.copyright-container {
     @include very-small;
+
+    @media #{$mobile-width-mq} {
+        @include smallest;
+    }
 }
 
 .street-address,
@@ -80,10 +85,6 @@
 
 .phone-number {
     color: #fff;
-}
-
-.copyright {
-    @include very-small;
 }
 
 .copyright span {
