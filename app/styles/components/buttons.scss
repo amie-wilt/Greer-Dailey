@@ -1,5 +1,6 @@
 @mixin base-button {
     @include small;
+    font-family: 'MuseoSans', sans-serif;
     line-height: 1;
     font-weight: 900;
     cursor: pointer;

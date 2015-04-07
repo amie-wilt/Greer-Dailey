@@ -75,7 +75,7 @@
 
     @media #{$mid-width-mq} {
         @include large;
-        @include full-width-side-padding;
+        @include mobile-width-side-padding;
         text-align: center;
     }
 }
@@ -88,7 +88,7 @@
     margin: 0;
 
     @media #{$mid-width-mq} {
-        @include full-width-side-padding;
+        @include mobile-width-side-padding;
         @include very-small;
         text-align: center;
     }
