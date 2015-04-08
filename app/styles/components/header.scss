@@ -41,11 +41,6 @@
             padding: 0;
             margin-bottom: 15px;
         }
-
-        @media #{$mobile-width-mq} {
-            @include very-small;
-        }
-
     }
 
     .overview-nav-header {
@@ -84,7 +79,7 @@
         }
 
         @media #{$mobile-width-mq} {
-            @include smallest;
+            @include very-small;
         }
     }
 }

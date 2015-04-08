@@ -72,7 +72,7 @@
     text-align: center;
 
     @media #{$mobile-width-mq} {
-        @include small;
+        @include very-small;
         @include mobile-width-side-padding;
         max-width: none;
     }
