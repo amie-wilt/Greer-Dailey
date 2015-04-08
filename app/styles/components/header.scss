@@ -199,11 +199,19 @@
         background-color: transparent;
 
         &:before {
-            transform: rotate(43deg) translate3d(6px, -5px, 0);
+            transform: rotate(45deg) translate3d(6px, -6px, 0);
+
+            @media #{$mobile-width-mq} {
+                transform: rotate(45deg) translate3d(6px, -5px, 0);
+            }
         }
 
         &:after {
-            transform: rotate(-50deg) translate3d(2px, 6px, 0);
+            transform: rotate(-45deg) translate3d(1px, 5px, 0);
+
+            @media #{$mobile-width-mq} {
+                transform: rotate(-45deg) translate3d(1px, 4px, 0);
+            }
         }
     }
 }

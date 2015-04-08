@@ -93,10 +93,19 @@ $expertise-link-mobile-height: 200px;
     vertical-align: middle;
     padding: 10px;
     box-sizing: border-box;
+
+    &:last-of-type {
+        vertical-align: top;
+        padding-top: 25px;
+    }
 }
 
 .expertise-icon-wrapper {
     margin-bottom: 30px;
+
+    &:last-of-type {
+        margin-bottom: 35px;
+    }
 
     @media #{$mobile-width-mq} {
         margin-bottom: 10px;

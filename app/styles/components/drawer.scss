@@ -96,7 +96,8 @@
     }
 }
 
-$close-button-offset: 0;
+$close-button-offset: -2px;
+$close-button-mid-offset: 5px;
 $close-button-mobile-offset: 10px;
 .drawer-content-top-close-button {
     @include drawer-close-button;
@@ -104,6 +105,10 @@ $close-button-mobile-offset: 10px;
 
     @media #{$mobile-width-mq} {
         top: $close-button-mobile-offset;
+    }
+
+    @media #{$mid-width-mq} {
+        top: $close-button-mid-offset;
     }
 }
 
@@ -113,6 +118,10 @@ $close-button-mobile-offset: 10px;
 
     @media #{$mobile-width-mq} {
         bottom: $close-button-mobile-offset;
+    }
+
+    @media #{$mid-width-mq} {
+        bottom: $close-button-mid-offset;
     }
 }
 
