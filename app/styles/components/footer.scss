@@ -55,10 +55,10 @@
 .address-container,
 .copyright-container {
     @include very-small;
-    line-height: 1.2;
 
     @media #{$mobile-width-mq} {
         @include smallest;
+        line-height: 1.2;
     }
 }
 
