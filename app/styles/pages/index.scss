@@ -101,11 +101,7 @@ $expertise-link-mobile-height: 200px;
 }
 
 .expertise-icon-wrapper {
-    margin-bottom: 30px;
-
-    &:last-of-type {
-        margin-bottom: 44px;
-    }
+    margin-bottom: 15px;
 
     @media #{$mobile-width-mq} {
         margin-bottom: 10px;
