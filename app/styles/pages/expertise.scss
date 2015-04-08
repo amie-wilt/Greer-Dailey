@@ -1,3 +1,7 @@
+.expertise-page .intro-title {
+    letter-spacing: -1px;
+}
+
 .intro-continued-supporting-text-container {
     @include full-width-side-padding;
     padding-top: 70px;
@@ -6,8 +10,8 @@
 
     @media #{$mobile-width-mq} {
         @include mobile-width-side-padding;
-        padding-top: 25px;
-        padding-bottom: 7.5px;
+        padding-top: 55px;
+        padding-bottom: 37.5px;
     }
 }
 

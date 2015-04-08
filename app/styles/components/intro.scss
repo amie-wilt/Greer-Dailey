@@ -6,7 +6,7 @@
     background-position: center bottom;
 
     @media #{$mobile-width-mq} {
-        height: 600px;
+        height: 500px;
     }
 }
 
@@ -16,10 +16,6 @@
     text-align: center;
     color: #fff;
     padding-top: 75px;
-
-    @media #{$mobile-width-mq} {
-        padding-top: 0;
-    }
 }
 
 .intro-title {
