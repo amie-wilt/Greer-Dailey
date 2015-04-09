@@ -107,14 +107,14 @@
 .header-primary-nav-container {
 
     @media #{$mid-width-mq} {
-        position: absolute;
+        position: fixed;
         text-align: right;
         background-color: #fff;
         left: 0;
-        top: 0;
+        bottom: 0;
         right: 0;
         padding: 80px 60px 50px 0;
-        transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, 100%, 0);
         transition: transform .5s ease-in-out;
 
         @media #{$mobile-width-mq} {
@@ -132,13 +132,14 @@
 
     @media #{$mid-width-mq} {
         @include base-button;
-        position: absolute;
+        position: fixed;
         right: 0;
-        bottom: 0;
+        bottom:446px;
         width: 70px;
         height: 70px;
         background-color: #fff;
         transform: translate3d(0, 100%, 0);
+
 
         @media #{$mobile-width-mq} {
             width: 50px;
