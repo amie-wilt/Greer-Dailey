@@ -1,12 +1,50 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $subject = "Contact Form Submission" . $firstName . $lastName;
+    $firstName = $_POST["contact-form-first-name"];
+    $lastName = $_POST["contact-form-last-name"];
+    $email = $_POST["contact-form-email"];
+    $message = $_POST["questions-comments"];
+
+    foreach( $_POST as $value ) {
+        if ( stripos($value, 'Content-Type:') !== FALSE ){
+        echo "There was a problem with the information you entered."
+            exit;
+        }
+    }
+
+    if ($_POST["address"] != "") {
+        echo "Your form submission has an error."
+        exit;
+
+        }
+
+    $body = "First Name: " . $firstName . "\n";
+    $body.= "Last Name: " . $lastName . "\n";
+    $body.= "Email: " . $email . "\n";
+    $body.= "Comments/Questions: ". $message;
+
+    header("Location: contact.hbs?status=thanks");
+    exit;
+?>
+
 {{#with global.pages.contact }}
     <div class="contact-page">
         <div class="contact-intro">
             {{> intro intro }}
         </div>
     </div>
+
+    <?php if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
+            <section class="thank-you-content-container">
+                <h1 class="thank-you-header">{{ submit-response.title }}</h1>
+                <p class="thank-you-submit-response">{{ submit-response.supporting-text }}</p>
+            </section>
+    <?php } else { ?>
+
 {{/with }}
 
-<form class="contact-form" data-contact-form>
+<form method="post" class="contact-form" data-contact-form>
 
     <fieldset>
         {{#each global.pages.contact.fields }}
@@ -16,7 +54,15 @@
                     <input type="{{ type }}" id="contact-form-{{ dasherize name }}" name="{{ dasherize name }}" class="first-name-input" required>
                 </div>
             </div>
-        {{/each}}
+        {{/each }}
+
+        <!--Not active, used for spam protection-->
+        <div style="display: none;">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+            <p>If you are human, please leave this field blank!</p>
+        </div>
+
     </fieldset>
 
     <fieldset class="questions-comments-fieldset">
@@ -41,3 +87,5 @@
 
     <button type="submit" class="submit-button">Submit</button>
 </form>
+
+<?php } ?>
