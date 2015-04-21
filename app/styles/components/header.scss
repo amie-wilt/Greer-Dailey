@@ -133,8 +133,8 @@
     @media #{$mid-width-mq} {
         @include base-button;
         position: fixed;
-        right: 0;
-        bottom:446px;
+        right: 6px;
+        bottom: 580px;
         width: 70px;
         height: 70px;
         background-color: #fff;
@@ -142,6 +142,7 @@
 
 
         @media #{$mobile-width-mq} {
+            bottom: 446px;
             width: 50px;
             height: 50px;
         }
