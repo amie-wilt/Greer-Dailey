@@ -7,7 +7,9 @@
     </div>
 {{/with }}
 
-<form method="post" class="contact-form" data-contact-form>
+<div id="form-messages"></div>
+
+<form method="post" action="../../scripts/contact-form.php" class="contact-form" id="contact-form" data-contact-form>
 
     <fieldset>
         {{#each global.pages.contact.fields }}
