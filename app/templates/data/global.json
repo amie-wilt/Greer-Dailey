@@ -165,11 +165,11 @@
                     "name": "Email",
                     "type": "email"
                 }
-            ],
-            "submit-response": {
-                "title": "Thank You",
-                "supporting-text": "We have received your submission and we will respond as quickly as possible."
-            }
+            ]
+        },
+        "contact-thanks": {
+            "name": "Thank You",
+            "supporting-text": "We have received your submission and we will respond as quickly as possible."
         },
         "error": {
             "name": "404",

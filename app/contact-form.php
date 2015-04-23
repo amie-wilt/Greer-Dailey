@@ -1,6 +1,43 @@
 <?php
 
-var_dump($_POST);
+if( isset($_POST) ) {
+
+    $subject = "Contact Form Submission";
+
+    //Submission Data
+    $ipaddress = $_SERVER['REMOTE_ADDR'];
+
+    //Form Data
+    $firstName = $_POST["first-name"];
+    $lastName = $_POST["last-name"];
+    $email = $_POST["email"];
+    $message = $_POST["questions-comments"];
+
+    //Email Body
+    $emailBody = "";
+    $emailBody = $emailBody . "First Name: " . $firstName . "\n";
+    $emailBody = $emailBody . "Last Name: " . $lastName . "\n";
+    $emailBody = $emailBody . "Email: " . $email . "\n";
+    $emailBody = $emailBody . "Comments/Questions: " . $message;
+
+    $headers = 'Content-Type: text/html' . "\r\n";
+    $headers.= $_POST['contact'] . "\r\n";
+
+    mail("amie.wilt@gmail.com", $subject, $emailBody, $headers);
+
+    header('Location: contact-thanks.html');
+
+}
+
+
+//header("Location: contact-thanks.html");
+
+//$pageTitle = "Contact Greer Dailey";
+//$section = "contact";
+
+
+
+
 
 //    $subject = "Contact Form Submission";
 //
@@ -17,3 +54,4 @@ var_dump($_POST);
 //    mail( $_POST['email'], $usersubject, $body, $headers);
 //    mail( $_POST['contact'], $subject, $body, $headers) or die('test');
 ?>
+

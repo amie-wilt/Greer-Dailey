@@ -45,6 +45,10 @@ module.exports = function(grunt) {
                     livereload: true
                 }
             },
+            php: {
+                files: ['<%= config.app %>/*.php'],
+                tasks: ['default']
+            },
             gruntfile: {
                 files: ['Gruntfile.js']
             },
@@ -326,6 +330,7 @@ module.exports = function(grunt) {
                         dest: '<%= config.dist %>',
                         src: [
                             '*.{ico,png,txt}',
+                            '*.php',
                             'images/{,*/}*.webp',
                             'styles/fonts/{,*/}*.*',
                             '!styles/fonts/icons'
