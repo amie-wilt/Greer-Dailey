@@ -19,7 +19,7 @@ $emailBody = $emailBody . 'Last Name: ' . $lastName . '\n';
 $emailBody = $emailBody . 'Email: ' . $email . '\n';
 $emailBody = $emailBody . 'Comments/Questions: ' . $message;
 
-$subject = 'Contact Form Submission From: ' . $firstName . $lastName;
+$subject = 'Contact Form Submission From: ' . $firstName . " " . $lastName;
 
 $headers = 'Content-Type: text/html' . '\r\n';
 $headers.= $_POST['contact'] . '\r\n';
