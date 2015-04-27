@@ -1,36 +1,35 @@
 <?php
 
-if( isset($_POST) ) {
 
-    $subject = 'Contact Form Submission';
-    $to = 'amie.wilt@gmail.com';
 
-    //Submission Data
-    $ipaddress = $_SERVER['REMOTE_ADDR'];
+//Submission Data
+$ipaddress = $_SERVER['REMOTE_ADDR'];
 
-    //Form Data
-    $firstName = $_POST['first-name'];
-    $lastName = $_POST['last-name'];
-    $email = $_POST['email'];
-    $message = $_POST['questions-comments'];
+//Form Data
+$firstName = $_POST['first-name'];
+$lastName = $_POST['last-name'];
+$email = $_POST['email'];
+$message = $_POST['questions-comments'];
 
-    //Email Body
-    $emailBody = '';
-    $emailBody = $emailBody . 'First Name: ' . $firstName . '\n';
-    $emailBody = $emailBody . 'Last Name: ' . $lastName . '\n';
-    $emailBody = $emailBody . 'Email: ' . $email . '\n';
-    $emailBody = $emailBody . 'Comments/Questions: ' . $message;
+//Email Body
+$emailBody = '';
+$emailBody = $emailBody . 'First Name: ' . $firstName . '\n';
+$emailBody = $emailBody . 'Last Name: ' . $lastName . '\n';
+$emailBody = $emailBody . 'Email: ' . $email . '\n';
+$emailBody = $emailBody . 'Comments/Questions: ' . $message;
 
-    $headers = 'Content-Type: text/html' . '\r\n';
-    $headers.= $_POST['contact'] . '\r\n';
+$subject = 'Contact Form Submission From: ' . $firstName . $lastName;
+$to = 'amie.wilt@gmail.com';
+
+$headers = 'Content-Type: text/html' . '\r\n';
+$headers.= $_POST['contact'] . '\r\n';
 //    mail( $_POST['email'], $usersubject, $emailBody, $headers);
-    mail($to, $subject, $emailBody, $headers);
+mail($to, $subject, $emailBody, $headers);
 
-   header('Location: contact-thanks.html');
-
-}
+header('Location: contact-thanks.html');
 
 
+?>
 
 
 
