@@ -72,7 +72,7 @@
                     'first-name': $('#contact-form-first-name').val(),
                     'last-name': $('#contact-form-last-name').val(),
                     'email': $('#contact-form-email').val(),
-                    'message': $('#questions-comments').val(),
+                    'questions-comments': $('#questions-comments').val(),
                     'to': recipients.toString()
                 };
 
