@@ -1,0 +1,24 @@
+.contact-thanks-wrapper {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.contact-thanks-header {
+    @include extra-large;
+    font-weight: 100;
+    color: $dark-green;
+
+    @media #{$mobile-width-mq} {
+        @include large;
+    }
+}
+
+.contact-thanks-supporting-text {
+    @include small;
+    @include full-width-side-padding;
+    font-weight: 300;
+
+    @media #{$mobile-width-mq} {
+        @include very-small;
+    }
+}
