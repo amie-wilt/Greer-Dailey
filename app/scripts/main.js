@@ -44,25 +44,25 @@
         }
     });
 
-    $(function(){
-        $('#contact-form').submit(function(e){
-
-            // Stop the form actually posting
-            e.preventDefault();
-
-            // Send the request
-            $.post('/contact-form.php', {
-                firstName: $('#contact-form-first-name').val(),
-                lastName: $('#contact-form-last-name').val(),
-                email: $('#contact-form-email').val(),
-                comments: $('#questions-comments').val()
-                //bacon: $('.bacon:checked').val(),
-                //checkme: $('#checkme').is(':checked')
-            }, function(){
-
-            });
-        });
-    });
+    //$(function(){
+    //    $('#contact-form').submit(function(e){
+    //
+    //        // Stop the form actually posting
+    //        e.preventDefault();
+    //
+    //        // Send the request
+    //        $.post('/contact-form.php', {
+    //            firstName: $('#contact-form-first-name').val(),
+    //            lastName: $('#contact-form-last-name').val(),
+    //            email: $('#contact-form-email').val(),
+    //            comments: $('#questions-comments').val()
+    //            //bacon: $('.bacon:checked').val(),
+    //            //checkme: $('#checkme').is(':checked')
+    //        }, function(){
+    //
+    //        });
+    //    });
+    //});
 
 
 

@@ -23,7 +23,7 @@ if( isset($_POST) ) {
 
     $headers = 'Content-Type: text/html' . '\r\n';
     $headers.= $_POST['contact'] . '\r\n';
-    mail( $_POST['email'], $usersubject, $emailBody, $headers);
+//    mail( $_POST['email'], $usersubject, $emailBody, $headers);
     mail($to, $subject, $emailBody, $headers);
 
    header('Location: contact-thanks.html');
