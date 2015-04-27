@@ -49,13 +49,6 @@
         }
     }
 
-    var $recipients = $('[data-contact-form="email-recipients"]');
-    function setRecipients() {
-        var emails = recipients.toString();
-
-        $recipients.val(emails);
-    }
-
     $('[data-email-address]').GDZ_Checkbox({
         onChange: function (checked) {
             var email = this.$el.data('email-address');
@@ -67,7 +60,6 @@
             }
             console.log('Recipients are now: ', recipients);
 
-            setRecipients();
         }
     });
 
@@ -76,7 +68,15 @@
             e.preventDefault();
 
             if ($(this).parsley().isValid() ) {
-                $.post('contact-form.php', function () {
+                var data = {
+                    'first-name': $('#contact-form-first-name').val(),
+                    'last-name': $('#contact-form-last-name').val(),
+                    'email': $('#contact-form-email').val(),
+                    'message': $('#questions-comments').val(),
+                    'to': recipients.toString()
+                };
+
+                $.post('contact-form.php', data, function () {
                     window.location.href = 'contact-thanks.html';
                 });
             }
