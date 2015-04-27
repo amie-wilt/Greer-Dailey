@@ -38,7 +38,7 @@
 .last-name-input,
 .email-input {
     @include contact-form-input;
-    font-family: 'MuseoSans';
+    font-family: 'MuseoSans', sans-serif;
     display: table-cell;
     width: 100%;
 
