@@ -75,9 +75,11 @@
         .on('submit', function (e) {
             e.preventDefault();
 
-            $.post('contact-form.php', function () {
-                window.location.href = 'contact-thanks.html';
-            });
+            if ($(this).parsley().isValid() ) {
+                $.post('contact-form.php', function () {
+                    window.location.href = 'contact-thanks.html';
+                });
+            }
         })
         .parsley({
             errorsContainer: function (field) {
