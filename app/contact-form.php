@@ -24,7 +24,7 @@ $subject = 'Contact Form Submission From: ' . $firstName . $lastName;
 $headers = 'Content-Type: text/html' . '\r\n';
 $headers.= $_POST['contact'] . '\r\n';
 //    mail( $_POST['email'], $usersubject, $emailBody, $headers);
-mail($to, $subject, $emailBody, $headers);
+mail('amie.wilt@gmail.com', $subject, $emailBody, $headers);
 
 header('Location: contact-thanks.html');
 
