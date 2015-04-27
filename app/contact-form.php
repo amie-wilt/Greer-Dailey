@@ -10,6 +10,7 @@ $firstName = $_POST['first-name'];
 $lastName = $_POST['last-name'];
 $email = $_POST['email'];
 $message = $_POST['questions-comments'];
+$to = $_POST['to'];
 
 //Email Body
 $emailBody = '';
@@ -19,7 +20,6 @@ $emailBody = $emailBody . 'Email: ' . $email . '\n';
 $emailBody = $emailBody . 'Comments/Questions: ' . $message;
 
 $subject = 'Contact Form Submission From: ' . $firstName . $lastName;
-$to = 'amie.wilt@gmail.com';
 
 $headers = 'Content-Type: text/html' . '\r\n';
 $headers.= $_POST['contact'] . '\r\n';
@@ -27,7 +27,6 @@ $headers.= $_POST['contact'] . '\r\n';
 mail($to, $subject, $emailBody, $headers);
 
 header('Location: contact-thanks.html');
-
 
 ?>
 

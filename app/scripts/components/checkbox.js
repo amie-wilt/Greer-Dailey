@@ -29,10 +29,16 @@
             this.$input
                 .on({
                     'change': function () {
-                        if (self.$input.prop('checked')) {
+                        var checked = self.$input.prop('checked');
+
+                        if (checked) {
                             self._check();
                         } else {
                             self._uncheck();
+                        }
+
+                        if (self.options.onChange && typeof self.options.onChange === 'function') {
+                            self.options.onChange.call(self, checked);
                         }
                     },
                     'focus': function () {

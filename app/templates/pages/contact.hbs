@@ -42,7 +42,7 @@
             <div class="direct-email-button-wrapper">
                 {{#each global.pages.team.team-members }}
                     {{#if email-recipient }}
-                        <div class="team-member-email-container" data-checkbox>
+                        <div class="team-member-email-container" data-email-address="{{ email }}">
                             <input type="checkbox" class="team-member-email-option-checkbox"
                                    id="team-member-email-option-{{ dasherize name }}"/>
                             <label class="team-member-email-option-label"
@@ -51,6 +51,8 @@
                     {{/if}}
                 {{/each}}
             </div>
+
+            <input type="hidden" name="to" data-contact-form="email-recipients" />
         </fieldset>
 
         <button type="submit" class="submit-button">Submit</button>
