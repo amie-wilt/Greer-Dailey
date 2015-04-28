@@ -15,17 +15,26 @@ $to = $_POST['to'];
 
 //Email Body
 $emailBody = '';
-$emailBody = $emailBody . 'First Name: ' . $firstName . '\n';
-$emailBody = $emailBody . 'Last Name: ' . $lastName . '\n';
-$emailBody = $emailBody . 'Email: ' . $email . '\n';
+$emailBody = $emailBody . 'First Name: ' . $firstName . '<br>';
+$emailBody = $emailBody . 'Last Name: ' . $lastName . '<br>';
+$emailBody = $emailBody . 'Email: ' . $email . '<br>';
 $emailBody = $emailBody . 'Comments/Questions: ' . $message;
 
-$subject = 'Contact Form Submission From: ' . $firstName . " " . $lastName;
+$mail->SetFrom($email, $lastName);
+$address = $to;
+$mail->Subject = 'Contact Form Submission | ' . $firstName . " " . $lastName;
 
-$headers = 'Content-Type: text/html' . '\r\n';
-$headers.= $_POST['contact'] . '\r\n';
-//    mail( $_POST['email'], $usersubject, $emailBody, $headers);
-mail($to, $subject, $emailBody, $headers);
+$mail->MsgHTML($emailBody);
+
+$mail->Send();
+
+
+//$subject = 'Contact Form Submission From: ' . $firstName . " " . $lastName;
+//
+//$headers = 'Content-Type: text/html' . '\r\n';
+//$headers.= $_POST['contact'] . '\r\n';
+////    mail( $_POST['email'], $usersubject, $emailBody, $headers);
+//mail($to, $subject, $emailBody, $headers);
 
 header('Location: contact-thanks.html');
 
