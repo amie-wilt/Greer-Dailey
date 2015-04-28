@@ -36,7 +36,7 @@ $mail->Send();
 ////    mail( $_POST['email'], $usersubject, $emailBody, $headers);
 //mail($to, $subject, $emailBody, $headers);
 
-header('Location: contact-thanks.html');
+//header('Location: contact-thanks.html');
 
 ?>
 
