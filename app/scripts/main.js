@@ -77,7 +77,7 @@
                 };
 
                 $.post('contact-form.php', data, function () {
-                    //window.location.href = 'contact-thanks.html';
+                    window.location.href = 'contact-thanks.html';
                 });
             }
         })
