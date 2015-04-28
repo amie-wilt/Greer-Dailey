@@ -24,22 +24,15 @@ $emailBody = $emailBody . 'Comments/Questions: ' . $message;
 
 $mail->SetFrom($email, $lastName);
 $address = $to;
-$mail->AddAddress($address, 'Greer | Dailey');
+$to_emails = explode(',',$to);
+    foreach($to_emails as $to_email){
+        $mail->AddAddress($to_email);
+    }
 $mail->Subject = 'Greer Daily Form Submission | ' . $firstName . ' ' . $lastName;
 
 $mail->MsgHTML($emailBody);
 
 $mail->Send();
-
-
-//$subject = 'Contact Form Submission From: ' . $firstName . " " . $lastName;
-//
-//$headers = 'Content-Type: text/html' . '\r\n';
-//$headers.= $_POST['contact'] . '\r\n';
-////    mail( $_POST['email'], $usersubject, $emailBody, $headers);
-//mail($to, $subject, $emailBody, $headers);
-
-//header('Location: contact-thanks.html');
 
 ?>
 
