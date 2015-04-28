@@ -22,6 +22,7 @@ $emailBody = $emailBody . 'Comments/Questions: ' . $message;
 
 $mail->SetFrom($email, $lastName);
 $address = $to;
+$mail->AddAddress($address, "Greer | Dailey");
 $mail->Subject = 'Greer Daily Form Submission | ' . $firstName . " " . $lastName;
 
 $mail->MsgHTML($emailBody);
