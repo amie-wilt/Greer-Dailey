@@ -1,6 +1,7 @@
 <?php
 
-
+require_once("class.phpmailer.php");
+$mail = new PHPMailer();
 
 //Submission Data
 $ipaddress = $_SERVER['REMOTE_ADDR'];
