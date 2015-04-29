@@ -171,7 +171,11 @@
         },
         "contact-thanks": {
             "name": "Thank You",
-            "supporting-text": "We have received your submission and we will respond as quickly as possible."
+            "intro": {
+                "image": "images/case-studies.jpg",
+                "title": "Thank You",
+                "supporting-text": "We have received your submission and we will respond as quickly as possible."
+            }
         },
         "error": {
             "name": "404",

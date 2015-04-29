@@ -30,7 +30,7 @@ $to_emails = explode(',',$to);
     foreach($to_emails as $to_email){
         $mail->AddAddress($to_email);
     }
-$mail->Subject = 'Greer Daily Form Submission | ' . $firstName . ' ' . $lastName;
+$mail->Subject = 'Greer Daily Form Submission | ' . $fullName;
 
 $mail->MsgHTML($emailBody);
 
