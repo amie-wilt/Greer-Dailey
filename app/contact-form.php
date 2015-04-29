@@ -19,10 +19,10 @@ $fullName = $firstName . ' ' . $lastName;
 
 //Email Body
 $emailBody = '';
-$emailBody = $emailBody . '<div style="padding-bottom:5px;border-bottom:1px solid #d9dcdd;margin-bottom:5px;"><span><strong style="color:#F3600C;">First Name:  </strong></span> <span>' . $firstName . '</span></div><br>';
-$emailBody = $emailBody . '<div style="padding-bottom:5px;border-bottom:1px solid #d9dcdd;margin-bottom:5px;"><span><strong style="color:#F3600C;">Last Name:  ' . $lastName . '</span></div><br>';
-$emailBody = $emailBody . '<div style="padding-bottom:5px;border-bottom:1px solid #d9dcdd;margin-bottom:5px;"><span><strong style="color:#F3600C;">Email:  ' . $email . '</span></div><br>';
-$emailBody = $emailBody . '<div><span><strong style="color:#F3600C;">Comments/Questions:  ' . $message . '</span></div>';
+$emailBody = $emailBody . '<div style="padding-bottom:5px;border-bottom:1px solid #d9dcdd;margin-bottom:5px;"><span><strong style="color:#122B48;">First Name:  </strong></span> <span>' . $firstName . '</span></div><br>';
+$emailBody = $emailBody . '<div style="padding-bottom:5px;border-bottom:1px solid #d9dcdd;margin-bottom:5px;"><span><strong style="color:#122B48;">Last Name:  </strong></span> <span>' . $lastName . '</span></div><br>';
+$emailBody = $emailBody . '<div style="padding-bottom:5px;border-bottom:1px solid #d9dcdd;margin-bottom:5px;"><span><strong style="color:#122B48;">Email:  </strong></span> <span>' . $email . '</span></div><br>';
+$emailBody = $emailBody . '<div><span><strong style="color:#122B48;">Comments/Questions:  </strong></span> <span>' . $message . '</span></div>';
 
 $mail->SetFrom($email, $fullName);
 $address = $to;
