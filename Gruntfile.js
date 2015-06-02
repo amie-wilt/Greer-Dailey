@@ -155,7 +155,7 @@ module.exports = function(grunt) {
         // Compiles Sass to CSS and generates necessary files if requested
         sass: {
             options: {
-                includePaths: ['app/bower_components']
+                includePaths: ['bower_components']
             },
             dist: {
                 files: [
@@ -200,7 +200,7 @@ module.exports = function(grunt) {
         wiredep: {
             app: {
                 exclude: [
-                    'app/bower_components/modernizr/modernizr.js'
+                    'bower_components/modernizr/modernizr.js'
                 ],
                 ignorePath: '../../',
                 src: ['<%= config.templates %>/layouts/base.hbs']
@@ -362,7 +362,7 @@ module.exports = function(grunt) {
         // reference in your app
         modernizr: {
             dist: {
-                devFile: 'app/bower_components/modernizr/modernizr.js',
+                devFile: 'bower_components/modernizr/modernizr.js',
                 outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
                 files: {
                     src: [
